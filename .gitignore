@@ -1,0 +1,25 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+/app/build
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# OS-specific files
+.DS_Store?
+ehthumbs.db
+Thumbs.db
