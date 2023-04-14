@@ -5,16 +5,22 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+def versionMajor = 1
+def versionMinor = 0
+def versionPatch = 0
+def versionIncrement = 0
+
 android {
     namespace 'com.dunghn2201.eternalcalendar'
     compileSdk 33
+    ndkVersion "25.1.8937393"
 
     defaultConfig {
         applicationId "com.dunghn2201.eternalcalendar"
         minSdk 26
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        versionCode versionMajor * 100000 + versionMinor * 1000 + versionPatch * 100 + versionIncrement
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -22,10 +28,68 @@ android {
         }
     }
 
+    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('debug.keystore')
+            storePassword 'android'
+        }
+    }
+
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            ndk {
+                debugSymbolLevel 'SYMBOL_TABLE'
+            }
+        }
+    }
+    flavorDimensions "version"
+    productFlavors {
+        def APP_NAME = "APP_NAME"
+        develop {
+            def version_name_ext = System.getenv("VERSION_NAME_EXT")
+            def app_name = "[Dev]lichvannien"
+            if (version_name_ext) {
+                versionNameSuffix "-develop-$version_name_ext"
+            } else {
+                versionNameSuffix "-develop"
+            }
+            dimension "version"
+            buildConfigField "String", APP_NAME, "\"${app_name}\""
+            manifestPlaceholders["appName"] = app_name
+        }
+        staging {
+            dimension "version"
+            def version_name_ext = System.getenv('VERSION_NAME_EXT')
+            def app_name = "[Staging]lichvannien"
+            if (version_name_ext) {
+                versionNameSuffix "-staging-$version_name_ext"
+            } else {
+                versionNameSuffix "-staging"
+            }
+            buildConfigField "String", APP_NAME, "\"${app_name}\""
+            manifestPlaceholders["appName"] = app_name
+        }
+        production {
+            def tag_name = System.getenv('TAG_NAME')
+            def app_name = "lichvannien"
+            if (tag_name) {
+                def versions = tag_name.replace('v', '').split("-")
+                versionCode versions[1].toInteger()
+                versionName "${versions[0]}"
+            }
+            dimension "version"
+            buildConfigField "String", APP_NAME, "\"${app_name}\""
+            manifestPlaceholders["appName"] = app_name
         }
     }
     compileOptions {
@@ -45,6 +109,24 @@ android {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
+    }
+
+    sourceSets {
+        develop.java.srcDirs = ["src/app/java"]
+        staging.java.srcDirs = ["src/app/java"]
+        production.java.srcDirs = ["src/app/java"]
+    }
+
+    // Package attribute in manifest file is deprecated
+    // Official document: https://developer.android.com/studio/releases/gradle-plugin#package-deprecated
+    namespace 'com.dunghn2201.eternalcalendar'
+
+    applicationVariants.all { variant ->
+        def localProperties = new Properties()
+        def propertiesFile = rootProject.file("local.properties")
+        // Skipped because local.properties does not exist on CI
+        if (!propertiesFile.exists()) return
+        propertiesFile.withInputStream { localProperties.load(it) }
     }
 }
 
@@ -79,4 +161,10 @@ dependencies {
 
     //==================== Constraint Layout ====================
     implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+
+    //==================== Work Manager ====================
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    //==================== Work Manager ====================
+    implementation 'io.sentry:sentry-android:6.17.0'
 }
