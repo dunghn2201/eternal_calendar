@@ -8,7 +8,7 @@ import io.sentry.Sentry
 import kotlinx.coroutines.*
 import timber.log.Timber
 
-open class BaseViewModel(val application: Application) : ViewModel() {
+open class BaseViewModel(private val application: Application) : ViewModel() {
 
     private val coroutineExceptionHandler = CoroutineExceptionHandler { _, e ->
         Timber.e(e)

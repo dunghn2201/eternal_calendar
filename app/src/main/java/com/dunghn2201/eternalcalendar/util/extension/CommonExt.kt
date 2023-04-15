@@ -11,3 +11,11 @@ inline fun tryCatch(crossinline func: () -> Unit) {
         Sentry.captureException(ex)
     }
 }
+
+interface UiState {
+    val uiState: State
+    override fun equals(other: Any?): Boolean
+    enum class State {
+        INITIAL, LOADING, COMPLETE, FAILURE,
+    }
+}

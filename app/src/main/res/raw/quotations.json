@@ -1,0 +1,5121 @@
+{
+  "quotes": [
+    {
+      "quote": "'Hoàn thành' tốt hơn là 'hoàn hảo'. - 'Done' is better than 'perfect'.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai không bắt đầu một cái gì thì chẳng làm được một cái gì cả.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Ai không có mục đích thì không thể tìm thấy niềm vui trong bất kỳ công việc gì.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai lao động nhiều, người đó sẽ hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai làm bằng gió thì sẽ được trả lương bằng khói.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ai phục vụ cùng một lúc hai ông chủ, anh ta sẽ lừa dối một ông.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Ai sợ khổ, sẽ khổ đầu tiên vì nỗi khổ của mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai điều khiển được lòng say mê của mình thì đó là ông chủ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ai đã cảm thấy niềm vui sáng tạo thì đối với người đó, mọi niềm vui khác đều không tồn tại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Anh càng đi nhanh, anh càng đi được ít. - The faster you go, the shorter you are.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Bí quyết của sự thành công là hằng ngày cố gắng hơn người khác một chút.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bạn không thể tạo ra kinh nghiệm, bạn trải qua nó. - You can't create experience, you undergo it.",
+      "author": "Albert Camus"
+    },
+    {
+      "quote": "Bắt đầu tốt chưa chắc kết thúc đã tốt.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Chuyển động thẳng quá dễ dẫn tới ngõ cụt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chúa luôn chọn cách đơn giản nhất. - God always takes the simplest way.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Chúng ta lao động để trở thành, không phải để nắm giữ. - We work to become, not to acquire.",
+      "author": "Elbert Hubbard"
+    },
+    {
+      "quote": "Chăm chỉ là mẹ của may mắn. - Diligence is the mother of good luck.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Chẳng gì là dễ dàng với kẻ miễn cưỡng. - Nothing is easy to the unwilling.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Chỉ có những kẻ ngu và người chết là chẳng bao giờ chịu thay đổi ý kiến.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chỉ có việc nào người ta thực sự muốn làm thì mới có thể làm tốt được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chỉ riêng những ý định trung thực không bảo đảm được những kết quả tốt nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chớ lề mề trong công việc phải làm gấp, chớ hấp tấp trong việc không cần vội.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con người chỉ biết được năng lực của mình sau khi đã tìm cách ứng dụng chúng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con người sinh ra để lao động giống như con chim sinh ra là để bay.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Con tàu rất an toàn khi neo đậu tại cảng nhưng người ta đóng tàu không phải vì mục đích đó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cách tốt nhất để hành động, là hành động. - The most effective way to do it, is to do it.",
+      "author": "Amelia Earhart"
+    },
+    {
+      "quote": "Cái thìa quá to không múc được mật ong trong hũ.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Công việc sáng tạo là loại lao động tuyệt vời, cực kỳ nặng nề, và vô cùng sung sướng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cần cù bù thông minh.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cần lạc quan khi khởi đầu công việc và đầy hoài nghi khi kết thúc công việc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cứ làm việc tốt phần mình, trời sẽ cho các thứ khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Dụng nhân như dụng mộc.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Giá trị của một ý tưởng nằm ở cách sử dụng nó. - The value of an idea lies in the using of it.",
+      "author": "Thomas Edison"
+    },
+    {
+      "quote": "Gánh nặng được mang một cách vui vẻ sẽ trở nên nhẹ nhàng.",
+      "author": "Ovid"
+    },
+    {
+      "quote": "Gương mẫu là lãnh đạo. - Example is leadership.",
+      "author": "Albert Schweitzer"
+    },
+    {
+      "quote": "Hoạt động thực tiễn và tác phong sáng tạo, đây là những người thầy giỏi trong trường đời.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy biết làm việc và hãy biết chọn người giúp việc.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hãy lao động nhiều hơn tất cả mọi người, nhưng hãy nói về bản thân mình ít hơn tất cả mọi người.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy vì mục đích lý tưởng mà tìm ra phương pháp, đừng tìm cách biện minh cho sai lầm của mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hễ bàn giấy ngổn ngang thì đầu óc cũng ngổn ngang.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Học cho rộng, hỏi cho kỹ, nghĩ cho cẩn thận, phân biệt cho rõ, làm cho hết sức.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Học cho rộng, hỏi cho kỹ, suy nghĩ cho cẩn thận, phân biệt cho sáng suốt, làm việc cho hết lòng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Học vấn là cái kho, và lao động là chìa khóa để mở cái kho ấy.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi chưa bắt tay vào công việc, sự lo lắng chỉ làm cho con người ta mệt mỏi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không ai có thể làm được tất cả mọi điều theo ý muốn của bản thân.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Không có công việc gì tồi tệ hơn là công việc đã được trả công trước.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có thứ gọi là tài năng. Chỉ có áp lực. - There is no such thing as talent. There is pressure.",
+      "author": "Alfred Adler"
+    },
+    {
+      "quote": "Không có áp lực, không có kim cương. - No pressure, no diamonds.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Không ghen ghét ai, không cầu cạnh ai thì làm việc gì chẳng lành, chẳng tốt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không làm một việc gì có nghĩa là đã làm một việc xấu.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Không thể làm gì vừa nhanh vừa thận trọng. - Nothing can be done at once hastily and prudently.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Kinh nghiệm, đó là thứ mà ta nhận được khi không nhận được những thứ mình muốn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lao động là mẹ đẻ của tính lương thiện.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Lao động làm ta khuây khỏa được nỗi buồn, tiết kiệm được thời gian, chữa khỏi được bệnh lười biếng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Luôn luôn có ánh sáng đằng sau những đám mây. - There is always light behind the clouds.",
+      "author": "Louisa May Alcott"
+    },
+    {
+      "quote": "Làm chuyện gì mà có điều chưa thỏa mãn thì hãy tự xét lại thân mình xem làm như thế đã phải chưa.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Làm hai thứ một lúc cũng có nghĩa không làm gì cả. - To do two things at once is to do neither.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Làm việc đừng mong dễ thành, vì việc dễ thành thì lòng thường kiêu ngạo.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Lãnh đạo, phục tùng, hoặc cuốn xéo. - Lead, follow, or get out of the way.",
+      "author": "Thomas Paine"
+    },
+    {
+      "quote": "Lời nói không có sức nặng và sức lực yếu kém thì đừng khuyên can người khác.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Muốn nói phải nghĩ đến làm. Muốn làm phải nhớ đến nói.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Muốn ăn quả phải trèo cây. - One that would have the fruit must climb the tree.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Mọi bức tường đều là một cánh cửa. - Every wall is a door.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Mọi người sẽ quên rất nhanh việc bạn làm nhưng họ sẽ nhớ rất lâu bạn đã làm nó tốt thế nào.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mỗi khi bạn có ý định từ bỏ, hãy nghĩ đến lý do mà bạn bắt đầu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mỗi điều tốt đẹp đều là những điều bắt tay vào khó nhất. - Each goodly thing is hardest to begin.",
+      "author": "Edmund Spenser"
+    },
+    {
+      "quote": "Một ao-xơ hành động đáng giá bằng cả tấn lý thuyết. - An ounce of action is worth a ton of theory.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Một con ngựa tốt không nên bị thúc nhiều. - A good horse should be seldom spurred.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Một nghề thì sống. Đống nghề thì chết.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Nghị lực và bền bỉ có thể chinh phục mọi thứ. - Energy and persistence conquer all things.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Ngoài những cái lợi khác, lao động còn có cái lợi làm cho ngày ngắn lại và đời dài ra.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nguyên nhân và hệ quả là hai mặt của một vấn đề. - Cause and effect are two sides of one fact.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Người chịu đựng được cực khổ không bao giờ bị thiệt thòi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người có tài lao động, thiên tài sáng tạo. - Talent works, genius creates.",
+      "author": "Robert Schumann"
+    },
+    {
+      "quote": "Người mà tính khí thất thường thì suốt đời không làm nên một việc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người nào chịu khổ, ăn rau cho là ngon, thì việc gì làm chả nổi.",
+      "author": "Uông Cách"
+    },
+    {
+      "quote": "Người ta sẽ mất hết lòng tự trọng khi chõ mũi vào công việc của người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người vắng mặt luôn là kẻ sai trái.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Người yêu lao động bao giờ cũng thấy công việc của mình chưa hoàn hảo.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nhiều người làm việc chỉ vì họ phải làm việc thì sẽ không bao giờ tiến bước.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người lười biếng sẽ không bao giờ biết rằng chỉ trong sự lao động mới có sự nghỉ ngơi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người đi tiên phong cho các lý tưởng mới không gặp gì khác ngoài sự chế giễu và đả kích.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Những ý tưởng lớn bắt nguồn từ cơ bắp. - Great ideas originate in the muscles.",
+      "author": "Thomas Edison"
+    },
+    {
+      "quote": "Niềm vui là ở bản thân công việc, chứ không phải ở những mối lợi ích của nó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu bạn giỏi làm việc gì thì đừng bao giờ làm nó miễn phí",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu bạn muốn có được những thứ bạn chưa từng có thì bạn phải làm những việc bạn chưa từng làm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu có chuẩn bị thì không phải lo lắng.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Nếu một người sợ trách nhiệm về việc mình làm thì đó là một kẻ hèn nhát.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu quá trình lao động được tự do, nó sẽ kết thúc bằng sáng tạo.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nỗ lực nửa vời là thất bại đích đáng. - A second-class effort is a first-class mistake.",
+      "author": "William Arthur Ward"
+    },
+    {
+      "quote": "Nỗi sợ hãi là mẹ của sự lo xa. - Fear is the mother of foresight.",
+      "author": "Thomas Hardy"
+    },
+    {
+      "quote": "Quá liều lĩnh sẽ chết trong liều lĩnh.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Thiên tài có thể đặt nền móng, nhưng hoàn tất công việc phải là lao động kiên nhẫn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thà làm hoàn thiện một phần bé nhỏ của công việc còn hơn làm không tốt việc to gấp mười lần.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thế giới rộng lớn không có chỗ cho kẻ bất tài.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trong mọi việc phải tuân thủ ba nguyên tắc: sự thật, trung thực, hữu ích.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trải qua một việc thêm một phần trí khôn.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Tâm niệm trầm tĩnh thì lẽ gì nghĩ chẳng tới. Chí khí cao rộng thì việc gì làm chẳng xong.",
+      "author": "Lã Khôn"
+    },
+    {
+      "quote": "Tình yêu với công việc làm cho nó nhẹ nhàng hơn.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Tôi không 'đón lấy' ý tưởng; ý tưởng đón lấy tôi. - I do not 'get' ideas; ideas get me.",
+      "author": "Robertson Davies"
+    },
+    {
+      "quote": "Việc làm nên trước mọi người, câu nói nên sau mọi người.",
+      "author": "Lã Khôn"
+    },
+    {
+      "quote": "Và với mỗi chuyện tồi tệ vẫn còn có chuyện tồi tệ hơn. - And yet to every bad there is a worse.",
+      "author": "Thomas Hardy"
+    },
+    {
+      "quote": "Vỏ bọc cải trang mà cơ hội yêu thích nhất là rắc rối. - Opportunity's favorite disguise is trouble.",
+      "author": "Frank Tyger"
+    },
+    {
+      "quote": "Điều gì cũng khó trước khi trở nên dễ dàng. - All things are difficult before they are easy.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Đường tuy ngắn, không đi không đến. Việc tuy nhỏ, không làm không nên.",
+      "author": "Tuân Tử"
+    },
+    {
+      "quote": "Đối với năng lực thì chỉ có một cách chứng minh đó là hành động.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng bao giờ hứa nhiều hơn bạn có thể thực hiện. - Never promise more than you can perform.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Đừng bao giờ ra thứ mệnh lệnh không thể phục tùng. - Never give an order that can't be obeyed.",
+      "author": "Douglas MacArthur"
+    },
+    {
+      "quote": "Đừng khoe sự khởi đầu của công việc mà hãy khoe khi bạn đã làm xong công việc.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Đừng kêu ca là vấn đề nào đó khó. Nếu không khó thì đã không phải là vấn đề.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai cả tin, người ấy phải hối hận.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Ai lớn lên với thói quen nào thì sẽ già đi với thói quen đó.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Ai mà vâng liều, hứa liều, tất nhiên ít khi giữ được đúng.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Ai nói nhiều nghe ít, người ấy đáng giá bằng một con lừa ở ngoài chợ.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Ai đánh đầu tiên, người ấy có lỗi. Ai không tự bảo vệ lấy mình, người đó dễ bị đánh nhất.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ai đã quyết định giúp thì người đó không sợ nguy hiểm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ba mươi trở đi, mới hay đất dày trời thẳm.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Ba điều trong đời một khi đã đi qua không thể lấy lại được: Thời gian, lời nói, cơ hội.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Biết cách nói thì mới biết cách im lặng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Biết lỗi mà không sửa, đó chính là lỗi! - Quá nhi bất cải, thị vị quá hĩ!",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Biết đủ không nhục, biết dừng không nguy. Như thế có thể giữ được lâu dài.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Biển làm chủ được những dòng sông bởi vì nó ở thấp hơn.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Buổi sáng nghe được đạo lý, buổi chiều dẫu chết cũng được rồi.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Bạn không bao giờ có thể thay đổi được quá khứ của bạn, nhưng bạn có thể thay đổi tương lai!",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Bạn muốn được mọi người hiểu nghĩa là bạn muốn họ tha thứ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Bạn sinh ra là một nguyên bản. Đừng chết đi như một bản sao",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bắt giặc bắt vua. - Cầm tặc cầm vương.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Bị nạn lớn không chết, ắt có phước về sau.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Bụng đói có thể no được, còn con mắt đói thì không bao giờ.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Cho nhiều hơn nhận thì sẽ được nhận nhiều hơn cho.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chính trong sự cho đi là chúng ta nhận lại. - For it is in giving that we receive.",
+      "author": "Francis of Assisi"
+    },
+    {
+      "quote": "Chúng ta cần phải lấy tất cả mọi điều mà cuộc sống có thể đưa cho.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Chúng ta vẫn tưởng rất nhiều người tốt, thật ra họ chỉ là những người nhu nhược mềm yếu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chẳng có lửa nào không có khói, cũng chẳng có ái tình nào không có cái vẻ bề ngoài vờ vĩnh.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Chỉ có ba điều cần nhớ là trong sạch, siêng năng, cẩn thận. Biết ba điều đó là biết giữ mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chỉ nắm lấy cơ hội rồi ta mới biết, đó có phải là cơ hội của ta hay của người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chọn con đường, cách thức tấn công mà không ai nghĩ tới. - Ám độ Trần Thương.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Chớ khoe điều hay, chớ phô công trạng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chớ lấy sự ác nhỏ mà làm, chớ lấy sự thiện nhỏ mà không làm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chớ nên phàn nàn là trước mắt mình đất quá hẹp, cứ lùi lại một bước tự khắc thấy nó rộng ra.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con bất hiếu luôn oán trách mẹ cha, người xấu mắc nợ oán chủ cho vay.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Con cá sẩy là con cá to.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Con cáo biết nhiều, nhưng người nào bắt được nó còn biết nhiều hơn.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Con người chỉ là một cây sậy yếu ớt nhất trong thiên nhiên, nhưng đó là một cây sậy biết suy nghĩ.",
+      "author": "Blaise Pascal"
+    },
+    {
+      "quote": "Con người dựa vào chí khí, con hổ dựa vào uy phong.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Con người không có mục đích nào khác, ngoài mục đích trở thành người chân chính.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con người làm đẹp địa vị chứ không phải địa vị làm đẹp con người.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Cuộc sống giống như một cầu vồng. Bạn cần cả mặt trời và mưa để làm cho màu sắc của nó xuất hiện.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cuộc sống là sự cân bằng giữa cho đi và nhận lại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cuộc sống tạo nên trật tự nhưng trật tự không thể tạo nên cuộc sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cuộc sống và lòng tin chỉ bị mất có một lần.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Cuộc sống vốn không công bằng. Hãy tập quen dần với điều đó.",
+      "author": "Bill Gates"
+    },
+    {
+      "quote": "Cuộc sống, đó không phải là những gì ta muốn mà là những gì ta có thể kiếm được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cuộc đời là một dòng sông. Kẻ nào không chịu học bơi sẽ bị nước nhấn chìm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Càng lên cao, chân trời càng xa, tầm mắt càng rộng.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Càng tưởng trốn tránh được nỗi khổ sở, người ta càng kéo dài nỗi khổ sở thêm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cái chết của con người nằm ở giữa hai hàm răng.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Cái gì bạn không giữ được trong miệng thì cũng không giữ được ở trong nhà.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Cái miệng say phản bội lại tất cả những điều bí mật nằm kín trong trái tim.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Cái tốt hơn cũng là kẻ thù của cái tốt.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Còn gì ý nghĩa hơn việc giúp một người bất hạnh nhận ra rằng mình ko bất hạnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có ba cách để tự làm giàu cho mình đó là Mỉm cười, Cho đi và Tha thứ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có mèo không biết công của mèo, không có mèo mới biết nhà lắm chuột.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Có thể bỏ qua một lời nói, nhưng không thể bỏ qua một nghìn lời góp ý.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Có thể lôi con người ra khỏi bùn đất, nhưng không thể lôi bùn đất khỏi con người.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có thể ăn nửa bữa, ngủ nửa đêm, nhưng không thể đi nửa đường chân lý, yêu bằng nửa trái tim.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Có thể đảm bảo tiền bạc, nhưng chớ bảo đảm con người.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Có đủ chỗ cho mọi thứ, nếu mỗi thứ được đặt ở chỗ của mình.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Cơm kẻ bất nhân, ăn, ấy chớ, Áo người vô nghĩa, mặc, chẳng thà.",
+      "author": "Nguyễn Trãi"
+    },
+    {
+      "quote": "Cười nụ giấu dao, lập mưu kín kẽ không để kẻ địch biết. - Tiếu lý tàng đao.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Cứng chống lại cứng là điều không bao giờ tốt cả.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Cứu xét tâm tánh thì đừng cầu không khúc mắc, vì không khúc mắc thì sở học không thấu đáo.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Danh dự là sự tự trọng mình và tôn trọng sự đẹp đẽ của cuộc đời. Danh dự là thi vị của cuộc sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Dù có đeo vàng đi chăng nữa, con lừa vẫn là con lừa.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Dùng gái đẹp để làm rối loạn quân địch. - Mỹ nhân kế.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Dốc lòng vì người đợi thiên mệnh.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Giả ngu chứ không điên, làm cho quân địch coi thường mình mà không đề phòng. - Giả si bất điên.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Giải phóng dân tộc là nghĩa vụ thiêng liêng nhất của mỗi người Việt Nam yêu nước.",
+      "author": "Võ Nguyên Giáp"
+    },
+    {
+      "quote": "Giản dị chẳng những là điều tốt đẹp nhất mà còn là điều cao thượng nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giản dị quá người ta nhờn, nghiêm trang quá người ta không thích.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giấu trời qua biển, lợi dụng sương mù để lẩn trốn. - Man thiên quá hải.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Giữ mình thì kính cẩn, Làm việc thì giản dị.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Gặp kẻ địch mạnh thì kế chuồn là thích hợp hơn cả trong 36 kế. - Tẩu vi thượng sách.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Hai người đánh nhau thì sẽ có một người bị đánh.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Hoặc là búa hoặc là đe chứ bạn đừng ở giữa hai thứ đó.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Hy vọng trục lợi bất chính là bắt đầu mọi sự tổn thất",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy học cái khôn ngoan từ muôn ngàn cái ngu của kẻ khác.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Hãy kính trọng những người trung thực, hãy khinh bỉ những kẻ dối trá.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hãy luôn mỉm cười, khi đó cuộc sống của bạn sẽ bớt đi mệt mỏi và căng thẳng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy ngước nhìn lên cao để thấy mình còn thấp và hãy nhìn xuống thấp để biết mình chưa cao.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy nhìn về phía trước một lần và hãy nhìn xung quanh bạn năm lần.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hãy nhận lấy lời khuyên của những người trên bạn và dưới bạn, còn sau đó hãy tự khuyên lấy mình.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Hãy nói một cách mềm mại nhưng nội dung thì phải cứng rắn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy sống là chính mình, bình thường nhưng không tầm thường.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy tôn trọng người khác, nếu muốn người ta tôn trọng bạn.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Hãy để kẻ khác khen mình, đừng tự khen.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hòa bình bắt đầu với một nụ cười. - Peace begins with a smile.",
+      "author": "Mother Teresa"
+    },
+    {
+      "quote": "Hùm chết để da, người ta chết để tiếng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hết họa thành phúc.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Học hỏi kinh nghiệm của mọi người; nhưng hãy tự chỉ huy mình.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Im lặng là câu trả lời tốt nhất mà bạn có thể dành cho kẻ ba hoa.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Khi bị trừng phạt thì người tốt trở lên tốt hơn, người xấu trở nên xấu hơn.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Khi cái đầu nghĩ, cái lưỡi được nghỉ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Khi hoạn nạn hãy trông vào mình.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Khi kẻ kém đạo đức ở ngôi cao, dân chúng rên than.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Khi một con bồ câu giao du với loài quạ, lông của nó vẫn trắng nhưng lòng nó thì thành đen.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Khi nói ít đi, bạn sẽ nghe thấy nhiều hơn.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Khi sinh ra, chúng ta không mang theo gì cả; chết đi chúng ta cũng không mang theo được cái gì cả.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Khi ta biết tự mắng mình ngốc là lúc ta đã khôn thêm một chút.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi đau khổ người ta kêu ca, khi hưởng lạc người ta thinh lặng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi đã quen với ấm áp rồi thì cái rét trở nên không chịu nổi.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Khi đường đời gập ghềnh, nhớ giữ tinh thần luôn bằng phẳng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khác biệt là một trong những điều đẹp nhất trên trái đất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khí kiêng nhất là hung hăng, tâm kiêng nhất là hẹp hòi, tài kiêng nhất là bộc lộ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khó khăn không phải để quật ngã ta, nhưng là để ta quật ngã chúng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không ai quay trở lại từ thế giới bên kia để kể chuyện về cuộc hành trình của mình.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Không ai yêu bạn, nếu bạn chỉ nghĩ đến bản thân mình.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Không biết lo xa thì khó khăn đến ngay trước mắt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có hoàn cảnh nào tuyệt vọng, chỉ có người tuyệt vọng vì hoàn cảnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không cái gì không chân chính mà lại trở nên vĩ đại được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có ai thực sự hiểu sự ưu sầu hay nỗi vui mừng của kẻ khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có cáo, sói ngây thơ, không có người không tội lỗi.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Không có gì khổ hơn là đau yếu và nợ nần.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Không có gì đáng ghét hơn là nói nhiều về bản thân mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có gì được mà lại không mất.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Không có mà làm thành có. - Vô trung sinh hữu.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Không khoe cái mạnh của mình mới là người thực sự mạnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không nên nói cái dở của người, chớ nên khoe cái hay của mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không phải cứ mặc áo đẹp vào là thành người tử tế.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Không phải ngọn gió thời cuộc nào cũng mang tới hơi mát.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khử một điều ác, lớn một điều lành.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Kim loại vì cứng mà hay gẫy, nước vì mềm mà được vẹn toàn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ duy nhất có thể lôi cuốn bạn vào vòng rượu chè, trộm cướp và nhục dục chính là bản thân bạn đó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ lười là ông anh ruột của kẻ ăn xin.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Kẻ ác tự làm hại mình trước khi có thể làm hại những người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ ăn bám là nửa người, người chăm chỉ là mười người.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Kẻ đam mê vật chất, thích tình dục đó là kẻ có trí óc nghèo nàn, tinh thần suy nhược.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ đáng sợ nhất là kẻ không có gì để mất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kể nỗi đau của mình ra là làm cho nó nhẹ bớt.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Là phúc không phải hoạ, là hoạ tránh chẳng qua.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Làm người nên tự lập, tự trọng, không nên bước theo gót người, nói theo miệng người.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Làm việc nghĩa chớ kể thiệt hại. Luận anh hùng chớ kể hơn thua.",
+      "author": "Lã Khôn"
+    },
+    {
+      "quote": "Lòng kính trọng nhận được thì khó mà mất đi thì dễ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Lấy nhàn để đối phó với mỏi mệt. - Dĩ dật đãi lao.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Lời hứa càng dễ dàng bao nhiêu thì càng dễ quên bấy nhiêu.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Lợi dụng kế của địch để biến thành kế của mình. - Phản gián kế.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Lợi: chớ hưởng một mình. Mưu: đừng cho ai biết.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Lừa cho hổ ra khỏi núi, khiến kẻ địch ra khỏi nơi ẩn nấp để dễ bề tấn công. - Điệu hổ ly sơn.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Miếng ăn càng to càng dễ bị nghẹn.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Muốn biết người phải nghe họ nói.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Muốn bắt thì phải thả. - Dục cầm cố túng.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Muốn làm được một người hoàn hảo, phải nếm đủ vị đắng cay.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Món quà lớn nhất trong cuộc sống là được ghi nhớ. - The greatest gift in life is to be remembered.",
+      "author": "Ken Venturi"
+    },
+    {
+      "quote": "Mượn dao giết người, mượn tay người khác để giết kẻ thù. - Tá đao sát nhân.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Mượn xác trả hồn, mượn thân xác khác để đưa hồn về. - Tá thi hoàn hồn.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Mận chết thay đào, đưa người khác ra thế thân gánh vác tai họa cho mình. - Lý đại đào cương.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Mọi việc sẽ đến đúng lúc với người biết chờ đợi.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Mỗi con người giá trị bằng chính bản thân mình.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Mỗi người đều tạo lấy lực lượng và số phận của chính mình.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Một câu niệm Phật, tiêu vạn tội. Hai chữ Từ bi, giải vạn sầu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một cơn tức giận tương đương với một trăm con quỷ dữ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một gam tự khoe làm hỏng cả một tạ danh dự.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Một lời giả dối được nói mãi sẽ trở thành sự thật.",
+      "author": "Vladimir Ilyich Lenin"
+    },
+    {
+      "quote": "Một người không sống được một trăm năm, thế mà anh ta lo lắng khá đủ cho một ngàn năm.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Một nhóm người nghĩ giống nhau không bằng một người có nhiều cách nghĩ khác nhau.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một tiếng cười bằng mười thang thuốc.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Một đầu bếp giỏi thì tốt bằng bảy bác sĩ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Mực có thể tẩy được nhưng ký ức thì không thể xóa nhòa theo thời gian.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mỹ thua ở Việt Nam vì Mỹ không hiểu người Việt Nam.",
+      "author": "Võ Nguyên Giáp"
+    },
+    {
+      "quote": "Nghi ngờ người trung thực là đã vô tình xúc phạm anh ta.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Nghĩ đến thân thể thì đừng cầu không tật bệnh, vì không tật bệnh thì tham dục dễ sanh.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Nghĩa, nhân là ngọn đuốc soi đường cho thiên hạ.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Ngoài cái chết ra thì tất cả mọi thứ đến nhanh đều là tốt cả.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Nguy hiểm nhất là đứng trước bò, sau ngựa và ở cạnh người ngu.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ngôn ngữ của tiếng cười với ai cũng giống nhau. - Everybody laughs in the same language.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người dễ cười cũng là người dễ khóc. Còn lúc tan nát nhất họ sẽ im lặng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người giàu chờ những tai họa, người nghèo chờ những niềm vui.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Người giàu mà kiêu ngạo cố nhiên không phải người có học thức, mà kiêu ngạo cái hại cũng khá to.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người khác thấy bạn như thế nào không quan trọng. Quan trọng là bạn nhìn bản thân mình như thế nào.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người khéo dùng oai không giận bậy. Ngưới khéo dùng ơn không cho bậy.",
+      "author": "Lã Khôn"
+    },
+    {
+      "quote": "Người khôn không thích kẻ ngu, người tỉnh không thích kẻ say.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Người khôn ngoan là kẻ mà cái gì cũng thấy mới lạ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người luôn luôn im lặng thường hay đúng hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người nào có sức khỏe là có hy vọng và người nào có hy vọng là có tất cả.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Người nào không biết giận là người dại. Người nào không muốn giận là người khôn.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Người quân tử không buồn lúc tuổi già, chỉ lo trí trễ nải.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người thuận theo đất, đất thuận theo trời, trời thuận theo Đạo, Đạo thuận theo tự nhiên.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Người thường trọng lời, người nghĩa trọng danh.",
+      "author": "Trang Tử"
+    },
+    {
+      "quote": "Người tự do là người biết làm chủ bản thân.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Ngồi bàn tiệc đừng ra vẻ anh hùng, vì rượu đã làm cho lắm người gục ngã.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Nhu thường thắng cương.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Nhìn lầm hại hơn là mù, nói điều sai tệ hơn là im lặng.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Nhìn rồi hãy uống, đọc rồi hãy ký.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Nhịn được cái thì tức giận một lúc, khỏi được cái lo âu trăm ngày.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những câu tiếu lâm của quần chúng dù chua chát đến mấy cũng không gay cấn bằng sự im lặng của họ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những giấc mơ phát triển nếu bạn phát triển. - Dreams grow if you grow.",
+      "author": "Zig Ziglar"
+    },
+    {
+      "quote": "Những gã trai lười biếng thường thích gọi mình là những kẻ lãng mạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những lời khuyên thông minh thì sẽ được cảm ơn, còn những lời khuyên ngu ngốc thì sẽ bị chê cười.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người mà chúng ta gặp không phải là tình cờ. Họ đi ngang qua đời ta là có một lý do nào đó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người thông minh và những người xinh đẹp đều mắc chung một tật: cứ tưởng như thế là mãi mãi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người vĩ đại thật sự bao giờ cũng giản dị, cách xử sự của họ tự nhiên và thoải mái.",
+      "author": "A. A. Milne"
+    },
+    {
+      "quote": "Những điều ác do chúng ta gây ra cho người khác, luôn đeo đuổi chúng ta như bóng với hình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những ước mơ không chết chừng nào bạn còn nuôi dưỡng nó bằng niềm đam mê.",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Nói không suy nghĩ giống như bắn mà không nhắm.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Nói với người khôn không lại. Cãi với người dại không cùng.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Nơi lạnh nhất không phải là Bắc cực mà là nơi không có tình người.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nơi nào có ý chí và có những con sóng, thì nơi đó có cách để lướt sóng!",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Nơi nào không sự khuyên can, nơi ấy không sự giúp đỡ.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Nước chảy nhỏ thì chảy dài.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Nước đục càng lắng càng trong, phải trái càng tranh luận càng rõ.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Nếu bạn chửi rủa người nào đó mỗi ngày, chắc chắn bạn giành hạnh phúc và sự sống lâu cho hắn.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Nếu con người thực hiện được một nửa ham muốn của mình thì họ sẽ phải vất vả gấp đôi.",
+      "author": "Ngạn ngữ Mỹ"
+    },
+    {
+      "quote": "Nếu không muốn nghe lời xấu thì đừng nói lời xấu.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Nếu kẻ thù khen ngợi anh thì có nghĩa là anh đã phạm phải sai lầm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu ta suy nghĩ hai lần trước khi nói, ta sẽ nói hay gấp đôi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu tự khoe khoang về cái gì, bạn sẽ thất bại về cái ấy.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Nếu tự tin ở bản thân, bạn sẽ truyền niềm tin đến người khác.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Nếu tự vẽ mình sặc sỡ thì ta càng mau xám xịt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phép màu tuyệt vời nhất là sự biến đổi từ bên trong con người chúng ta.﻿",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Phúc bất trùng lai, Họa vô đơn chí.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Phương cách tốt nhất để chống lại cái xấu là lánh xa nó.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Phải biết vui trong hy vọng, phải biết kiên nhẫn trong khổ đau.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phần thưởng đáng giá nhất là phần thưởng do danh dự đem lại và không có gì hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Rút củi đáy nồi, đánh tiêu hao hậu cần để làm quân địch dần phải thua. - Phủ để trừu tân.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Răng cứng thì chóng gãy, lưỡi mềm thì bền lâu.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Rượu chẳng sáng tạo ra cái gì cả, nó chỉ làm ra kẻ nói nhiều.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Rượu làm nổi lên những điều thầm kín nhất.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Rượu làm vui khi uống đúng mức, rượu cai trị khi uống quá nhiều.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Sau sự vội vã là sự hối hận.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Say là cái điên tự nguyện.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Siêng năng là của báu vô giá, thận trọng là lá bùa hộ mệnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Suốt đời làm lành, một câu bạc ác, đủ đổ đi cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sắc đẹp là hoa, còn đạo đức là quả của cuộc đời.",
+      "author": "Ngạn ngữ Mỹ"
+    },
+    {
+      "quote": "Số mệnh hạ mình trước quyền lực và sức mạnh.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Sống chừng mực sống thoải mái.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sống là hiểu biết, trông cậy, yêu thương, thán phục và hành động tốt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sống thì đừng quan tâm người khác nói gì về mình, bởi chỉ có bạn mới biết mình là ai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sử dụng nhiều kế liên tiếp, muốn chiến thắng phải biết móc nối nhiều kế với nhau. - Liên hoàn kế.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Sự cao cả của con người nằm trong sức mạnh tư tưởng.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Sự hận thù của kẻ bạc nhược không nguy hiểm bằng kết bạn với họ.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Sự khiêm nhường thì người ta càng phục, tự khoe mình thì người ta càng khinh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sự thật bao giờ cũng đơn giản.",
+      "author": "Ngạn ngữ Hy Lạp"
+    },
+    {
+      "quote": "Sự đau đớn thì vô cùng, sự vui mừng thì hữu hạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ta có lỗi với người là họa, người có lỗi với ta là phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ta không được chọn nơi mình sinh ra. Nhưng ta được chọn cách mình sẽ sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thiên tài trứ danh nhất cũng có thể sản sinh đồ vô dụng: đó chính là bắt chước.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thuận tay bắt dê, phải tranh thủ nắm lấy cơ hội nằm trong tầm tay. - Thuận thủ khiên dương.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Thà có một con chim trong tay còn hơn mười con ở trên cây.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Thành quả của im lặng là hòa bình.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Thái cực sinh lưỡng nghi, lưỡng nghị tứ tượng, tứ tượng sinh bát quái, bát quái sinh vạn vật.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Thường thì rất khó nói sự thật cho người khác nghe, càng khó khăn hơn nữa là tự thú với mình.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Thấy người nào đó làm một việc phải thì nên quên tất cả lỗi lầm của anh ta.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Thần tốc, thần tốc hơn nữa; táo bạo, táo bạo hơn nữa...",
+      "author": "Võ Nguyên Giáp"
+    },
+    {
+      "quote": "Thận trọng không bao giờ thừa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thật ngốc nghếch nếu sợ, nhưng thật khủng khiếp nếu không sợ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thật tốt khi có điều để mà nhớ lại, nhưng tốt hơn nếu không có gì để phải quên cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thế giới càng suy đồi thì những hành động bình thường càng dễ được ca tụng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thế giới của con người càng thấp và bé thì anh ta càng coi mình là cái phần lớn hơn của vũ trụ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thời gian và hoàn cảnh mang lại sự khôn ngoan.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Tiếng cười không những là dấu hiệu của sức mạnh, mà bản thân nó cũng đã là sức mạnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiết kiệm là tập quán phải bắt đầu từ nhỏ. Tội lỗi thú nhận là giảm đi một nửa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tranh thủ nhà cháy mà đánh cướp, lợi dụng lửa để hành động. - Sấn hỏa đả kiếp.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Trong khó khăn, ta nhận biết được bạn và lột mặt nạ được kẻ thù.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trách mình như trách người, tha thứ người như tha thứ mình.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Tránh nơi địch mạnh nhất, đánh vào hiểm yếu khiến địch phải rút về. - Vây Ngụy cứu Triệu.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Trên cây hoa nở. - Thụ thượng khai hoa.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Trên đường đời hành lý của con người cần mang theo là lòng kiên nhẫn và tính chịu đựng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trước mặt thần ái tình và thần chết, sức mạnh chẳng giúp ích gì được cả.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Trần gian vô cùng xấu xa, tôi không có gì để nói với nó.",
+      "author": "Trang Tử"
+    },
+    {
+      "quote": "Trọng người giỏi mà vọng người thường, khen người hay mà thương người dở.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Trộm rường thay cột, phá hủy cơ sở của địch. - Thâu lương hoán trụ.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Trời làm nên tai họa còn có thể tránh được, tự mình làm nên tai họa, thì không thể sống được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trời phú cho ta sự sống với điều kiện nhất thiết phải can đảm bảo vệ nó tới cùng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tìm cách bào chữa cho điều ngu ngốc có nghĩa là nhân nó lên.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Tìm ra mục đích sống của bạn là bước quan trọng đầu tiên để sống một cuộc sống không giới hạn.",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Tính ngay thật được xác nhận là điều đáng tin cậy nhất trong các lời thề.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tính ích kỷ là nguồn gốc của mọi sự tàn ác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tôi biết chắc chắn rằng chừng nào bạn còn thở thì chừng ấy cuộc sống của bạn vẫn còn hy vọng.",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Tôi không lấy gì làm nhục nhã khi phải thú nhận rằng tôi dốt nát về những cái mà tôi không biết.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tôi là một điều kỳ diệu. Bạn cũng là một điều kỳ diệu của cuộc sống.",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Tôi sống ngày nào, cũng là vì đất nước ngày đó.",
+      "author": "Võ Nguyên Giáp"
+    },
+    {
+      "quote": "Tướng giỏi sau khi thắng trận không cần ai khen và cũng không cần ai biết đến công lao.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Từ lo sợ không có trong tư duy quân sự Việt Nam.",
+      "author": "Võ Nguyên Giáp"
+    },
+    {
+      "quote": "Từ sự cao cả đến sự lố bịch, chỉ cách nhau một bước.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tự làm mình khổ nhục để đánh lừa quân địch. - Khổ nhục kế.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Tự mình không biết mình là một điều hại lớn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Vinh quang chạy khỏi những người chạy đến với nó, bằng thủ đoạn thấp hèn.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Viên đá nhỏ lật đổ cả cỗ xe lớn.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Việc tốt nhất ở thế gian không gì bằng cứu người nguy cấp, thương kẻ khốn cùng.",
+      "author": "Ngạn ngữ Ấn Độ"
+    },
+    {
+      "quote": "Vẻ đẹp đánh vào ánh mắt, nhưng phẩm giá chinh phục tâm hồn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Vết thương càng ngấm ngầm, nỗi đau càng ghê gớm.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Xa thì giao thiệp, gần thì dùng vũ lực. - Viễn giao cận công.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Yêu cầu thì nóng bỏng, cảm ơn thì lạnh nhạt.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Yêu người, người thường yêu lại, kính người, người thường kính lại.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Yếu làm mồi ăn cho kẻ mạnh, kẻ muốn sống tồn phải trải qua sự chiến thắng kẻ thù địch.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Áo đẹp không làm nên người sang.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Âm thanh gọt ngào nhất là lời khen ngợi. - The sweetest of all sounds is praise.",
+      "author": "Xenophon"
+    },
+    {
+      "quote": "Ý muốn ở đâu thì đôi chân chạy đến đó.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Đánh không được người mặt đỏ như vang, đánh được người mặt vàng như nghệ.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đánh kẻ chạy đi không ai đánh kẻ chạy lại.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đánh là thắng, chỉ đánh khi chắc thắng, nếu không thắng thì không đánh.",
+      "author": "Võ Nguyên Giáp"
+    },
+    {
+      "quote": "Đã có nhà nước thì không thể có tự do, mà khi có tự do thì sẽ không có nhà nước.",
+      "author": "Vladimir Ilyich Lenin"
+    },
+    {
+      "quote": "Đóng cửa bắt giặc, dồn giặc vào thế bí không thể chạy thoát. - Quan môn tróc tặc.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Đôi khi phải mất mọi thứ mới tìm thấy chính bản thân mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đôi lúc bạn cần nhìn cuộc sống theo hướng khác đi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đề nghị không phải là tội lỗi, từ chối không phải là tai họa.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Đối với kẻ tự hại thân dầu nói cũng bằng thừa. Đối với kẻ tự liều thân dầu giúp cũng vô ích.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Đối với người quân tử, mười năm mới trả được mối thù cũng không có gì là muộn cả.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Đời là một hài kịch đối với những người hay suy nghĩ và là một bi kịch đối với những người đa cảm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đời là thế: ngốc thường tinh tướng, khôn hay dại dột.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đời quá ngắn nên chẳng tội gì phí thì giờ để suy tư về ý nghĩa của nó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đục nước bắt cá, lợi dụng tình thế để ra tay đạt mục đích. - Hỗn thủy mạc ngư.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Đức hơn tài là quân tử, tài hơn đức là tiểu nhân.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đứng cách bờ để xem lửa cháy, để yên cho kẻ địch tự rối loạn. - Cách ngạn quan hỏa.",
+      "author": "Tôn Tử"
+    },
+    {
+      "quote": "Đừng bao giờ quá bận rộn để quên nói lời “làm ơn” hay “cảm ơn”.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng khóc vì một việc đã qua, hãy cười vì mọi việc đang chờ phía trước.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng sống cho người khác coi. Và đừng coi người khác mà sống!",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng thở dài hãy vươn vai mà sống. Bùn dưới chân nhưng nắng ở trên đầu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng vội sống để chóng thành bụi đất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ưu điểm cũng là khuyết điểm.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Ảo tưởng là ảo ảnh của Hy vọng. - Illusions are the mirages of Hope.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ở đâu nghe thấy lời thề, hãy suy ngẫm về cái xấu.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ở đời đừng cầu không khó khăn, vì không khó khăn thì kiêu xa nổi dậy.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Ai kính trọng bố mẹ mình thì sẽ được con cái mình kính trọng.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ai đánh vợ thì giống như đâm vào bao bột – hạt tốt thì bay đi còn hạt tồi thì đọng lại.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Ai đánh vợ thì giống như đấm vào bao bột - hạt tốt thì bay đi còn hạt tồi thì đọng lại.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Anh em cãi nhau cả ngày không mất, vợ chồng cãi nhau một lúc thành người dưng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Anh em như thể tay chân.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cha mẹ là của cải, anh em là chỗ dựa, bạn thân là cả hai thứ đó.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Cha mẹ thương con mà không dạy con, như thế là không thương con.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cha nghiêm sinh con trai hiếu hạnh, mẹ nghiêm sinh con gái vẹn toàn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chia sẻ niềm tin với người bạn đời là một bảo đảm cho hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chồng giận thì vợ phải lui, Chồng giận, vợ giận thì dùi nó quăng.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Con bú mẹ khi còn nhỏ và bú cha khi đã lớn.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Con cái ngoan mang lại hạnh phúc cho cha mẹ. Con cái hư là kẻ đào mồ chôn cha mẹ chúng.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Con cưng chiều khó giữ gìn cơ nghiệp. Vợ quay quắt khó giữ cửa nhà.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Con hư tại mẹ, cháu hư tại bà.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Con đi ngàn dặm mẹ lo âu, Mẹ đi ngàn dặm con chẳng sầu.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Cái khổ của đàn ông là vợ ghen, cái khổ của đàn bà là chồng vui tính.",
+      "author": "Jean Jacques Rousseau"
+    },
+    {
+      "quote": "Có nuôi con mới biết lòng cha mẹ.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cô dâu khóc lóc sẽ là người vợ tươi cười, cô dâu tươi cười sẽ là người vợ khóc lóc.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Công cha như núi Thái Sơn. Nghĩa mẹ như nước trong nguồn chảy ra.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cưới hỏi một lần là bổn phận, hai lần là khùng, ba lần là điên dại.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Dạy dỗ con cái tựa như nhai đá cứng.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Dạy vợ không phải bằng ngững cái đấm đá, mà bằng đạo đức bằng lời nói êm đềm, ngôn từ cẩn trọng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Gia đình là nơi cuộc sống bắt đầu và tình yêu không bao giờ kết thúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Gia đình là nơi, không ai bỏ rơi ai, và yêu những ai đó vô điều kiện.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Gia đình vẫn là gia đình, mặc dù có lúc, nó không ấm cúng chút nào cả.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Gái đẹp phải biết làm duyên, vợ đẹp phải biết chiều chồng yêu con.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Hai yếu tố có thể làm tăng tuổi thọ của bạn: một trái tim bình thản và một người vợ hiền.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Hiếu thảo là nguồn gốc của đạo đức.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Hãy chọn vợ bằng tai hơn là bằng mắt. - Choose a wife rather by your ear than your eye.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Hãy giúp người độc thân, còn người đã làm chồng thì đã có vợ anh ta giúp.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hãy làm kẻ khôn ngoan trong nhà mình.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Hãy yêu thương con cái bằng trái tim, nhưng hãy dạy dỗ chúng bằng bàn tay.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hôn nhân là bản dịch ra văn xuôi của bài thơ tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có gì làm cho con vui hơn vinh dự của cha, không có gì làm cha vui hơn thành quả của con.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khốn nạn thay kẻ nào quên rằng mình là con cái.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lời nói trong khuê phòng không nên để lọt ra ngoài cửa.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Mẹ hiền sinh con ngoan, lúa tốt cho gạo ngon.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Mẹ nuôi con biển bờ lai láng, con nuôi mẹ kể tháng kể ngày.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Mọi gia đình hạnh phúc đều giống nhau. Còn những gia đình bất hạnh thì lại hoàn toàn khác nhau.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Một người đàn ông có bổn phận trước tiên là che chở cho vợ mình.",
+      "author": "Ngạn ngữ Ấn Độ"
+    },
+    {
+      "quote": "Một đứa con trai còn rắc rối hơn một tá con gái.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Người chồng được đánh giá qua người vợ, người mẹ được đánh giá qua những đứa con.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người mẹ thật sự chẳng bao giờ rảnh rỗi. - A mother who is really a mother is never free.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Người ta không bao giờ hết nói hết về Thượng đế cũng như về người mẹ.",
+      "author": "Ngạn ngữ Ấn Độ"
+    },
+    {
+      "quote": "Nhất vợ nhì trời.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Những gì nghe thấy trong nhà, bọn trẻ mang hết ra đường kể cho nhau nghe.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Nếu ta không nuông nấng cha mẹ lúc còn sống thì có ích gì mà cúng tế khi đã chết.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Rời cái roi là làm hỏng đứa con.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Sắc đẹp rất cần trong lễ cưới, còn hạnh phúc thì cần trong suốt cả cuộc đời.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Thuận vợ thuận chồng, tát bể Đông cũng cạn.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Thà chịu bất công còn hơn tạo ra bất công. - Tis better to suffer wrong than do it.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Thương cho roi cho vọt. Ghét cho ngọt cho bùi.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Tiếng khóc trẻ còn đỡ hơn tiếng mẹ thở dài.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Trong gia đình người đàn bà là nhụy của đóa hoa hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trên thế giới, bạn có thể tìm ra tất cả để thay thế tất cả, trừ người bố và người mẹ của mình.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Trị quốc thì dễ nhưng tề gia thì khó.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Tội của người chồng ở lại nơi anh ta, tội của người vợ thấm vào trong nhà.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Uốn cây từ thuở còn non. Dạy con từ thuở con còn ngây thơ.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Yêu cho roi cho vọt, ghét cho ngọt cho bùi.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Yêu con sau lưng, giận con giận trước mặt.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đứa trẻ không có bố không phải là mồ côi, đứa trẻ không có mẹ mới là mồ côi.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Đừng chửi rủa vợ buổi chiều, nếu không bạn sẽ phải ngủ một mình.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Đừng giận khi chúng ta bị ba mẹ mắng mà hãy cười khi họ vẫn còn bên ta.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chín phần mười sự giáo dục là động viên khích lệ. - Nine tenths of education is encouragement.",
+      "author": "Anatole France"
+    },
+    {
+      "quote": "Chỉ những người ngu dốt mới căm ghét giáo dục. - It is only the ignorant who despise education.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Chừng nào anh chưa sửa được chính mình, anh không thể sửa được người khác.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Chừng nào còn sống thì anh hãy học đi. Đừng chờ tuổi già mang lại sự thông thái.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con ơi ghi nhớ lời này Công cha, nghĩa mẹ, công thầy chớ quên.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cái nợ khác có khi trả hết được, nợ học là nợ chung thân vậy.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cái đích lao tới của sự học không có gì khác hơn là tìm lại cái tâm đã mất.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Cơm cha áo mẹ chữ thầy. Gắng công mà học có ngày thành danh.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cần phải lựa chọn một cách nghiêm ngặt xem nên học gì và không nên học gì.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Dạy người phải theo đường ngay lẽ thẳng.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Giáo dục một người là đào luyện cho họ có thể đối đầu với mọi hoàn cảnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Gỗ mục không thể khắc.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Học mà chưa thấy vui thì chưa gọi là học.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Học mà không suy nghĩ thì vô ích; suy nghĩ mà không học thì hiểm nghèo.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Học những điều mà trước kia mình chưa học, dù vào lúc nào đi nữa, chẳng có gì là xấu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Học thầy không tầy học bạn.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Học đi với hành, không chỉ nói cho qua chuyện! - Học nhi thời tập chi, bất diệc thuyết hồ!",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Học, học nữa, học mãi.",
+      "author": "Vladimir Ilyich Lenin"
+    },
+    {
+      "quote": "Hỏi một câu chỉ dốt trong chốc lát, không dám hỏi sẽ dốt nát cả đời.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi trường học phát triển, mọi thứ đều phát triển. - When schools flourish, all flourishes.",
+      "author": "Martin Luther"
+    },
+    {
+      "quote": "Không học sẽ trở thành vô học!",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Không sợ sự dốt nát, mà đáng sợ sự hiểu biết giả. Tất cả cái ác trên thế gian đều bắt đầu từ đó.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Không thầy đố mày làm nên.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Kinh nghiệm chỉ dạy cho những ai có thể dạy dỗ. - Experience teaches only the teachable.",
+      "author": "Aldous Huxley"
+    },
+    {
+      "quote": "Kết quả cao nhất của giáo dục là sự khoan dung. - The highest result of education is tolerance.",
+      "author": "Helen Keller"
+    },
+    {
+      "quote": "Muốn sang thì bắc cầu kiều, muốn con hay chữ phải yêu lấy thầy.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Một chữ cũng là thầy, nửa chữ cũng là thầy.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Một gánh sách không bằng một người thầy giỏi.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Một ngày làm thầy, suốt đời là cha.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Ngay cả trí tuệ thông minh nhất vẫn còn có điều phải học.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người biết cách nghĩ không cần thầy giáo. - Those who know how to think need no teachers.",
+      "author": "Mahatma Gandhi"
+    },
+    {
+      "quote": "Người biết học biết đủ cho mình. - They know enough who know how to learn.",
+      "author": "Henry Brooks Adams"
+    },
+    {
+      "quote": "Người mà không học khác gì mò mẫm trong đêm.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Nhiệm vụ quan trọng nhất của nền văn minh là dạy cho con người biết tư duy.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Núi nào cũng có hổ, vùng nào cũng có nhân tài.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Phải luôn luôn học tập, chừng nào còn một điều gì đó chưa biết.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Rễ của sự học tập thì đắng, quả của sự học tập thì ngọt.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Sách là kho tàng đã và đang cho ta trí tuệ và biến ta thành người có tri thức, học rộng, tài cao.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sự học trước hết phải biết phân biệt việc nghĩa với việc hại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thà học muộn còn hơn không bao giờ học. - It is better to learn late than never.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Thói xấu nhất là sự buông tuồng, kẻ thù nguy hiểm nhất là sự ngu dốt.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Thực hành là người thầy tốt nhất. - Practice is the best of all instructors.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Trường học không phải nơi để đi tìm ý tưởng. - College isn't the place to go for ideas.",
+      "author": "Helen Keller"
+    },
+    {
+      "quote": "Trọng thầy mới được làm thầy.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Xây dựng đất nước phải lấy dạy học làm đầu, tìm lẽ trị bình lấy tuyển nhân tài làm gốc.",
+      "author": "Quang Trung"
+    },
+    {
+      "quote": "Ăn quả nhớ kẻ trồng cây. Có danh có vọng nhớ thầy khi xưa.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đi một ngày đàng học một sàng khôn.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đọc sách không bằng suy ngẫm. Học trường không hơn được trường đời.",
+      "author": "Immanuel Kant"
+    },
+    {
+      "quote": "Đời sống có hạn mà sự học thì vô hạn.",
+      "author": "Trang Tử"
+    },
+    {
+      "quote": "Bạn của bạn tôi là bạn tôi. Nhưng bạn của bạn gái tôi chưa chắc đã là bạn tôi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chân lý là mặt trời chói lọi. Nếu bạn không nghiên cứu về nó thì đừng có điên mà nhìn vào nó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chúng ta thường thích nghe lời người khác, đặc biệt nếu đó là người đã quá cố.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chỉ cần ta quay lưng lại với cái xấu là ta sẽ nhìn ra con đường tới với cái thiện.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cuộc tình dù đúng dù sai. Tốn tiền nhất vẫn là thằng con trai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Càng biết nhiều về phụ nữ, càng khó có thể lạc quan.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Càng trọc đầu càng khó bị nắm tóc và vì thế, càng trở nên nguy hiểm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có mối quan hệ mà dù ta cắt bao nhiều lần rồi mà nó vẫn không đứt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có những người mà khi chơi với họ chỉ để có kinh nghiệm sống chứ không phải để sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có những thứ không thể mua được nhưng cho không cũng chẳng ai cần.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Công việc vất vả và khó nhọc nhất là giả vờ rằng ta đang rất bận rộn khi sự thật không phải thế.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cưới lần đầu vì yêu, lần thứ hai vì tính toán, lần thứ ba vì thói quen.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giai độc thân, đó là người tới nơi làm việc mỗi sáng từ mỗi hướng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giang hồ hiểm ác anh không sợ chỉ sợ đường về vắng bóng em.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giúp đỡ người khác khi gặp khó khăn và họ sẽ nhớ tới bạn khi họ lại gặp khó khăn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ham muốn mà ta không đủ tiền để biến thành hiện thực thì được gọi là ước mơ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hôn nhân không hẳn là tình yêu mà là liên minh để thực hiện những nghĩa vụ trước tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc không ở tiền bạc mà ở số lượng của nó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc nhất là người không buồn ngồi vào ghế của ai khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Học vấn giúp người ta sai lầm một cách bài bản.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khen phụ nữ tức là chưa hiểu hết họ, chê phụ nữ tức là hoàn toàn không hiểu họ",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi bạn yêu ai đó thật lòng thì bạn sẽ nhận được một người bạn đời hoặc một bài học để đời.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi bạn yêu đời thì bạn có thể tha thứ cho người đời rất nhiều chuyện.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không ai lúc nào cũng dại dột, nhưng ai mà chẳng có lúc dại dột.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không bao giờ bán đứng bạn bè, … khi chưa được giá.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không biết luật thì vẫn phải chịu trách nhiệm, còn biết luật thì rất dễ lẩn trách nhiệm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có gì giúp tiết kiệm thời gian và tiền bạc bằng tình yêu sét đánh ngay từ cái nhìn đầu tiên.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có loại thuốc nào làm dịu đau đầu bằng tiền, có điều, phải liên tục gia tăng số lượng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có phụ nữ xấu chỉ có phụ nữ không biết mình xấu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không phải người đàn bà nào cũng đẹp và không phải người đẹp nào cũng là đàn bà.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không ít phụ nữ già đi nhanh chóng có khi do họ động não suy nghĩ phải làm sao để mình trẻ lại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khổ quá, sướng không chịu nổi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kiếm bộn tiền không phải vì làm việc tốt mà vì không quấy rầy người làm việc tốt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ thấp kém thì không bao giờ bị vu cáo.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Làm sai thì bị phạt, làm đúng thì bị thu thuế.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lúc yêu người ta thường đánh mất sự tỉnh táo mà chỉ khi cưới nhau rồi, họ mới nhận ra sự mất mát đó",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lương tâm là cái buộc ta phải kể hết mọi bí mật cho người tình trước khi có ai đó mách.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lương tâm là cái gì đó cảm thấy tổn thương trong khi các phần khác của cơ thể cảm thấy dễ chịu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lắm khi chúng ta chỉ coi những người đồng tình với mình là thông minh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Muốn gìn giữ hạnh phúc gia đình thì thỉnh thoảng phải biết nhìn vợ bằng con mắt của ông hàng xóm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Món ngon nhất đối với đàn ông là đàn bà, còn món ngon nhất đối với đàn bà là tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mọi tai họa xảy ra trên đời chỉ vì phụ nữ không nghe lời đàn ông, còn đàn ông lại nghe lời phụ nữ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mỗi khi tôi buộc phải chọn lựa giữa hai tật xấu, tôi thường chọn cái mà tôi chưa bao giờ được thử.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một người phụ nữ toàn diện: Sáng diện, trưa diện, chiều diện, tối diện.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một người vợ tốt luôn tha thứ cho chồng khi cô ta sai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mỹ nhân làm mềm ý chí nhưng làm cứng thân thể.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nghèo không phải là tội lỗi, mà là một phong cách sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người khôn và kẻ ngốc luôn luôn là điều bí ẩn đối với nhau.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người không thể tin tưởng thì có thể mua chuộc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người ngốc muốn tận tình giúp ta còn nguy hiểm hơn cả kẻ thù.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người đàn ông nào cũng xứng đáng với người đàn bà đã chọn anh ta.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nhiều lúc hâm hâm cho tâm hồn thanh thản. Nhiều lúc nói nhảm cho cuộc đời thêm vui.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nhục không phải là nghèo khó , nhưng nghèo khó thì thật là nhục.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người không học được gì ở cuộc đời này thì lại hay lớn giọng dạy đời.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những ý nghĩ hay ho nhất thường xuất hiện khi ta không có cả giấy lẫn bút trong tay.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nói dối giết chết tình yêu. Nhưng nói thật thì lại càng làm nó chết nhanh hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu khó khăn về tiền bạc,bạn hay thử sống không có chúng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu một cô gái tặng bạn trái tim thì các bộ phận khác dù không muốn bạn cũng phải nhận.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu mỹ nhân nói \"Đừng có mà mơ!\" thì có nghĩa là phải ngay lập tức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu người phụ nữ trông thanh mảnh thì hoặc là nàng ăn ít hoặc là chồng nàng uống rượu quá nhiều.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu phụ nữ thôi giả bộ, thì đàn ông sẽ phải rất gắng sức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu ta không còn phạm phải sai lầm thì có lẽ là ta đã quá già.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu ta không sợ ai cả thì ta đúng là kẻ đáng sợ nhất trên đời.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu tiền không làm bạn hạnh phúc thì hay đưa nó cho tôi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu vì sai lầm của bạn mà người khác phải trả giá thì đó không còn là sai lầm nữa rồi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phong cách ngoại giao, đó là khi biết đổ thêm dầu vào lửa mà không để bị bỏng tay.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phải có chuyện cổ tích thì cái ác mới bị trừng trị một cách đích đáng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phụ nữ chính là vụ khí huỷ diệt hàng loạt được chúa trời tạo ra để đàn áp đàn ông…!",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phụ nữ không chú ý tới những người đàn ông đẹp mà tới những người đàn ông có những cô gái đẹp.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Quy định nào cũng có ngoại lệ, ngay cả quy định này.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Quân tử nhất ngôn là quân tử dại. Quân tử nhai di nhai lại là quân tử khôn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Quần áo làm đàn ông xấu đi và che hộ cảm xúc của anh ta đối với phụ nữ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Rất dễ nói ra điều mình suy nghĩ khi mình không suy nghĩ gì cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sếp cũng như bồ, không được thỏa mãn thì sẽ rất nguy hiểm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sự hài hước là lời chúc phúc lớn nhất của nhân loại. - Humor is mankind's greatest blessing.",
+      "author": "Mark Twain"
+    },
+    {
+      "quote": "Thiếu lương tâm thì dễ được thừa tiền.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thuyết phục phụ nữ tốt nhất không phải bằng lời nói mà bằng tiền tươi thóc thật.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thà sống giàu sang mà sung sướng còn hơn sống nghèo hèn mà cực khổ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thà sống hèn còn hơn chết dại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thật tồi tệ nếu bạn mất tinh thần, nhưng còn tồi tệ hơn nếu mất hết tiền.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thời gian là vị bác sĩ giỏi nhưng lại là người trang điểm tồi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiền bạc không phải là tất cả. Vì còn có vàng và kim cương.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiền bạc không thành vấn đề, vấn đề là có tiền hay không.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiền không mang lại hạnh phúc cho những người....không có chúng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiền không quan trọng....nhưng đó là ta đang nói về tiền của người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiền là điều tôi ghét nhất.....Nhưng thiếu nó tôi càng ghét hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trí thức cũng như phụ nữ, khi ta sở hữu rồi thì ta thôi thèm muốn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trăm năm bia đá cũng mòn, bia chai cũng bể, chỉ còn bia ... ôm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trước đám cưới có thể làm mọi việc, sau đám cưới còn có thể cả li dị nữa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu là bất tử , chỉ có người yêu là thay đổi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu là một giấc mơ dài ngọt ngào, và hôn nhân là chiếc đồng hồ báo thức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu là điểm yếu làm cho con người trở nên mạnh hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu như mạng nhện, chạm vào là dính liền.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu, đó là cách thích ứng của phụ nữ đối với môi trường thù địch xung quanh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tôi có thể làm tất cả vì tiền thậm trí đó là.....những việc tốt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tôi không tham tiền - Nhưng nó làm thần kinh tôi bớt căng thẳng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tôi định sẽ sống mãi mãi, hoặc chết trong khi thử. - I intend to live forever, or die trying.",
+      "author": "Groucho Marx"
+    },
+    {
+      "quote": "Tất cả những gì khiến ta sứt sẹo thì đều giúp ta dày da hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tất cả những đồng tiền đều tốt nhất là những đồng tiền mặt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Việc người thì sáng, việc mình thì quáng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Yêu một cách vô tư nhưng không miễn phí.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ðàn ông tốt có ở khắp mọi nơi trên thế giới, trừ dưới mái nhà của vợ mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đôi khi chỉ vì dăm ba chuyện lẻ tẻ mà ta phải trả bằng những món tiền lớn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Được đàn ông giúp đỡ thì đàn bà có thể tự làm mọi thứ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đại gia chỉ tốn nhiều tiền cho hai việc: để có được chân dài và để thoát khỏi chân dài.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đời thay đổi khi ta thôi đẩy.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng bao giờ cãi nhau với bạn gái, dù đúng hay sai thì người cuối cùng xin lỗi vẫn là bạn thôi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng ghen tị với ai trước khi biết họ đã kết thúc cuộc đời họ như thế nào.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng nhầm tình yêu dành cho vợ với nỗi sợ phải ở một mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng tự ti vì mình nghèo mà vẫn giỏi mà hãy tự hỏi tại sao mình giỏi mà mình vẫn nghèo.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng vội đi đến kết luận mà cấp trên chưa đưa ra.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bạn không thể vừa ghen tị và vừa hạnh phúc. - You can't be envious and happy at the same time.",
+      "author": "Frank Tyger"
+    },
+    {
+      "quote": "Chúng ta cảm thấy bất hạnh trong nỗi bất hạnh nhiều hơn là cảm thấy hạnh phúc trong niềm hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chỉ kẻ ngu xuẩn mới hy vọng lúc nào cũng hạnh phúc. - Only a fool expects to be happy all the time.",
+      "author": "Robertson Davies"
+    },
+    {
+      "quote": "Cuộc đời càng phức tạp thì những niềm vui sống càng đơn giản.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cái hạnh phúc giống như thủy tinh, càng rực rỡ bao nhiêu càng mỏng manh bấy nhiêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy cho đi thứ bạn có, rồi bạn sẽ được đền bù xứng đáng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy học cách sống hạnh phúc với những gì bạn có trong khi vẫn theo đuổi những gì bạn muốn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc cũng giống như chiếc đồng hồ; loại ít phức tạp nhất là loại ít hỏng nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc dễ kiêu căng, đau khổ dễ khôn ngoan.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Hạnh phúc không phải đích đến; nó là phụ phẩm. - Happiness is not a goal; it is a by-product.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "quote": "Hạnh phúc luôn mỉm cười với những ai kiên trì, dũng cảm, hăng say lao động.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc là cái gì thật mơ hồ khiến ta buộc phải mơ ước.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc là tự thấy ở mình một linh hồn trong sạch.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hạnh phúc thay kẻ biết hưởng lúc vận thịnh cũng như chịu đựng lúc vận suy.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Hạnh phúc đúng là món quà của thượng đế. - Le bonheur est bien un présent divin.",
+      "author": "Aristotle"
+    },
+    {
+      "quote": "Hạnh phúc đến thì lâu mà đi khỏi thì nhanh.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Khi tôi ở một mình, tôi hạnh phúc. - When I am alone I am happy.",
+      "author": "William Carlos Williams"
+    },
+    {
+      "quote": "Không ai hạnh phúc nếu không nghĩ mình hạnh phúc. - No man is happy who does not think himself so.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Không phải những người đẹp là người hạnh phúc, mà những người hạnh phúc là những người đẹp.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lo thắng người thì loạn. Lo thắng mình thì bình.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Mỗi người là một kiến trúc sư cho hạnh phúc của mình.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Một cách đơn giản để hạnh phúc là trân trọng những gì mình đang có.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một ngày không có tiếng cười là một ngày lãng phí. - A day without laughter is a day wasted.",
+      "author": "Charlie Chaplin"
+    },
+    {
+      "quote": "Ngàn vàng không mua được tiếng cười.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Ngày nào chúng ta không cười, ngày đó chúng ta đã mất nhiều thứ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người hạnh phúc là người có 3 thứ: sức khỏe, sự giàu có và trí thông minh.",
+      "author": "Ngạn ngữ Hy Lạp"
+    },
+    {
+      "quote": "Người nghèo cũng thèm tiền. Người giàu cũng thèm tiền. Chỉ người anh minh mới thèm hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những ai chưa từng đau khổ thì những kẻ ấy không bao giờ biết tận hưởng hạnh phúc",
+      "author": "Ugo Foscolo"
+    },
+    {
+      "quote": "Niềm vui luôn luôn đi sau đau khổ. - Joy always came after pain.",
+      "author": "Guillaume Apollinaire"
+    },
+    {
+      "quote": "Nỗi bất hạnh làm ra con người, còn con người làm ra hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tai họa thì bay đến mà hạnh phúc thì bò đến ta.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Tôi chỉ biết một nghĩa vụ, và đó là yêu thương. - I know of only one duty, and that is to love.",
+      "author": "Albert Camus"
+    },
+    {
+      "quote": "Được làm những điều bạn thích, đó là tự do. Thích được những điều bạn làm, đó là hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bất mãn là sự sự cần thiết đầu tiên cho tiến bộ. - Discontent is the first necessity of progress.",
+      "author": "Thomas Edison"
+    },
+    {
+      "quote": "Câu trả lời ngắn nhất là hành động.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hành động hiển hiện, cho dù động cơ bị che dấu. - Actions are visible, though motives are secret.",
+      "author": "Samuel Johnson"
+    },
+    {
+      "quote": "Hãy hành động nhiệt tình và bạn sẽ nhiệt tình. - Act enthusiastic and you will be enthusiastic.",
+      "author": "Dale Carnegie"
+    },
+    {
+      "quote": "Hãy luôn làm điều bạn sợ phải làm. - Always do what you are afraid to do.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Hãy tin tôi đi, hành động cao quý nhất chính là đến trợ giúp cho những người thất thế.",
+      "author": "Ovid"
+    },
+    {
+      "quote": "Khi nghi ngờ, đừng làm gì cả. - When in doubt, don't.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Làm tốt tốt hơn là nói hay. - Well done is better than well said.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Làm điều đúng không bao giờ là sớm quá. - What is right to be done cannot be done too soon.",
+      "author": "Jane Austen"
+    },
+    {
+      "quote": "Mắt ta nhìn thấy những gì mà chúng muốn thấy. - The eye sees what it brings the power to see.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Người ta không tốt hay xấu chỉ vì một hành động. - A man is not good or bad for one action.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Nếu bạn có thể đi, bạn cũng có thể chạy. - If you can walk, you can run.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Nếu bạn muốn người khác thay đổi, hãy thay đổi chính mình đầu tiên.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Suy nghĩ là mẹ của hành động. - Thought is the parent of the deed.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Sự bất mãn tốt đẹp là dấu hiệu của tiến bộ. - Healthy discontent is the prelude to progress.",
+      "author": "Mahatma Gandhi"
+    },
+    {
+      "quote": "Sự không chắc chắn là nơi trú ẩn của hy vọng. - Uncertainty is the refuge of hope.",
+      "author": "Henri Frederic Amiel"
+    },
+    {
+      "quote": "Sự phiêu lưu chính nó đã đáng giá. - Adventure is worthwhile in itself.",
+      "author": "Amelia Earhart"
+    },
+    {
+      "quote": "Thần linh sẽ giúp những người tự giúp mình. - The gods help them that help themselves.",
+      "author": "Aesop"
+    },
+    {
+      "quote": "Tốt nhất là quay trở về hơn tiếp tục đi lạc lối. - Better turn back than lose your way.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Tổ tiên của mọi hành động là suy nghĩ. - The ancestor of every action is a thought.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Đừng bao giờ nhầm lẫn chuyển động và hành động. - Never confuse motion with action.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Ba thứ chóng qua: tiếng vọng, cầu vồng và sắc đẹp phụ nữ.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Các thiếu nữ ngày xưa đỏ mặt vì ngượng ngùng; còn thiếu nữ ngày nay ngượng ngùng khi đỏ mặt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cái đẹp u buồn là cái đẹp rung động lòng người mãnh liệt nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có ba loại phụ nữ: những người thông thái, những người đẹp và những người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Dịu dàng không phải nhu nhược. Dịu dàng mà vẫn cương quyết là bí ẩn của người phụ nữ.",
+      "author": "A. A. Milne"
+    },
+    {
+      "quote": "Khi một người phụ nữ kể với bạn vấn đề khó khăn tức là họ muốn bạn giúp đỡ họ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không phải bao giờ dưới một khuôn mặt xinh đẹp cũng ẩn náu một tâm hồn trong trắng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lòng cả tin của người phụ nữ vốn là mầm mống gây nên điều bất hạnh sau này.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Muốn đánh giá một người phụ nữ chỉ cần biết người đàn ông mà cô ta yêu.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Một sự phỏng đoán của người đàn bà còn đúng hơn sự tin chắc của người đàn ông.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người con gái là đóa hoa hồng mà năm tháng tỉa dần từng cánh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người phụ nữ chỉ cười khi có thể cuời nhưng muốn khóc thì lúc nào cũng được.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Người phụ nữ chỉ tin lời tỏ tình khi nó được nói lên khẽ khàng, giản dị.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người đàn bà mà không biết trang điểm thì chỉ giống như thửa ruộng khô cằn.",
+      "author": "Ngạn ngữ Ấn Độ"
+    },
+    {
+      "quote": "Người đời thường hay nói đến những thói xấu của phụ nữ, nhưng mấy ai có thể sống thiếu họ được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người phụ nữ chỉ đi tìm kiếm sự bình đẳng với nam giới, là những người thiếu tham vọng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nước mắt đàn bà chỉ làm điên đầu được những kẻ dại dột.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Nước mắt đàn bà có nhiều tác dụng song họ chẳng mất gì khi khóc.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Phụ nữ có thể tha thứ khi bị thiệt thòi, nhưng không bao giờ quên được sự khinh miệt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phụ nữ là để yêu chứ không phải là để hiểu. - Women are meant to be loved, not to be understood.",
+      "author": "Oscar Wilde"
+    },
+    {
+      "quote": "Phụ nữ sẵn sàng hy sinh nếu ta tạo cho họ cơ hội.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Phụ nữ vừa là trái táo, vừa là con rắn. - Woman is at once apple and serpent.",
+      "author": "Heinrich Heine"
+    },
+    {
+      "quote": "Rượu ngon và lời nói ngọt ngào của người đàn bà là hai độc dược dịu dàng.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Sinh ra là phụ nữ đã khổ. Chọn nhầm người đàn ông của đời mình còn khổ hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sắc đẹp tự nó đủ thuyết phục đôi mắt của người đàn ông mà chẳng cần nhà hùng biện.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sắc đẹp và sự khờ dại thường đi đôi với nhau.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Sự xúc phạm đàn bà sẽ bị trừng phạt gấp đôi.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Thượng đế rất công bằng. Khi ngài ban cho người con gái trí tuệ thì không ban cho cô ta vẻ đẹp.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thắng lợi lớn nhất của người phụ nữ là đừng để cho mình thành người thắng cuộc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tri thức đúng đắn của nhân loại là phụ nữ. - The proper study of mankind is woman.",
+      "author": "Henry Brooks Adams"
+    },
+    {
+      "quote": "Trăm thứ hoa không bằng thứ hoa con gái.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Tính vũ phu, người đàn ông có thể bỏ được, nhưng tính lẳng lơ của người đàn bà thì chẳng bao giờ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Vàng khiến đàn bà cảm động: Đàn bà khiến đàn ông rung động.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đau khổ là khuôn đúc tâm hồn người phụ nữ để trở nên thành cao cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn bà khôn ngoan hơn đàn ông vì họ biết ít hơn, nhưng hiểu nhiều hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn bà không biết e thẹn, giống như một thức ăn thiếu muối.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn bà như cánh hoa tươi. Nở ra chỉ được một thời mà thôi.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đàn bà thường có năm nỗi sợ: nghèo, xấu, già, chết và bị bỏ rơi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đức tính thứ nhất và trọng yếu của phụ nữ là sự hiền dịu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chúa tạo ra đàn ông để thử thách linh hồn phụ nữ. - God created men to test the souls of women.",
+      "author": "Robert A Heinlein"
+    },
+    {
+      "quote": "Dù bị ngã 7 lần, đến lần thứ 8 người đàn ông vẫn đứng dậy được.",
+      "author": "Ngạn ngữ Mông Cổ"
+    },
+    {
+      "quote": "Khen người đàn ông khôn sau lưng họ, khen người đàn bà đẹp trước mặt họ.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Lúc lớn khôn người đàn ông có ba cái nặng phải gánh vác là; danh vọng, đạo vợ chồng và con cái.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người đàn ông chinh phục thế giới để chinh phục đàn bà.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người đàn ông giống như quả ớt, chỉ khi nếm mới thấy cái cay của nó.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Những sự yếu hèn của người đàn ông đã làm nên sức mạnh cho người đàn bà.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Nội tâm của đàn ông phức tạp hơn, còn nội tâm của đàn bà bất trắc hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ra đời trăm trận trăm thắng, về nhà không thắng nổi người đàn bà.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn bà khóc bằng mắt, đàn ông khóc bằng tim.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông chỉ coi trọng hiện tại của người phụ nữ. Phụ nữ lại coi trọng tương lai của người đàn ông.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông cần có tương lai, còn đàn bà cần có quá khứ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông cần tiền chủ yếu chỉ để cho hai việc: có được nàng và thoát được nàng!",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông gánh tuổi tác trên vai, đàn bà mang tuổi tác trên mặt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông không có tiền như sói không răng.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Đàn ông không vợ không tranh đấu, Đàn bà không chồng không đau khổ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông là mãnh lực hành động, đàn bà là mãnh lực thu hút.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đàn ông thông minh thích phụ nữ xinh đẹp và vui tính, đàn ông anh minh thích phụ nữ dễ tính.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ở đâu có sự nghiêm khắc của người phụ nữ, ở đó chàng trai sẽ trở thành người đàn ông thực thụ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai lơ đễnh việc nhỏ không bao giờ làm được các việc lớn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai muốn tỏa sáng thì phải cháy lên.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai mà đi quá nhanh thì trên đường phẳng cũng bị vấp.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Bạn càng thành công thì ở gần bạn càng ít người vui vì sự thành công của bạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bạn nghèo vì bạn không có tham vọng. 35 tuổi mà còn nghèo thì đấy là tại bạn!",
+      "author": "Jack Ma"
+    },
+    {
+      "quote": "Chậu sành sẽ va vào thành giếng mà vỡ, tướng quân khó tránh bị tử trận.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Chẳng ai trở nên vĩ đại bằng cách bắt chước. - No man was ever great by imitation.",
+      "author": "Samuel Johnson"
+    },
+    {
+      "quote": "Chỉ có thành công duy nhất – đó là có khả năng sống cuộc sống của mình theo cách mình muốn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con người sinh ra để thành công, không phải để thất bại. - Men are born to succeed, not to fail.",
+      "author": "Henry David Thoreau"
+    },
+    {
+      "quote": "Càng hoài bão lớn, càng thành đạt to.",
+      "author": "Ngạn ngữ Mông Cổ"
+    },
+    {
+      "quote": "Cái có thể không làm được, nếu nghĩ bằng mọi cách làm sẽ làm được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Danh vọng càng nhiều thì càng gian nan khó nhọc. Tương lai càng tươi sáng thì cạm bẫy càng nhiều.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Dù bạn có vấp ngã hàng trăm lần thì cũng đừng bỏ cuộc. Hãy đứng dậy!",
+      "author": "Nick Vujicic"
+    },
+    {
+      "quote": "Khát vọng lớn nào chẳng gặp khó khăn về tiền bạc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có cuộc sống bất tử, chỉ có những sự nghiệp bất tử.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Không có khát vọng thì không có nhân tài.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không mạo hiểm thì chẳng làm gì được.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Không ở vị trí thích hợp, không nên toan tính chuyện. - Bất tại kỳ vị, bất mưu kỳ chính.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Kẻ nào tự bằng lòng mình không muốn đổi cái tốt lấy cái tốt hơn nữa, thì rồi sẽ mất sạch cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Muốn thành công thì khao khát thành công phải lớn hơn nỗi sợ bị thất bại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mọi công việc thành đạt đều nhờ sự kiên trì và lòng say mê.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Mỗi người đều có một tâm tư và sự lựa chọn riêng cho mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một người thông minh thuê những người thông minh hơn làm việc cho anh ta nữa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một vùng biển lặng không tạo ra được thủy thủ giỏi giang.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người chết để lưu danh muôn thủa sẽ sống mãi. - He lives who dies to win a lasting name.",
+      "author": "Henry Drummond"
+    },
+    {
+      "quote": "Người không có chữ tín, chẳng làm chi nên việc. - Nhân nhi vô tín, bất tri kỳ khả dã.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Người đi quá nhanh sẽ đến quá muộn. - He gets through too late who goes too fast.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Năm đầu được mùa đừng quên nắm sau thất bát, khi no đủ thì đừng quên lúc cơ hàn.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Phải nhắm trên hồng tâm để trúng hồng tâm. - We aim above the mark to hit the mark.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Sao phải hòa nhập khi mà bạn sinh ra để nổi bật? - Why fit in when you were born to stand out?",
+      "author": "Dr Seuss"
+    },
+    {
+      "quote": "Sự bền bỉ, bí mật của mọi chiến thắng. - Perseverance, secret of all triumphs.",
+      "author": "Victor Hugo"
+    },
+    {
+      "quote": "Sự cẩn thận và chăm chỉ mang tới may mắn. - Care and diligence bring luck.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Sự kiên nhẫn là cay đắng, song quả của nó thì lại ngọt ngào.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Sự lười nhác là chí tử đối với những kẻ tầm thường. - Idleness is fatal only to the mediocre.",
+      "author": "Albert Camus"
+    },
+    {
+      "quote": "Sự nghiệp đừng mong không bị chông gai, vì không bị chông gai thì chí nguyện không kiên cường.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Tham vọng là nhiệt huyết có mục đích. - Ambition is enthusiasm with a purpose.",
+      "author": "Frank Tyger"
+    },
+    {
+      "quote": "Thành công của chúng ta không phải là những gì mà ta đang sở hữu mà là những gì ta sẽ để lại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thành công không phụ thuộc vào kiến thức mà vào cách áp dụng kiến thức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thành đạt không phải do sự giúp đỡ của người khác mà chính do lòng tự tin.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thất bại đơn giản chỉ là cơ hội để bắt đầu lại mọi thứ một cách thông minh hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thử thách càng lớn, cơ hội càng lớn. - The bigger the challenge, the greater the opportunity.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Từng chút từng chút một là bí quyết thành công. - Little by little does the trick.",
+      "author": "Aesop"
+    },
+    {
+      "quote": "Điều khôn ngoan nhất là phải luôn ghi nhớ rằng không thành công hay thất bại nào là cuối cùng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Điều quan trọng không phải là vị trí đứng mà là hướng đi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Điều thú vị nhất trong cuộc sống là làm những điều mà mọi người nói rằng bạn không thể.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đằng sau mọi cơ đồ lớn ẩn chứa tội ác lớn. - Behind every great fortune lies a great crime.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Để thành công, bạn phải sẵn lòng thất bại. - To be successful, you've got to be willing to fail.",
+      "author": "Frank Tyger"
+    },
+    {
+      "quote": "Đừng lo mình không có chức vị, chỉ lo mình không đủ tài để nhận lấy chức vị.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Đừng mong đích đến sẽ thay đổi nếu như bạn không thay đổi con đường.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai nới rộng con tim thì phải thu hẹp cái miệng lại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bên trong, tất cả chúng ta đều là hoa hướng dương. - We're all golden sunflowers inside.",
+      "author": "Allen Ginsberg"
+    },
+    {
+      "quote": "Chúng ta biết mặt người chứ không biết tâm người.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Cuộc hành trình duy nhất là cuộc hành trình vào nội tâm. - The only journey is the journey within.",
+      "author": "Rainer Maria Rilke"
+    },
+    {
+      "quote": "Dễ dãi là phương châm của thể xác và là tro nguội của tâm hồn.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Giọt sương của lòng trắc ẩn là nước mắt. - The dew of compassion is a tear.",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Hãy tha thứ cho những người đã làm bạn bị tổn thương. - Forgive those who have hurt you.",
+      "author": "Les Brown"
+    },
+    {
+      "quote": "Hối hận, quả trứng chết người mà lạc thú sản sinh. - Remorse, the fatal egg that pleasure laid.",
+      "author": "William Cowper"
+    },
+    {
+      "quote": "Khi biết tha thứ bạn sẽ mỉm cười nhiều hơn, biết cảm nhận sâu sắc và dễ thông cảm với người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi chúng ta già đi, sắc đẹp ẩn vào bên trong. - As we grow old, the beauty steals inward.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Khi tâm trạng không vui đừng làm gì điên rồ mà hãy chọn một giấc ngủ vì đó là thứ êm ái nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không ai có thể cho bạn sự bình yên ngoài chính bạn. - Nobody can bring you peace but yourself.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Không thể sống dễ chịu nếu không sống hợp lý, có đạo đức và đúng đắn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Luôn luôn hy vọng, không bao giờ được tuyệt vong, đó là bản chất của một người có tâm hồn lớn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lương tâm là la bàn của con người. - Conscience is a man's compass.",
+      "author": "Vincent Van Gogh"
+    },
+    {
+      "quote": "Một lương tâm tội lỗi không bao giờ cảm thấy yên tâm. - A guilty conscience never feels secure.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Những giọt nước mắt khi rỏ ra một mình là chân thực nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những tư tưởng lớn thường xuất phát từ trái tim lớn, nhưng ân tình nặng thường đến từ lẽ phải.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những đam mê của chúng ta nói lên chính bản thân ta. - Our passions are ourselves.",
+      "author": "Anatole France"
+    },
+    {
+      "quote": "Nước mắt là ngôn ngữ câm lặng của đau buồn. - Tears are the silent language of grief.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Nếu không phải nhờ hy vọng, trái tim sẽ tan vỡ. - If it were not for hopes, the heart would break.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Nếu trái tim bạn là một đóa hồng, miệng bạn sẽ thốt ra những lời ngát hương.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Sự trả thù cao quý nhất chính là tha thứ. - The noblest revenge is to forgive.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Tiếng cười là liều thuốc tốt nhất. - Laughter is the best medicine.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiếng cười ồn ào thể hiện sự trống rỗng của tâm hồn.",
+      "author": "Olivier Goldsmith"
+    },
+    {
+      "quote": "Trong nụ cười hứa hẹn vệt nước mắt. - Smiles form the channels of a future tear.",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Trong việc nuôi cái tâm, không gì tốt hơn là ít ham muốn.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Trái tim là đòn bẩy của những gì vĩ đại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tư tưởng luôn bị đói, cho nó thức ăn lành. Để tư tưởng trống rỗng, thức ăn độc sẽ tràn vào.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tốt danh hơn giàu của.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Tự do tư tưởng là sức sống của linh hồn. - Liberty of thought is the life of the soul.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Tự lừa gạt bản thân sẽ dẫn tới tự hủy diệt bản thân. - Self-conceit may lead to self-destruction.",
+      "author": "Aesop"
+    },
+    {
+      "quote": "Vết thương nặng nề và khó chạy chữa nhất, đó là đổ vỡ lương tâm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Yêu mọi người, tin vài người, đừng xúc phạm tới ai hết. - Love all, trust afew, do wrong to none.",
+      "author": "William Shakespeare"
+    },
+    {
+      "quote": "Ác quỷ nằm ấp ủ trong lồng ngực của kẻ khốn cùng. - The devil lies brooding in the miser's chest.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Ai tràn trề hy vọng và nguyện vọng, người đó sống ở tương lai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Anh có thể trì hoãn, nhưng thời gian thì không. - You may delay, but time will not.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Cho dù con gà trống không gáy thì một ngày mới vẫn cứ bắt đầu.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Chúng ta cần phải đi ngang với thời gian chứ không phải để thời gian đi ngang qua.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Cuộc sống luôn cho bạn cơ hội thứ hai, nó được gọi là ngày mai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy thắp sáng ngày mai bằng ngày hôm nay! - Light tomorrow with today!",
+      "author": "Elizabeth Barrett Browning"
+    },
+    {
+      "quote": "Hôm nay là học trò của hôm qua. - Today is yesterday's pupil.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Kẻ tầm thường chỉ lo tìm cách giết thời gian, còn người có tài thì tìm mọi cách tận dụng thời gian.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một ngày hôm nay đáng giá hai ngày mai. - One today is worth two tomorrows.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Một tuần lễ với người chăm chỉ có 7 ngày, còn với kẻ lười biếng có 7 ngày mai.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Ngày đi, tháng chạy, năm bay. Thời gian nước chảy, chẳng quay được về.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Người bận rộn chẳng còn thời gian để khóc. - The busy have no time for tears.",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Nuối tiếc là đặc tính tự nhiên của mái đầu bạc. - Regrets are the natural property of grey hairs.",
+      "author": "Charles Dickens"
+    },
+    {
+      "quote": "Nỗi buồn bay đi trên đôi cánh của thời gian. - Sadness flies away on the wings of time.",
+      "author": "La Fontaine"
+    },
+    {
+      "quote": "Quá khứ đang đợi ta trong mặt nạ tương lai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sự chần chừ là kẻ trộm thời gian. - Procrastination is the thief of time.",
+      "author": "Edward Young"
+    },
+    {
+      "quote": "Thời gian là kẻ sát nhân giỏi nhất. - Time is the best killer.",
+      "author": "Agatha Christie"
+    },
+    {
+      "quote": "Thời gian là ông thầy vĩ đại, nó đàn xếp êm thấm mọi việc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thời gian làm mòn mọi gót giày. - Time wounds all heels.",
+      "author": "John Lennon"
+    },
+    {
+      "quote": "Thời gian mà bạn hưởng thụ để phung phí, không lãng phí. - Time you enjoy wasting, was not wasted.",
+      "author": "John Lennon"
+    },
+    {
+      "quote": "Thời gian thay đổi và chúng ta cũng thay đổi theo thời gian.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Thời gian trả giá cho mọi hành động.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Thời gian tạo ra nhiều biến đổi hơn là lí lẽ. - Time makes more converts than reason.",
+      "author": "Thomas Paine"
+    },
+    {
+      "quote": "Thời gian đã mất không bao giờ tìm lại được. - Lost time is never found again.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Thời giờ là tiền bạc. - Time is money.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Trong những nhà phê bình hiện có, vĩ đại nhất, chính xác nhất, thiên tài nhất là thời gian.",
+      "author": "Vissarion Belinsky"
+    },
+    {
+      "quote": "Tuổi tác là nhà pháp luật vĩ đại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tương lai được mua bằng hiện tại. - The future is purchased by the present.",
+      "author": "Steve Jobs"
+    },
+    {
+      "quote": "Đừng thương tiếc hôm qua, đừng đợi ngày mai, đừng lảng tránh hôm nay.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Ai chi tiêu quá nhanh không bao giờ giàu có được. - Those who spend too fast never grow rich.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Ai tiết kiệm tiền, người đó sống không thiếu thốn.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Anh không sở hữu sự giàu sang; nó sở hữu anh. - He does not possess wealth; it possesses him.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Biết đủ trong cái đủ của mình thì luôn luôn đủ.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Chúng ta biết giá trị của mình: nó thường cao hơn thu nhập.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chủ nợ có trí nhớ tốt hơn con nợ. - Creditors have better memories than debtors.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Con người thường bán thời gian để kiếm tiền rồi lại dùng tiền để giết thời gian.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Của làm ra là của trong nhà. Của ông bà làm là của ngoài sân. Của phù vân nó có chân nó chạy.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Danh tiếng tốt đáng giá hơn tiền bạc. - Honesta fama melior pecunia est.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Giàu chiều hôm, khó sớm mai.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Giàu có gồm có hai cánh tay; một là sự khôn khéo và một là tính tiết kiệm.",
+      "author": "Ngạn ngữ Italia"
+    },
+    {
+      "quote": "Giàu không tiết kiệm, nghèo liền tay. Nghèo không tiết kiệm, sớm ăn mày.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Giá trị của bạn trong con mắt xã hội không phải ở số tiền bạn có, mà ở số tiền bạn tiêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi tiền bạc nói ra thì sự thật yên lặng.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Không bao giờ được tiêu nhiều hơn số tiền bạn có.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có ai kiêu ngạo hơn người giàu mà mới đây chỉ là một kẻ nghèo kiết xác.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Không có tiền thì không thể sống, nhưng có tiền chưa chắc đã được sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không lấy bậy của ai gọi là giàu. Không bị nhục với ai gọi là sang.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không người tốt nào lại đột ngột trở nên giàu có. - Repente dives nemo factus est bonus.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Kẻ nào không biết giữ của cải nhỏ thì sẽ mất cái lớn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ nào tham lam tài sản của người khác thì đáng phải mất tài sản của chính mình.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Lời đề nghị của kẻ nghèo được xét đến sau cùng.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Muối thì tốt để ăn ở mọi nơi trên thế giới; tiền bạc thì tốt để sử dụng mọi nơi trên thế giới.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Muốn hái ra tiền thì phải biết cách thỏa mãn nhu cầu của người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một xu tiết kiệm là một xu kiếm được. - A penny saved is a penny earned.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Nghèo không phải người có ít tiền mà là người có bao nhiêu tiền vẫn thấy ít.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nghèo túng không phải là tội lỗi, nhưng nó sẽ dẫn đến chỗ mất kính nể.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Người giàu không làm việc vì tiền. Người giàu làm việc vì cơ hội.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người giàu không phải là người có đủ mọi thứ mà là người không cần gì thêm nữa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người giàu ngã xuống, người ta bảo tai họa, người nghèo ngã xuống, người ta bảo gặp may.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Người giàu như ngọn lửa, ở gần thì bị bỏng, ở xa thì không ấm.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Người khôn biết biến cơ hội thành của cải. - A wise man turns chance into good fortune.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Người không tiền bất nghĩa chẳng giàu, ngựa không cỏ ăn đêm chẳng béo.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Người ta làm giàu bằng mồ hôi và nước mắt và hơn thế nữa bằng sự tiết kiệm.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Người ở cung điện không hiểu kẻ sống ở túp lều.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Những ngôi nhà lớn được làm ra bởi sự tiết kiệm.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Nén bạc đâm toạc tờ giấy.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Nếu anh tiếp tục cho thì anh tiếp tục có.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Nếu giàu có, hãy cho bạn của mình của, nếu nghèo khó, hãy cho họ tấm lòng.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Nợ nần cũng giống như mọi thứ bẫy khác: sa vào thì rất dễ, thoát ra thì khá khó.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sống giàu có vẫn hay hơn là chết giàu có. - It is better to live rich than to die rich.",
+      "author": "Samuel Johnson"
+    },
+    {
+      "quote": "Sự lười biếng bước đi rất chậm để cái đói nghèo lúc nào cũng đuổi kịp.",
+      "author": "Ngạn ngữ Mỹ"
+    },
+    {
+      "quote": "Thiếu tiền là nguồn gốc của mọi tội lỗi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thà nghèo mà tự do còn hơn giàu mà nô lệ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Tiết kiệm là cái kho vô tận của kẻ nghèo, hoang phí là cạm bẫy của kẻ giàu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tiết kiệm là một nghệ thuật lớn hơn cả việc kiếm tiền.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Tiết kiệm là tập tính thì phải bắt đầu ngay khi còn nhỏ.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Tiền bạc của người giàu là ở trong túi, của người nghèo là ở trong tim.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Tiền bạc khiến cả thế giới xoay chuyển. - Money alone sets all the world in motion.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Tiền dùng đúng, tiền hiền như Phật. Bạc sài lầm, bạc ác hơn ma.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trời không mưa liền ba ngày, người không nghèo khổ suốt đời.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Tình yêu làm được một cái gì đấy. Tiền bạc làm được tất cả.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Tính tiết kiệm có lợi cho chính bản thân nó.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Tôi chưa có nhiều tiền đến mức nghĩ rằng tiền không mang lại hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ðồng tiền không phải vạn năng, nhưng không tiền thì vạn vạn bất năng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đeo sắt, đeo đá không nặng bằng đeo nghèo, đeo khổ.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Đạo đức là đời đời, còn của cải mỗi ngày đều thay chủ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đồng tiền hiếm nhất, đó là đồng tiền đã được tiêu một cách khôn ngoan.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đồng tiền đi trước đồng tiền khôn, đồng tiền đi sau đồng tiền dại.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Ai bỏ bạn trong cơn hoạn nạn thì sẽ bị rơi xuống địa ngục.",
+      "author": "Ngạn ngữ Ấn Độ"
+    },
+    {
+      "quote": "Ai có ý đi tìm một người bạn không có một tật xấu nào cả, người đó sẽ không tìm thấy được bạn.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Bán anh em xa, mua láng giềng gần.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Bạn bè chung thủy là kho vàng quý nhất.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Bạn bè được sinh ra, không phải được tạo ra. - Friends are born, not made.",
+      "author": "Henry Brooks Adams"
+    },
+    {
+      "quote": "Bản thân là bạn tốt sẽ có được bạn bè tốt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chân thật và thẳng thắn là bước đầu cần thiết làm nảy nở và củng cố mối quan hệ bạn bè.",
+      "author": "Vladimir Ilyich Lenin"
+    },
+    {
+      "quote": "Chẳng có người bạn nào mà mọi mặt đều tốt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cách giữ bạn tốt nhất là không phản bội bạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có một người bạn khăng khít còn hơn là một người anh em ruột.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Hai bàn tay hay hơn nhiều niềm tin bằng hữu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi người ta thực sự là bạn với nhau thì ngay cả nước lã cũng ngọt.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Khó kiếm được người bạn trong một năm nhưng dễ xúc phạm bạn trong một giờ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khó kiếm được người bạn trong một năm, nhưng dễ xúc phạm bạn trong một giờ.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Kẻ thù xưa và bạn bè mới, nếu khôn ngoan chớ vội vàng tin.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Một người bạn khác phái có thể bằng mười người bạn cùng phái với mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một người bạn quyền thế là một người bạn đã mất. - A friend in power is a friend lost.",
+      "author": "Henry Brooks Adams"
+    },
+    {
+      "quote": "Người có đức thì không lẻ loi, tất có bạn cũng trọng đạo đức như mình. - Đức bất cô, tất hữu lân.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Người ta có ba người bạn chắc chắn. Cha, mẹ và vợ thủy chung.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Nước trong quá thì không có cá. Người xét nét quá thì không có bạn bè.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Sống không bạn, chết cô đơn.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Sự chiều lòng nuôi dưỡng bạn bè, sự nói thật gây nên thù oán.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Sự phê bình của người bạn còn tốt hơn lời nịnh nọt của kẻ thù.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Ta yêu ta mặc dù những lỗi lầm của ta, và ta cũng phải yêu bạn ta như vậy.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Thà ở một mình còn hơn đi cùng người xấu. - Better be alone than in bad company.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Trách bạn kín đáo nhưng khen bạn công khai. - Reprove your friends in secret, praise them openly.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Tình bạn là cuộc giao lưu vô vụ lợi giữa những người bình đẳng.",
+      "author": "Olivier Goldsmith"
+    },
+    {
+      "quote": "Tình bạn là một tâm hồn ngự trong hai thể xác. - Frienship is a single soul dwelling in two bodies.",
+      "author": "Aristotle"
+    },
+    {
+      "quote": "Tình bạn nhân lên niềm vui và chia bớt đau buồn. - Friendships multiply joys and divide griefs.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Tình bạn tươi tốt bên suối nguồn tha thứ. - Friendship flourishes at the fountain of forgiveness.",
+      "author": "William Arthur Ward"
+    },
+    {
+      "quote": "Tình bạn đến với nhau trong lúc khó khăn mới thật là tình bạn.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Vàng tìm vàng làm bạn. Ngọc tìm ngọc sách đôi.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đẩy tình bạn ra khỏi cuộc sống của mình, chẳng khác gì đẩy mặt trời ra khỏi thế giới này.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Anh càng biết nhiều, anh càng tha thứ nhiều. - The more a man knows, the more he forgives.",
+      "author": "Catherine II"
+    },
+    {
+      "quote": "Bi quan là tâm trạng, lạc quan là ý chí.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bạn hãy cố gắng có những đức tính lớn lao, người ta sẽ bỏ qua những điều xấu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Chính mình có điều hay thì cố mà giữ lấy; thấy mình có điều dở thì phải cố mà trừ đi.",
+      "author": "Tuân Tử"
+    },
+    {
+      "quote": "Chúng ta thường quên nhiều hơn nhớ. - We have all forgot more than we remember.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Chẳng ai đủ quan trọng để làm tôi giận dữ. - No person is important enough to make me angry.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Chết đứng còn hơn sống quỳ.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Con người phải đồng thời tạo ra và chế ngự sự đam mê.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Càng mạnh mẽ, càng hiền lành, càng thông minh, càng khiêm tốn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Càng thông minh càng ít can đảm. - The more wit the less courage.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Còn lại gì nếu danh dự mất? - What is left when honor is lost?",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Có công mài sắt, có ngày nên kim.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Cả nghe thì dở, tự phụ thì hỏng việc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Danh dự quý hơn tính mệnh.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Dù ai nói ngả nói nghiêng, lòng ta vẫn vững như kiềng ba chân.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Dễ dãi với sự dối lừa là điều nhục nhã. - It is an affront to treat falsehood with complaisance.",
+      "author": "Thomas Paine"
+    },
+    {
+      "quote": "Gieo đức hạnh, gặt vinh quang.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giản dị là nét chủ yếu của vẻ đẹp đạo đức.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Giận là đem lỗi lầm của người khác trừng phạt bản thân mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giới hạn cao nhất của lòng kiên nhẫn là: không nói, không cáu, không giận.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Giữ vững được đạo đức trong thành công còn quan trọng hơn trong hoạn nạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Im lặng là câu trả lời tốt nhất với giận dữ.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Khí kiêng nhất là hung hăng. Tâm kiêng nhất là hẹp hòi. Tài kiêng nhất là bộc lộ.",
+      "author": "Lã Khôn"
+    },
+    {
+      "quote": "Không có sự vĩ đại ở nơi nào không có sự giản dị, lòng tốt và sự thật.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Không oán trời, không trách người là quân tử.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Kiêu căng là bãi cát lún của lý trí. - Vanity is the quicksand of reason.",
+      "author": "Groucho Marx"
+    },
+    {
+      "quote": "Kẻ chế nhạo người khác không bao giờ để ý đến cái xấu của mình.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Kẻ hay hiếu danh, việc làm thường giả dối.",
+      "author": "Lã Khôn"
+    },
+    {
+      "quote": "Lòng biết hổ thẹn là đầu mối của đức nghĩa. - Tu ố chi tâm, nghĩa chi đoan dã.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Lòng kiên nhẫn bị lạm dụng sẽ trở thành giận dữ. - Abused patience turns to fury.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Lòng kiêu ngạo của con người là nhược điểm của họ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Muốn cho người ta dễ có lòng thiện thì phải làm thế nào cho người ta khỏi nghèo khổ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mỗi người đều có 3 tính cách: tính cách phô ra, tính cách họ có và tính cách họ nghĩ rằng họ có.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Một kẻ nói dối nên có một trí nhớ tốt. - A liar should have a good memory.",
+      "author": "Quintilian"
+    },
+    {
+      "quote": "Một người tốt không bao giờ được giả dối, xu nịnh dù là cả trong những vấn đề sinh tử.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người bất mãn khó tìm được ghế dễ ngồi. - The discontented man finds no easy chair.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Người càng thông minh và càng tốt thì càng nhận thấy nhiều cái tốt ở mọi người.",
+      "author": "Blaise Pascal"
+    },
+    {
+      "quote": "Người có khí tiết thà chết không chịu nhục.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Người có phẩm chất đạo đức hoàn hảo sẽ không có được gì; người vĩ đại tự tước mất bản thân minh.",
+      "author": "Trang Tử"
+    },
+    {
+      "quote": "Người dung thứ cho cái ác làm tổn thương cái thiện. - He who spares the bad injures the good.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Người khôn ngoan hỏi nguyên do lầm lỗi ở bản thân, kẻ dại khờ hỏi nguyên do ở người khác.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Người không hy vọng điều tốt đẹp không sợ hãi điều xấu xa. - He that hopes no good fears no ill.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Người nào có tấm lòng vàng thì dù mặc quần áo nghèo khổ cũng vẫn cao quý.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người quân tử cầu ở mình, kẻ tiểu nhân cầu ở người.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Người thật sự trung thực là người luôn luôn tự hỏi mình đã đủ trung thực chưa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người trung thực có thể bị truy nã, nhưng không thể bị làm mất danh dự.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Nhượng bộ không phải là hạ mình; nhận lỗi không phải là nhục nhã.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Nước không đọng lại trên núi cao, người cao thượng không chất chứa nỗi căm hờn.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Nỗi sợ hãi có công dụng, nhưng sự hèn nhát thì không. - Fear has its use but cowardice has none.",
+      "author": "Mahatma Gandhi"
+    },
+    {
+      "quote": "Nỗi sợ nhạt nhòa khi ta đối diện thực tế. - Fear fades when facts are faced.",
+      "author": "Frank Tyger"
+    },
+    {
+      "quote": "Phương thuốc hữu hiệu nhất cho giận dữ là trì hoãn. - The greatest remedy for anger is delay.",
+      "author": "Thomas Paine"
+    },
+    {
+      "quote": "Quá tử tế dễ bị lợi dụng.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Sự bền bỉ là tính kiên nhẫn được tập trung. - Endurance is patience concentrated.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Sự chính trực không cần điều luật. - Integrity has no need of rules.",
+      "author": "Albert Camus"
+    },
+    {
+      "quote": "Sự chịu đựng kéo dài khuất phục cả những kẻ can trường. - Prolonged endurance tames the bold.",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Sự khiêm tốn là lương tri của cơ thể. - Modesty is the conscience of the body.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Sự kiên nhẫn đắng chát, nhưng quả của nó lại ngọt. - Patience is bitter, but its fruit is sweet.",
+      "author": "Jean Jacques Rousseau"
+    },
+    {
+      "quote": "Sự kiềm chế là bắt đầu của lịch sự và đạo đức.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Sự tha hóa đến từ bên trong. - The rottenness comes from within.",
+      "author": "Agatha Christie"
+    },
+    {
+      "quote": "Sự tuyệt vọng đem can đảm đến cho kẻ hèn. - Despair gives courage to a coward.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Sự táo bạo làm tăng can đảm; do dự làm tăng sợ hãi. - Audacity augments courage; hesitation, fear.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Sự tức giận không quyền lực là một trò cười.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ta phân biệt được điều phải lẽ trái đều do đức trí cả. - Thị phi chi tâm trí chi đoan dã.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Tha thứ là sự trả thù vinh quang nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thi ân đừng cầu đền đáp, vì cầu đáp trả là thi ân mà có mưu tính.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Trong tất cả mọi tính cách, cung cách, phong cách. . . cái đẹp nhất là sự giản dị.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trong đạo đức cũng như trong nghệ thuật, vấn đề không phải ở lời nói, mà là ở việc làm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trách nhiệm lớn lao đòi hỏi đức hạnh lớn lao. - Great necessities call out great virtues.",
+      "author": "Abigail Adams"
+    },
+    {
+      "quote": "Tuyệt vọng cũng có những khoảng lặng. - Despair has its own calms.",
+      "author": "Bram Stoker"
+    },
+    {
+      "quote": "Tính chân thật của đạo đức là khiêm tốn.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Tính cách gìn giữ thì dễ hơn là phục hồi. - Character is much easier kept than recovered.",
+      "author": "Thomas Paine"
+    },
+    {
+      "quote": "Tôi cong nhưng không gãy. - I bend and do not break.",
+      "author": "La Fontaine"
+    },
+    {
+      "quote": "Tất cả những con người vĩ đại đều khiêm tốn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Từ cuồng tín tới man rợ chỉ có một bước chân thôi. - From fanaticism to barbarism is only one step.",
+      "author": "Denis Diderot"
+    },
+    {
+      "quote": "Tự tin không phải vì đúng mà vì không sợ sai.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Việc không hợp đạo thì một lưng cơm cũng không lấy của ai.",
+      "author": "Mạnh Tử"
+    },
+    {
+      "quote": "Vui mừng quá thì vỡ dương, tức giận quá thì phá vỡ âm.",
+      "author": "Trang Tử"
+    },
+    {
+      "quote": "Với người đừng mong thuận chiều ý mình, vì được thuận chiều ý mình thì tất sanh tự kiêu.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Với những kẻ độc ác, mọi thứ đều là cái cớ. - To the wicked, everything serves as pretext.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Với những kẻ độc ác, mọi thứ đều là cái cớ. - To the wicked, everything serves as pretext.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Xem trọng hòa khí.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Đói cho sạch, rách cho thơm.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đạo trời không thiên vị ai, luôn ban ơn cho người có đức.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Đừng quan tâm đến kẻ nói xấu sau lưng bạn. Vì chỗ của họ là ở đó, mãi mãi sau lưng bạn mà thôi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ai đó không yêu bạn như bạn mong muốn không có nghĩa là họ không yêu bạn hết mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Anh càng phán xét nhiều thì anh càng yêu ít. - The more one judges, the less one loves.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Biết rằng tình yêu đã bắt đầu là cái khó, biết nó bắt đầu từ lúc nào còn khó hơn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bình đẳng là cơ sở vững chắc của tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bạn có cần lý do để yêu không? - Do you have to have a reason for loving?",
+      "author": "Brigitte Bardot"
+    },
+    {
+      "quote": "Bạn hãy làm chủ kẻ không yêu bạn và hãy làm đầy tớ cho người yêu bạn.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Chẳng có bản năng nào như bản năng của trái tim. - There is no instinct like that of the heart.",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Chỉ cần một sợi tóc của người yêu cũng đủ để kéo khỏe hơn bốn con bò mộng.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Cuộc đời là đóa hoa mà tình yêu là mật ngọt. - Life is a flower of which love is the honey.",
+      "author": "Victor Hugo"
+    },
+    {
+      "quote": "Cái gì xuất phát từ trái tim thì sẽ đi đến trái tim.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Còn thế lực nào mạnh mẽ hơn tình yêu? - What force is more potent than love?",
+      "author": "Igor Stravinsky"
+    },
+    {
+      "quote": "Còn yêu nhau thì còn tha thứ cho nhau được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có rất nhiều phương thức để chữa cháy tình yêu, nhưng không có thứ nào đáng tin cậy cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Có thể yêu nhiều lần, nhưng không thể yêu nhiều lần cùng một người.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Công danh, tiền tài, danh vọng, tất cả đều là hư ảo, chỉ có tình yêu là sự thật.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cặp đôi hoàn hảo, đó là khi hai người thích cả những tính xấu của nhau.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ghen tuông là thiếu quý trọng đối với người mình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hãy xứng đáng với tình yêu, và rồi tình yêu sẽ đến. - Be worthy love, and love will come.",
+      "author": "Louisa May Alcott"
+    },
+    {
+      "quote": "Hãy yêu khi bạn đã sẵn sàng, đừng yêu khi bạn thấy cô đơn quá.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi bắt đầu yêu tức là bắt đầu bước vào cuộc sống.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Khi chớm biết yêu thì vui. Lúc biết yêu rồi thì buồn.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Khi rơi vào tình yêu mỗi người đều là một chiến binh dũng cảm.",
+      "author": "Ovid"
+    },
+    {
+      "quote": "Khi thiếu vắng bạn trong cuộc đời, sẽ có người không thể sống mà cảm thấy hạnh phúc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi yêu người ta có thể tha thứ cho nhau tất cả. Khi ghét người ta có thể nói xấu nhau tất cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi yêu phụ nữ thích hứa hẹn thật nhiều, còn đàn ông thích chiếm đoạt thật nhiều.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khi yêu đàn ông là người vất vả nhất, nhưng khi lấy nhau rồi phụ nữ là người thiệt thòi nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Khoảng cách giữa tình yêu và lòng thù hận là vô cùng nhỏ.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Không có gì làm đau khổ bằng yêu. Không có gì hết. Để khỏi khổ thì đừng nên yêu.",
+      "author": "Yasmina Reza"
+    },
+    {
+      "quote": "Không có đức tính nào vĩ đại hơn tình yêu không kỳ thị.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không gì quyến rũ bằng sự dịu dàng của trái tim. - There is no charm equal to tenderness of heart.",
+      "author": "Jane Austen"
+    },
+    {
+      "quote": "Không người nào có thể ra lệnh cho tình yêu. - No human creature can give orders to love.",
+      "author": "George Sand"
+    },
+    {
+      "quote": "Lòng ghen tuông biến con người thành thú dữ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Muốn nhận được, trước hết cần phải trao tặng. Nếu bạn muốn được yêu, hãy học cách cho đi tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Muốn yêu cho ra yêu một người đàn bà, ta phải yêu nàng như nàng sẽ phải chết ngày mai.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Mọi cái đều phải trả bằng tiền bạc, còn tình yêu phải trả bằng tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Mọi thứ đều trở nên rõ ràng hơn khi bạn đang yêu. - Everything is clearer when you're in love.",
+      "author": "John Lennon"
+    },
+    {
+      "quote": "Người ta càng yêu, người ta càng khổ. Yêu nhiều bao nhiêu, càng khổ bấy nhiêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người yêu người khác một cách chân thành, quyết sẽ không già yếu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người đàn bà thông minh lấy người yêu họ hơn là người họ yêu.",
+      "author": "Ngạn ngữ Thổ Nhĩ Kỳ"
+    },
+    {
+      "quote": "Những cuộc cãi vã của đôi nhân tình là một cuộc đổi mới của yêu đương.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Những người yêu thương sâu sắc tin vào điều không thể. - Who so loves believes the impossible.",
+      "author": "Elizabeth Barrett Browning"
+    },
+    {
+      "quote": "Những nụ hồng tình yêu làm đẹp vườn đời. - The roses of love glad the garden of life.",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Những đứa con trai không biết tán gái, một khi yêu ai đó thì họ yêu rất thật lòng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nơi nào có tình yêu, nơi đó có sự sống. - Where there is love there is life.",
+      "author": "Mahatma Gandhi"
+    },
+    {
+      "quote": "Nếu bạn muốn trái tim người khác thuộc về mình, thì bạn phải mang trái tim mình ra trao đổi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu muốn được yêu, hãy yêu đi và tỏ ra đáng yêu. - If you would be loved, love, and be loveable.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Nếu yêu thì nói rằng yêu,. Không yêu hãy nói một điều cho xong.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Quyền thống trị của tình yêu giống như quyền của vua, không chấp nhận chia sẻ.",
+      "author": "Ovid"
+    },
+    {
+      "quote": "Sự ghen tuông chỉ là yêu và hận cùng một lúc. - Jealousy is just love and hate at the same time.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sự lừa dối của tình yêu ghê sợ hơn tất cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thà đau khổ vì tình yêu tan vỡ hơn là không có tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thôi đã hết hờn ghen và giận dỗi. Được giận hờn sung sướng biết bao nhiêu.",
+      "author": "Xuân Diệu"
+    },
+    {
+      "quote": "Thật khó mà vừa yêu vừa tỏ ra sáng suốt.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Thật đau khổ cho kẻ nào vào lúc bắt đầu yêu đã không tin rằng tình yêu đó sẽ là vĩnh cửu!",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Thế giới không có tình yêu là thế giới đã chết. - A loveless world is a dead world.",
+      "author": "Albert Camus"
+    },
+    {
+      "quote": "Thế sự trai yêu thiếp mọn. Nhân tình, gái nhớ chồng xưa.",
+      "author": "Nguyễn Trãi"
+    },
+    {
+      "quote": "Trong yêu đương cũng như ở trong giấc mộng, không có gì gọi là không thể được.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trái tim đang yêu là sự thông thái chân thực nhất. - A loving heart is the truest wisdom.",
+      "author": "Charles Dickens"
+    },
+    {
+      "quote": "Trót mang hơi thở dâng trời đất. Đến phút cuối đời vẫn cứ yêu.",
+      "author": "Xuân Diệu"
+    },
+    {
+      "quote": "Tình bạn là Tình yêu không có cánh! - Friendship is Love without his wings!",
+      "author": "Lord Byron"
+    },
+    {
+      "quote": "Tình yêu an ủi được tất, kể cả những ưu phiền do nó gây ra.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu bắt đầu bằng nụ cười, lớn lên bằng nụ hôn và thường kết thúc bằng nước mắt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu chết đi bởi sự nhàm chán và bị chôn vùi bởi sự lãng quên.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu chỉ là một trong nhiều niềm đam mê. - Love is only one of many passions.",
+      "author": "Samuel Johnson"
+    },
+    {
+      "quote": "Tình yêu càng đắm đuối, buồn phiền càng mãnh liệt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu giết chết thời gian, nhưng thời gian cũng giết chết tình yêu.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Tình yêu giống như một dây leo, nó sẽ khô héo và chết đi nếu không có cái gì để quấn quýt.",
+      "author": "Ngạn ngữ Ấn Độ"
+    },
+    {
+      "quote": "Tình yêu giống như một điếu xì gà – khi nó cháy càng mạnh, thời gian biến thành tro tàn càng ngắn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu không bao giờ chết đói mà thường chết vì bội thực.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu không bắt nguồn từ tiền bạc, nhưng tiền bạc nuôi dưỡng tình yêu.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu không phải là những lời thề non hẹn biển, chỉ đơn giản là cùng nhau bình yên qua ngày.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu không phải ở đôi má hồng của người thiếu nữ mà ở trong mắt của kẻ si tình.",
+      "author": "Immanuel Kant"
+    },
+    {
+      "quote": "Tình yêu không thể giấu giếm được và khi người ta không yêu nữa, điều ấy lại càng khó giấu hơn.",
+      "author": "Ngạn ngữ Mỹ"
+    },
+    {
+      "quote": "Tình yêu là bài thơ của giác quan. - Love is the poetry of the senses.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Tình yêu là em; em và anh. - Love is you; you and me.",
+      "author": "John Lennon"
+    },
+    {
+      "quote": "Tình yêu là linh hồn đọng lại của tất cả lửa trên đời. - Love is a spirit of all compact of fire.",
+      "author": "William Shakespeare"
+    },
+    {
+      "quote": "Tình yêu là người thầy tốt hơn trách nhiệm. - Love is a better teacher than duty.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Tình yêu là niềm vui ngọt ngào nhất và là nỗi đau nhức buốt nhất.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu là trò chơi mà ai cũng gian lận. - Love is a game in which one always cheats.",
+      "author": "Balzac"
+    },
+    {
+      "quote": "Tình yêu làm hư hỏng đi những tâm hồn tốt và làm tốt lên những tâm hồn hư hỏng.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Tình yêu nâng cao con người thoát khỏi sự tầm thường.",
+      "author": "Blaise Pascal"
+    },
+    {
+      "quote": "Tình yêu thì chỉ có một, nhưng cái tương tự tình yêu thì có hàng ngàn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tình yêu thương con người là tài sản quý giá nhất.",
+      "author": "Ngạn ngữ Ả rập"
+    },
+    {
+      "quote": "Tình yêu tiêu diệt cái chết hoặc biến nó thành ảo ảnh mờ nhạt.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Tình yêu, đó là sự hòa đồng tâm hồn, trí tuệ và thể xác. Nhưng phải theo đúng thứ tự này.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tôi không cần tiền, tôi chỉ cần tình yêu ....Nhưng không có tiền, tình yêu của tôi sẽ chết.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tất cả những gì bạn cần là tình yêu. - All you need is love.",
+      "author": "John Lennon"
+    },
+    {
+      "quote": "Tức giận gây nên tức giận, tình yêu sinh ra tình yêu.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Tự ái trong tình yêu chẳng khác gì vụ lợi trong tình bạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Vai anh khi có đầu em tựa. Cân cả buồn vui của cuộc đời.",
+      "author": "Xuân Diệu"
+    },
+    {
+      "quote": "Và tất cả vì tình yêu, và không vì phần thưởng. - And all for love, and nothing for reward.",
+      "author": "Edmund Spenser"
+    },
+    {
+      "quote": "Yêu không có nghĩa là nhìn nhau, mà có nghĩa là cùng nhau nhìn theo một hướng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Yêu là chết ở trong lòng một ít.",
+      "author": "Xuân Diệu"
+    },
+    {
+      "quote": "Yêu là hành động. - To love is to act.",
+      "author": "Victor Hugo"
+    },
+    {
+      "quote": "Yêu nhau lắm, cắn nhau đau.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Ái tình là một căn bệnh gồm ba giai đoạn: khao khát, chiếm đoạt, chán chường.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đôi mắt chỉ có nhìn thấy, trái tim mới là quyết định.",
+      "author": "Ngạn ngữ Nam Phi"
+    },
+    {
+      "quote": "Đối với vũ trụ bao la, bạn chỉ là một người nhỏ bé. Đối với một người, bạn là cả vũ trụ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng quên hy vọng, sự hy vọng cho bạn sức mạnh để tồn tại ngay khi bạn đang bị bỏ rơi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng sống quá thật thà. Đừng yêu ai quá thiết tha.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng trách người vì đã làm bạn thất vọng. Hãy tự trách mình đã kỳ vọng quá nhiều.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Biết người là trí, biết mình là sáng.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Biết thì phải biết cho suốt, làm thì phải làm cho đến nơi.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Bí ẩn là sự thông thái của những kẻ ngu dốt. - Mystery is the wisdom of blockheads.",
+      "author": "Horace Walpole"
+    },
+    {
+      "quote": "Bước thứ nhất để đạt tới sự thông thái là im lặng. thứ hai là biết lắng nghe người khác nói.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bệnh tật nguy hiểm nhất là thiếu khôn ngoan.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Bộ lông trang sức con công, học vấn trang sức con người.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Chúng ta không thể ước những điều mình không biết. - We cannot wish for that we know not.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Con người biết nhiều hơn những gì mình hiểu. - Man knows much more than he understands.",
+      "author": "Alfred Adler"
+    },
+    {
+      "quote": "Càng biết nhiều càng khổ.",
+      "author": "Ngạn ngữ Tây Ban Nha"
+    },
+    {
+      "quote": "Càng dễ tin mù quáng thì càng hay hoài nghi.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Càng không vội bày tỏ quan điểm thì càng đỡ gặp những sự phiền toái.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cái bất lợi của trí tuệ là ở chỗ: buộc phải không ngừng học hỏi thêm.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cái gì cũng biết là không biết gì cả.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Cái hay duy nhất là tri thức, cái dở duy nhất là không có tri thức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cánh cửa của trí tuệ không bao giờ đóng lại. - The doors of wisdom are never shut.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Của cải có thể tìm đến chúng ta, nhưng sự khôn ngoan thì chúng ta phải tìm đến nó.",
+      "author": "Olivier Goldsmith"
+    },
+    {
+      "quote": "Cứ nói tất cả những gì anh suy nghĩ riết rồi anh không còn suy nghĩ những gì anh nói nữa.",
+      "author": "Immanuel Kant"
+    },
+    {
+      "quote": "Góc nhìn càng hẹp thì tầm nhìn càng xa.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hiểu biết và chỉ có hiểu biết mới làm cho con người tự do và đem lại cho con người sự vĩ đại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Hiểu thời thế mới là người giỏi.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Hãy sống và học hỏi, nếu không bạn không thể sống lâu. - Live and learn, or you don't live long.",
+      "author": "Robert A Heinlein"
+    },
+    {
+      "quote": "Khôn ngoan giữ công việc, ngu khờ giữ hy vọng.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Khôn từ thuở lên ba, Dại già đầu cũng dại.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Không ai có thể biết mọi thứ. Thật xấu hổ và tai hại nếu ta giả vờ biết cái mà ta không biết.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có gì nghèo bằng không có tài. Không có gì hèn bằng không có chí",
+      "author": "Uông Cách"
+    },
+    {
+      "quote": "Không có lỗi nào to bằng ham muốn. Không có tai hoạ nào to bằng không biết đủ.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Không có tài sản nào quý bằng trí thông minh, không vinh quang nào lớn hơn học vấn và hiểu biết.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không kho báu nào quý bằng học thức, hãy tích lũy lấy nó, lúc bạn còn đủ sức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không phân biệt được điều hay lẽ phải thì không biết được ai là tà, ai là chính.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không phải câu hỏi nào cũng cần trả lời. - It is not every question that deserves an answer.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Không tự cho là thông minh chính là thông minh.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Kẻ biết thì không nói. Kẻ nói thì không biết.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Kẻ khôn hơn phải biết nhường nhịn.",
+      "author": "Ngạn ngữ Đức"
+    },
+    {
+      "quote": "Kẻ ngu đôi khi có thể cho người khôn một lời khuyên.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Kẻ sĩ không lo người đời chẳng biết mình mà chỉ sợ mình bất tài thôi.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Nghệ thuật đọc là lướt qua một cách khôn ngoan. - The art of reading is to skip judiciously.",
+      "author": "Alexander Hamilton"
+    },
+    {
+      "quote": "Nguồn tri thức duy nhất là kinh nghiệm. - The only source of knowledge is experience.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Người biết đủ, không bao giờ nhục. - Tri túc bất nhục.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Người có học biết mình ngu dốt. - The learned man knows that he is ignorant.",
+      "author": "Victor Hugo"
+    },
+    {
+      "quote": "Người khôn nghĩ rồi mới nói, người ngu đần nói rồi mới nghĩ đến điều anh ta nói.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Người khôn ngoan là người biết khéo nghe.",
+      "author": "Ngạn ngữ Pháp"
+    },
+    {
+      "quote": "Người ta có thể bỏ hết đựợc cái khôn vặt thì mới khôn to được.",
+      "author": "Trang Tử"
+    },
+    {
+      "quote": "Người thiếu khôn ngoan là người đứng trong tiệm bán dù suốt trận mưa.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Người thông minh không phải là người đọc nhiều mà là người hiểu được nhiều từ những điều đã đọc.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người thông minh không tự ái mà ngay lập tức nghĩ cách để rửa hận.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người thông minh thì không làm việc gì mà không suy nghĩ.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Người đi nhiều hiểu biết nhiều. - He that travels much knows much.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Nhiều người nhận được lời khuyên, ít người được lợi từ nó. - Many receive advice, few profit by it.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Nhìn thấy là tin tưởng, nhưng cảm nhận là sự thật. - Seeing's believing, but feeling's the truth.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Những tư tưởng lớn thường gặp nhau. - Les beaux esprits se rencontrent.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Những tư tưởng tốt nhất của chúng ta đến từ người khác. - Our best thoughts come from others.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Những điều chúng ta biết chỉ là giọt nước. Những điều chúng ta không biết là cả một dại dương.",
+      "author": "Isaac Newton"
+    },
+    {
+      "quote": "Những điều ít ỏi mà tôi biết đến từ sự ngu dốt của tôi. - The little I know I owe to my ignorance.",
+      "author": "Sacha Guitry"
+    },
+    {
+      "quote": "Này kẻ nên khôn đều có dại, làm người có dại mới nên khôn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu tôi nhìn được xa hơn những người khác, ấy là vì tôi đứng trên vai các vĩ nhân.",
+      "author": "Isaac Newton"
+    },
+    {
+      "quote": "Suy nghĩ những điều bạn sắp nói nhưng đừng nói hết những gì bạn nghĩ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sáng tạo là suy nghĩ một cách hiệu quả hơn. - Creativity is to think more efficiently.",
+      "author": "Pierre Reverdy"
+    },
+    {
+      "quote": "Sự tò mò là ngọn bấc trong cây nến học hỏi. - Curiosity is the wick in the candle of learning.",
+      "author": "William Arthur Ward"
+    },
+    {
+      "quote": "Thà không biết còn hơn biết một nửa. - Better to be ignorant of a matter than half know it.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Thông tin không phải là kiến thức. - Information is not knowledge.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Thấy người hay nghĩ sao cho bằng, thấy người dở tự xét mình có dở.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Thận trọng là đứa con trưởng của sự khôn ngoan. - Caution is the eldest child of wisdom.",
+      "author": "Victor Hugo"
+    },
+    {
+      "quote": "Tri thức là biết điều chúng ta không thể biết. - Knowledge is knowing that we cannot know.",
+      "author": "Ralph Waldo Emerson"
+    },
+    {
+      "quote": "Tri thức làm người ta khiêm tốn, ngu si làm người ta kiêu ngạo.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Trong tranh cãi gay gắt, sự thật bị đánh mất. - Nimium altercando veritas amittitur.",
+      "author": "Publilius Syrus"
+    },
+    {
+      "quote": "Trên đời không gì vĩ đại bằng con người, trong con người không gì vĩ đại bằng trí tuệ.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trí khôn ít có ở tuổi trẻ và sắc đẹp.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Trí tuệ rộng rãi, sức tưởng tượng mạnh mẽ và tâm hồn năng động, đó chính là thiên tài.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Trí tưởng tượng quan trọng hơn kiến thức. - Imagination is more important than knowledge.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Tài năng xuất sắc là đứa con của đau khổ. - Genius is sorrow's child.",
+      "author": "John Adams"
+    },
+    {
+      "quote": "Tính hài hước là ánh mặt trời của tư duy. - Humor is the sunshine of the mind.",
+      "author": "Edward Bulwer-Lytton"
+    },
+    {
+      "quote": "Tóc bạc không sinh ra sự khôn ngoan. - It is not white hair that engenders wisdom.",
+      "author": "Menander"
+    },
+    {
+      "quote": "Tôi biết quá nhiều và vẫn không đủ. - I know too much and not enough.",
+      "author": "Allen Ginsberg"
+    },
+    {
+      "quote": "Tôi càng thấy nhiều tôi càng ít biết chắc. - The more I see the less I know for sure.",
+      "author": "John Lennon"
+    },
+    {
+      "quote": "Tôi tư duy nên tôi tồn tại. - I think; therefore I am.",
+      "author": "Rene Descartes"
+    },
+    {
+      "quote": "Tấm gương người tốt là triết lý nhìn thấy được.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Tự biết mình là người sáng suốt. Thắng được người là có sức mạnh. Thắng được mình là kiên cường.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Đi ra một bước đường ta thấy ta khôn thêm một chút và tự thấy trí óc của mình thật bé bỏng vô cùng.",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "quote": "Đôi khi có ngốc nghếch một chút cũng chẳng sao, chẳng ai phải thông minh suốt cả đời.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Định kiến là điều những thằng ngu sử dụng làm lý lẽ. - Prejudices are what fools use for reason.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Đồ vật càng cũ càng rẻ, trí tuệ càng già càng đắt.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Con người cần hai năm để học nói và cần sáu mươi năm để học được cách giữ gìn lời ăn tiếng nói.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Cuồng tín là sự bồi thường quá đà cho ngờ vực. - Fanaticism is overcompensation for doubt.",
+      "author": "Robertson Davies"
+    },
+    {
+      "quote": "Câu nói như tên bắn, không nên bắn bậy, đã lọt vào tai ai khó mà lấy lại.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Dở nhất trong cái đạo xử thế là không thấy cái lỗi của mình.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Giao tiếp đừng mong lợi mình, vì lợi mình thì mất đạo nghĩa.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Hãy dùng lời nói như dùng vàng vậy.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không có cái gì độc bằng cái lưỡi.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Không có gì rẻ mà lại quý như thái độ lịch sự.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không hứa bậy nên mình không phụ ai. Không tin bừa nên không ai phụ mình.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Không nên ăn tất cả mọi thứ cũng như không nên nói tất cả mọi điều.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Làm việc thiện được thiện, làm điều ác bị quả báo.",
+      "author": "Ngạn ngữ Trung Quốc"
+    },
+    {
+      "quote": "Lá lành đùm lá rách.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Lương tri là Chúa trong mỗi con người. - Conscience is God present in man.",
+      "author": "Victor Hugo"
+    },
+    {
+      "quote": "Lưỡi dài thu ngắn đời sống.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Lịch sử, sản phẩm chưng cất của những lời đồn. - History, a distillation of rumour.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Lời nói chẳng mất tiền mua, lựa lời mà nói cho vừa lòng nhau.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Lời nói hay thì cưa đứt được cả sắt.",
+      "author": "Ngạn ngữ Nga"
+    },
+    {
+      "quote": "Lời nói hay,giúp người ấm hơi vải lụa. Lời nói dở, hại người như gươm dao.",
+      "author": "Tuân Tử"
+    },
+    {
+      "quote": "Lời nói như con ong nó có mật và có ngọc.",
+      "author": "Ngạn ngữ Anh"
+    },
+    {
+      "quote": "Lời thành thật thì không đẹp. Lời đẹp thì không thành thật.",
+      "author": "Lão Tử"
+    },
+    {
+      "quote": "Lời thề trong giông bão bị lãng quên lúc bình yên. - Vows made in storms are forgotten in calm.",
+      "author": "Thomas Fuller"
+    },
+    {
+      "quote": "Một thái độ văn hóa phản ánh một trình độ tri thức.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ngôn ngữ là y phục của tư duy. - Language is the dress of thought.",
+      "author": "Samuel Johnson"
+    },
+    {
+      "quote": "Ngôn ngữ ác nhất là đặt điều nói không.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Ngôn từ được sử dụng để che dấu suy nghĩ. - One great use of words is to hide our thoughts.",
+      "author": "Voltaire"
+    },
+    {
+      "quote": "Người cao thượng là người không bao giờ làm một điều gì để hạ thấp người khác.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người có lời nói xảo quyệt hoa hoè là người không có lòng tốt! - Xảo ngôn lệnh sắc, tiên hĩ nhân!",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Người nói càng nhiều càng tạo ra nhiều nhầm lẫn. - He that speaks much, is much mistaken.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Người nói nhiều là kẻ không có gì để nói.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Người nói đâu ra đó, thật thà sẽ dễ gần gũi người khác. - Cương, nghị, mộc nột, cận nhân.",
+      "author": "Khổng Tử"
+    },
+    {
+      "quote": "Người ta biết chùa uy nghiêm ngay từ cổng chùa.",
+      "author": "Ngạn ngữ Nhật Bản"
+    },
+    {
+      "quote": "Ngọc mà hóa ra đá, châu mà hóa ra sỏi, đó là tại lời gièm pha cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nhà văn tồn tại ở tác phẩm. Không có tác phẩm thì nhà văn ấy coi như đã chết.",
+      "author": "Xuân Diệu"
+    },
+    {
+      "quote": "Những cái lưỡi độc ác sợ hơn khẩu súng.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu bạn biết lắng nghe, những lời khuyên của bạn sẽ thuyết phục hơn rất nhiều.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nếu có ai đó nói rằng họ ghét bạn, hãy mỉm cười để cho họ thấy bạn không hề muốn có kẻ thù.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Nền dân chủ là con đường dẫn tới chủ nghĩa xã hội. - Democracy is the road to socialism.",
+      "author": "Karl Marx"
+    },
+    {
+      "quote": "Nền văn hóa ở một nước cao hay thấp không phải ở chính các nhà văn mà chính là ở độc giả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Sùng bái là con gái của ngu dốt. - Admiration is the daughter of ignorance.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "Sự lễ phép không phải tiêu phí gì mà lại chiếm được tất cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Tha thứ là mệnh lệnh của Chúa. - Forgiveness is God's command.",
+      "author": "Martin Luther"
+    },
+    {
+      "quote": "Thuyết vô thần là lời cuối cùng của thuyết hữu thần. - Atheism is the last word of theism.",
+      "author": "Heinrich Heine"
+    },
+    {
+      "quote": "Tôn giáo là thuốc phiện của nhân dân. - Religion is the opium of the masses.",
+      "author": "Karl Marx"
+    },
+    {
+      "quote": "Văn hóa là cái gì còn lại khi người ta quên hết cả, là cái gì vẫn thiếu khi người ta đã học tất cả.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Văn học có ý nghĩa rất lớn, nó là gia sư của xã hội.",
+      "author": "Vissarion Belinsky"
+    },
+    {
+      "quote": "Ăn trông nồi ngồi trông hướng.",
+      "author": "Tục ngữ Việt Nam"
+    },
+    {
+      "quote": "Đừng cho phép lưỡi bạn vượt quá ý nghĩ của bạn.",
+      "author": "Sưu tầm"
+    },
+    {
+      "quote": "Đừng là nô lệ của ngôn từ. - Be not a slave of words.",
+      "author": "Thomas Carlyle"
+    },
+    {
+      "quote": "Đừng làm việc trái đạo đức dưới cái cớ đạo đức. - Do not do an immoral thing for moral reasons.",
+      "author": "Thomas Hardy"
+    },
+    {
+      "quote": "Đừng ăn thỏa đói, đừng nói thỏa giận.",
+      "author": "Sưu tầm"
+    }
+  ]
+}
+

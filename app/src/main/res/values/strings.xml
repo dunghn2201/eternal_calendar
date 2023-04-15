@@ -4,4 +4,8 @@
     <string name="daily_calendar">Lịch Ngày</string>
     <string name="calendar_month">Lịch Tháng</string>
     <string name="vietnamese_culture">Văn Hoá Việt</string>
+    <string name="today">Hôm nay</string>
+    <string name="pick_date_display">Tháng %d - %d</string>
+    <string name="hour">Giờ</string>
+    <string name="detail">Chi tiết</string>
 </resources>

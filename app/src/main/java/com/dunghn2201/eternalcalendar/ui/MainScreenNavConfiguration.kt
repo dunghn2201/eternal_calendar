@@ -24,7 +24,6 @@ import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.ui.day_calendar.DayCalendarScreen
 import com.dunghn2201.eternalcalendar.ui.month_calendar.MonthCalendarScreen
 import com.dunghn2201.eternalcalendar.ui.news.NewsScreen
-import timber.log.Timber
 
 @Composable
 fun MainScreenNavConfiguration(
@@ -53,7 +52,7 @@ fun CalendarBottomNavigation(
     navController: NavController,
     items: List<BottomNavigationScreens>
 ) {
-    var currentTab by remember {
+    var currentTabRoute by remember {
         mutableStateOf(BottomNavigationScreens.DayCalendar.route)
     }
 
@@ -61,7 +60,7 @@ fun CalendarBottomNavigation(
         val currentRoute = currentRoute(navController)
         items.forEach { screen ->
             val selected = currentRoute == screen.route // This hides the title for the unselected items
-            val colorTab = if (currentTab == screen.route) Color.Red else Color.Gray
+            val colorTab = if (currentTabRoute == screen.route) Color.Red else Color.Gray
             BottomNavigationItem(
                 icon = {
                     Icon(
@@ -80,10 +79,9 @@ fun CalendarBottomNavigation(
                 onClick = {
                     // This if check gives us a "singleTop" behavior where we do not create a
                     // second instance of the composable if we are already on that destination
-                    if (currentRoute != screen.route) {
-                        Timber.e("/// navController.navigate(screen.route)")
+                    if (currentTabRoute != screen.route) {
                         navController.navigate(screen.route)
-                        currentTab = screen.route
+                        currentTabRoute = screen.route
                     }
                 },
             )

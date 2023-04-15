@@ -167,4 +167,10 @@ dependencies {
 
     //==================== Work Manager ====================
     implementation 'io.sentry:sentry-android:6.17.0'
+
+  //==================== Moshi ====================
+  kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+  implementation "com.squareup.moshi:moshi:$moshi_version"
+  implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+  implementation "com.squareup.moshi:moshi-adapters:$moshi_version"
 }
