@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">EternalCalendar</string>
+    <string name="app_name">Lịch Vạn Niên</string>
+    <string name="news">Báo Mới</string>
+    <string name="daily_calendar">Lịch Ngày</string>
+    <string name="calendar_month">Lịch Tháng</string>
+    <string name="vietnamese_culture">Văn Hoá Việt</string>
 </resources>
