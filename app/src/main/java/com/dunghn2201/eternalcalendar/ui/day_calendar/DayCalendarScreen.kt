@@ -4,6 +4,7 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.gestures.detectVerticalDragGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.PagerState
@@ -14,14 +15,14 @@ import androidx.compose.material.Icon
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -37,30 +38,68 @@ import com.dunghn2201.eternalcalendar.util.extension.UiState
 import java.time.DayOfWeek
 import java.time.LocalDate
 import java.util.*
+import kotlinx.coroutines.launch
+import timber.log.Timber
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun DayCalendarScreen(
-    viewModel: DayCalendarViewModel = hiltViewModel()
-) {
-    val context = LocalContext.current
+fun DayCalendarScreen() {
+    val viewModel: DayCalendarViewModel = hiltViewModel()
     val uiState by lazy {
         viewModel.uiState
     }
     val now by lazy {
         viewModel.now
     }
+    Timber.e("/// check rebuild")
+    var verticalDragDirection by remember {
+        mutableStateOf(VerticalDragDirection.BOTTOM_TO_TOP)
+    }
     if (uiState.uiState != UiState.State.COMPLETE) return
     val pagerState = rememberPagerState()
     LaunchedEffect(Unit) {
-        pagerState.scrollToPage(now)
+        pagerState.scrollToPage(now, uiState.items)
+        viewModel.updateUiState(
+            uiState.copy(
+                latestPage = now,
+            ),
+        )
     }
+    val coroutine = rememberCoroutineScope()
     val currentPage by lazy {
         uiState.items[pagerState.currentPage]
     }
-    val isCurrentPageIsNotToday: Boolean = currentPage.day != now.dayOfMonth ||
-        currentPage.month != now.monthValue ||
-        currentPage.year != now.year
+    val isCurrentPageIsNotToday: Boolean by lazy {
+        currentPage.date != now
+    }
+    val currentDate = currentPage.date
+    val isCurrentIndexIsFirst = pagerState.currentPage == 0 && uiState.items.isNotEmpty()
+    val isCurrentIndexIsEnd = pagerState.currentPage + 1 == uiState.items.size
+    if (isCurrentIndexIsFirst) viewModel.getMoreDaysByMonth(currentDate, GetMonthType.SUBTRACT)
+    if (isCurrentIndexIsEnd) viewModel.getMoreDaysByMonth(currentDate, GetMonthType.PLUS)
+
+    SideEffect {
+        coroutine.launch {
+            val isApproachingLatestPage = currentPage.date != (uiState.latestPage?.minusDays(1)) ||
+                currentPage.date != (uiState.latestPage?.plusDays(1))
+            val isValidToSideBack = uiState.latestPage != null &&
+                isApproachingLatestPage &&
+                uiState.allowRefreshLatestPage
+            if (isValidToSideBack) {
+                Timber.e("/// scrollToPage latestPage ${uiState.latestPage}")
+                Timber.e("/// scrollToPage currentPage ${currentPage.date}")
+
+                pagerState.scrollToPage(uiState.latestPage!!, uiState.items)
+                viewModel.updateUiState(
+                    uiState.copy(
+                        allowRefreshLatestPage = false,
+                        latestPage = currentPage.date,
+                    ),
+                )
+            }
+        }
+    }
+
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize(),
@@ -72,6 +111,26 @@ fun DayCalendarScreen(
                 .fillMaxSize()
                 .constrainAs(pager) {
                     top.linkTo(pager.top)
+                }
+                .pointerInput(Unit) {
+                    detectVerticalDragGestures(onVerticalDrag = { change, _ ->
+                        val deltaY = change.positionChange().y
+                        verticalDragDirection = if (deltaY > 0) {
+                            VerticalDragDirection.TOP_TO_BOTTOM
+                        } else {
+                            VerticalDragDirection.BOTTOM_TO_TOP
+                        }
+                    }, onDragEnd = {
+                        when (verticalDragDirection) {
+                            VerticalDragDirection.TOP_TO_BOTTOM -> {
+                                viewModel.getMoreDaysByMonth(currentDate, GetMonthType.PLUS, false)
+                            }
+                            VerticalDragDirection.BOTTOM_TO_TOP -> {
+                                viewModel.getMoreDaysByMonth(currentDate, GetMonthType.SUBTRACT, false)
+                            }
+                        }
+                        Timber.e("/// vuốt xong $verticalDragDirection")
+                    })
                 },
             pageCount = uiState.items.size,
             state = pagerState,
@@ -88,8 +147,7 @@ fun DayCalendarScreen(
                     }
                     .padding(start = 10.dp),
                 onClick = {
-                    val currentDay = now.dayOfMonth
-                    pagerState.scrollToPage(page = currentDay - 1)
+                    pagerState.scrollToPage(now, uiState.items)
                 },
             ) {
                 Text(
@@ -119,7 +177,7 @@ fun DayCalendarScreen(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(
-                text = stringResource(R.string.pick_date_display, now.monthValue, now.year),
+                text = stringResource(R.string.pick_date_display, currentPage.date.monthValue, currentPage.date.year),
                 color = ToryBlue,
                 fontSize = 18.sp,
                 fontFamily = OpenSansSemiBold,
@@ -230,7 +288,7 @@ fun DayCalendarItem(item: CalendarPagerItem) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 60.dp)
+                    .padding(top = 90.dp)
                     .background(
                         Color.White.copy(
                             alpha = 0.5f,
@@ -307,9 +365,9 @@ fun DayCalendarItem(item: CalendarPagerItem) {
             /** Lunar Calendar */
             Column(
                 modifier = Modifier
-                    .size(110.dp)
+                    .size(120.dp)
                     .paint(painterResource(id = R.drawable.bg_lunar_calendar), contentScale = ContentScale.FillBounds)
-                    .padding(bottom = 5.dp)
+                    .padding(bottom = 15.dp)
                     .constrainAs(lunarCalendar) {
                         top.linkTo(parent.top)
                         start.linkTo(parent.start)
@@ -331,12 +389,17 @@ fun DayCalendarItem(item: CalendarPagerItem) {
 }
 
 @OptIn(ExperimentalFoundationApi::class)
-suspend fun PagerState.scrollToPage(now: LocalDate) {
-    val currentDay = now.dayOfMonth
-    animateScrollToPage(page = currentDay - 1)
+suspend fun PagerState.scrollToPage(dateCompare: LocalDate, items: List<CalendarPagerItem>) {
+    val index = items.indexOfFirst { it.date == dateCompare }.takeIf { it != -1 } ?: 0
+    scrollToPage(page = index)
 }
 
 fun isWeekend(date: LocalDate): Boolean {
     val dayOfWeek = date.dayOfWeek
     return dayOfWeek == DayOfWeek.SUNDAY
+}
+
+enum class VerticalDragDirection {
+    BOTTOM_TO_TOP,
+    TOP_TO_BOTTOM,
 }

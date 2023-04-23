@@ -3,17 +3,16 @@ package com.dunghn2201.eternalcalendar.model
 import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.ui.theme.PersianBlue
 import com.dunghn2201.eternalcalendar.ui.theme.RudyRed
+import java.time.LocalDate
 
 typealias DayDrawableResource = Pair<Int, Int>
 
 data class CalendarPagerItem(
-    val day: Int,
-    val month: Int,
-    val year: Int,
     val dayOfWeek: String,
     val quote: String,
     val author: String,
     val isWeekend: Boolean,
+    val date: LocalDate,
 ) {
     val colorRes = if (isWeekend) RudyRed else PersianBlue
     val dayRes
@@ -28,7 +27,7 @@ data class CalendarPagerItem(
             val number7 = if (isWeekend) R.drawable.red7 else R.drawable.blue7
             val number8 = if (isWeekend) R.drawable.red8 else R.drawable.blue8
             val number9 = if (isWeekend) R.drawable.red9 else R.drawable.blue9
-            return when (day) {
+            return when (date.dayOfMonth) {
                 1 -> Pair(number0, number1)
                 2 -> Pair(number0, number2)
                 3 -> Pair(number0, number3)
