@@ -6,9 +6,7 @@ import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.gestures.detectVerticalDragGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Divider
-import androidx.compose.material.Icon
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.runtime.*
@@ -19,19 +17,25 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.ui.theme.*
 import com.dunghn2201.eternalcalendar.util.extension.SafeScaleAnimatedClickable
 import com.dunghn2201.eternalcalendar.util.extension.UiState
-import java.time.DayOfWeek
-import java.time.LocalDate
+import com.dunghn2201.eternalcalendar.util.extension.isSameDate
+import java.text.SimpleDateFormat
+import java.time.LocalTime
+import java.util.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -43,14 +47,27 @@ fun DayCalendarScreen() {
         viewModel.uiState
     }
     if (uiState.uiState != UiState.State.COMPLETE) return
+    var showPickDateDialog by remember {
+        mutableStateOf(false)
+    }
     val coroutine = rememberCoroutineScope()
     var dragDirection by remember {
         mutableStateOf(DragDirection.TOP_TO_BOTTOM)
     }
-    Timber.e("/// date current ${uiState.date}")
     var isVisibleTransitionType by remember {
         mutableStateOf(Pair(true, dragDirection))
     }
+    var currentTime by remember {
+        mutableStateOf(LocalTime.now())
+    }
+    LaunchedEffect(Unit) {
+        while (true) {
+            delay(1000)
+            currentTime = null
+            currentTime = LocalTime.now()
+        }
+    }
+
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
@@ -59,21 +76,18 @@ fun DayCalendarScreen() {
                     coroutine.launch {
                         isVisibleTransitionType = Pair(false, dragDirection) // exit old transition
                         delay(150)
-                        Timber.e("/// dragDirection Vertical $dragDirection")
-                        val dateTarget = dragDirection.getDateDisplayTarget(uiState.date)
+                        val dateTarget = dragDirection.getDateDisplayTarget(uiState.calendar)
                         viewModel.getCalendarInfoByDate(dateTarget)
                         delay(150)
                         isVisibleTransitionType = Pair(true, dragDirection) // enter new transition
                     }
-
                 }) { change, _ ->
                     val deltaY = change.positionChange().y
-                    dragDirection =
-                        if (deltaY > 0) {
-                            DragDirection.TOP_TO_BOTTOM
-                        } else {
-                            DragDirection.BOTTOM_TO_TOP
-                        }
+                    dragDirection = if (deltaY > 0) {
+                        DragDirection.TOP_TO_BOTTOM
+                    } else {
+                        DragDirection.BOTTOM_TO_TOP
+                    }
                 }
             }
             .pointerInput(Unit) {
@@ -81,20 +95,18 @@ fun DayCalendarScreen() {
                     coroutine.launch {
                         isVisibleTransitionType = Pair(false, dragDirection) // exit old transition
                         delay(150)
-                        Timber.e("/// dragDirection tHorizontal $dragDirection")
-                        val dateTarget = dragDirection.getDateDisplayTarget(uiState.date)
+                        val dateTarget = dragDirection.getDateDisplayTarget(uiState.calendar)
                         viewModel.getCalendarInfoByDate(dateTarget)
                         delay(150)
                         isVisibleTransitionType = Pair(true, dragDirection) // enter new transition
                     }
                 }) { change, _ ->
                     val deltaX = change.positionChange().x
-                    dragDirection =
-                        if (deltaX > 0) {
-                            DragDirection.START_TO_END
-                        } else {
-                            DragDirection.END_TO_START
-                        }
+                    dragDirection = if (deltaX > 0) {
+                        DragDirection.START_TO_END
+                    } else {
+                        DragDirection.END_TO_START
+                    }
                 }
             },
     ) {
@@ -106,32 +118,39 @@ fun DayCalendarScreen() {
                 .constrainAs(bg) {
                     top.linkTo(parent.top)
                 },
-            painter = painterResource(id = uiState.bgCalendarRes.random()),
+            painter = painterResource(id = uiState.bgCalendarRes),
             contentDescription = "",
             contentScale = ContentScale.FillBounds,
         )
         /** Today */
-        SafeScaleAnimatedClickable(
-            modifier = Modifier
-                .constrainAs(today) {
-                    top.linkTo(pickDate.top)
-                    bottom.linkTo(pickDate.bottom)
-                }
-                .padding(start = 10.dp),
-            onClick = {
-                viewModel.getCalendarInfoByDate(viewModel.now)
-            },
-        ) {
-            Text(
+        if (!uiState.calendar.isSameDate(uiState.now)) {
+            SafeScaleAnimatedClickable(
                 modifier = Modifier
-                    .background(Color.White, RoundedCornerShape(30.dp))
-                    .border(1.5.dp, ToryBlue, RoundedCornerShape(30.dp))
-                    .padding(10.dp),
-                text = stringResource(R.string.today),
-                color = ToryBlue,
-                fontSize = 15.sp,
-                fontFamily = OpenSansMedium,
-            )
+                    .constrainAs(today) {
+                        top.linkTo(pickDate.top)
+                        bottom.linkTo(pickDate.bottom)
+                    }
+                    .padding(start = 10.dp),
+                onClick = {
+                    viewModel.getCalendarInfoByDate(uiState.now)
+                },
+            ) {
+                Text(
+                    modifier = Modifier
+                        .background(
+                            Color.White.copy(
+                                alpha = 0.7f,
+                            ),
+                            RoundedCornerShape(30.dp),
+                        )
+                        .border(1.5.dp, ToryBlue, RoundedCornerShape(30.dp))
+                        .padding(10.dp),
+                    text = stringResource(R.string.today),
+                    color = ToryBlue,
+                    fontSize = 15.sp,
+                    fontFamily = OpenSansMedium,
+                )
+            }
         }
         /** PickDate */
         Row(
@@ -141,14 +160,22 @@ fun DayCalendarScreen() {
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }
-                .padding(10.dp)
-                .background(Color.White, RoundedCornerShape(30.dp))
+                .clickable {
+                    showPickDateDialog = true
+                }
+                .padding(30.dp)
+                .background(
+                    Color.White.copy(
+                        alpha = 0.7f,
+                    ),
+                    RoundedCornerShape(30.dp),
+                )
                 .border(1.5.dp, ToryBlue, RoundedCornerShape(30.dp))
                 .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(
-                text = stringResource(R.string.pick_date_display, uiState.date.monthValue, uiState.date.year),
+                text = stringResource(R.string.pick_date_display, uiState.month, uiState.year),
                 color = ToryBlue,
                 fontSize = 18.sp,
                 fontFamily = OpenSansSemiBold,
@@ -165,11 +192,10 @@ fun DayCalendarScreen() {
                 .fillMaxSize(),
             visible = isVisibleTransitionType.first,
             enter = isVisibleTransitionType.second.enterTransition,
-            exit = isVisibleTransitionType.second.exitTransition
+            exit = isVisibleTransitionType.second.exitTransition,
         ) {
             Column(
-                modifier = Modifier
-                    .offset(y = 0.3.dp),
+                modifier = Modifier.offset(y = 0.3.dp),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally,
 
@@ -268,7 +294,7 @@ fun DayCalendarScreen() {
                     )
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
-                        "20:48",
+                        stringResource(id = R.string.hour_minutes_args, currentTime.hour, currentTime.minute),
                         fontSize = 25.sp,
                         fontFamily = OpenSansSemiBold,
                         color = PersianBlue,
@@ -299,13 +325,13 @@ fun DayCalendarScreen() {
                         color = NaturalGrey,
                     )
                     Text(
-                        "Năm Quý Mão",
+                        stringResource(id = R.string.year_args, uiState.yearCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
                     )
                     Text(
-                        "Tháng Ất Mão",
+                        stringResource(id = R.string.month_args, uiState.monthCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
@@ -324,43 +350,88 @@ fun DayCalendarScreen() {
                     .size(120.dp)
                     .paint(
                         painterResource(id = R.drawable.bg_lunar_calendar),
-                        contentScale = ContentScale.FillBounds
+                        contentScale = ContentScale.FillBounds,
                     )
                     .padding(bottom = 15.dp)
                     .constrainAs(lunarCalendar) {
                         top.linkTo(parent.top)
                         start.linkTo(parent.start)
                         end.linkTo(parent.end)
-                    }
-                    .clickable {
-
                     },
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
-                Text("25", fontSize = 50.sp, fontFamily = OpenSansBold, color = PersianBlue)
+                Text(
+                    text = String.format("%02d", uiState.dayLunar),
+                    fontSize = 60.sp,
+                    fontFamily = OpenSansBold,
+                    color = PersianBlue,
+                )
                 Divider(
                     modifier = Modifier.padding(horizontal = 20.dp),
                     color = PersianBlue,
                     thickness = 1.dp,
                 )
-                Text("THÁNG 2", fontSize = 15.sp, fontFamily = OpenSansMedium, color = PersianBlue)
+                Text(
+                    stringResource(id = R.string.month_num_args, uiState.monthLunar),
+                    fontSize = 15.sp,
+                    fontFamily = OpenSansMedium,
+                    color = PersianBlue,
+                )
+            }
+        }
+        /** PickDateDialog */
+        // PickDateDialog()
+    }
+}
+
+@Preview
+@Composable
+fun PickDateDialog() {
+    val boxSize = with(LocalDensity.current) { 300.dp.toPx() }
+    Dialog(properties = DialogProperties(usePlatformDefaultWidth = false), onDismissRequest = { /*TODO*/ }) {
+        Surface(
+            modifier = Modifier.padding(10.dp),
+            shape = RoundedCornerShape(10.dp),
+            border = BorderStroke(1.dp, Color.White),
+        ) {
+            ConstraintLayout(modifier = Modifier.fillMaxWidth()) {
+                val (title, rowContent, Ok) = createRefs()
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .constrainAs(title) {
+                            top.linkTo(parent.top)
+                        },
+                    text = "Ngày|Tháng|Năm",
+                    textAlign = TextAlign.Center,
+                )
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(200.dp)
+                        .constrainAs(rowContent) {
+                            top.linkTo(title.bottom)
+                        },
+                ) {
+                }
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .constrainAs(Ok) {
+                            top.linkTo(rowContent.bottom)
+                            bottom.linkTo(parent.bottom)
+                        },
+                    text = "Đồng Ý",
+                    textAlign = TextAlign.Center,
+                )
             }
         }
     }
 }
 
-fun isWeekend(date: LocalDate): Boolean {
-    val dayOfWeek = date.dayOfWeek
-    return dayOfWeek == DayOfWeek.SUNDAY
-}
-
 enum class DragDirection {
-    TOP_TO_BOTTOM,
-    BOTTOM_TO_TOP,
-    START_TO_END,
-    END_TO_START;
-
+    TOP_TO_BOTTOM, BOTTOM_TO_TOP, START_TO_END, END_TO_START;
 
     val enterTransition
         get() = when (this) {
@@ -378,16 +449,15 @@ enum class DragDirection {
             END_TO_START -> ExitTransitionType.TARGET_TO_START.enterTransition
         }
 
-    fun getDateDisplayTarget(date: LocalDate): LocalDate {
-        val unitAction = 1L
-        return when (this) {
-            TOP_TO_BOTTOM -> date.plusMonths(unitAction)
-            BOTTOM_TO_TOP -> date.minusMonths(unitAction)
-            START_TO_END -> date.minusDays(unitAction)
-            END_TO_START -> date.plusDays(unitAction)
+    fun getDateDisplayTarget(calendar: Calendar): Calendar {
+        when (this) {
+            TOP_TO_BOTTOM -> calendar.add(Calendar.MONTH, 1)
+            BOTTOM_TO_TOP -> calendar.add(Calendar.MONTH, -1)
+            START_TO_END -> calendar.add(Calendar.DAY_OF_MONTH, -1)
+            END_TO_START -> calendar.add(Calendar.DAY_OF_MONTH, 1)
         }
+        return calendar
     }
-
 }
 
 enum class EnterTransitionType(val enterTransition: EnterTransition) {
@@ -403,4 +473,3 @@ enum class ExitTransitionType(val enterTransition: ExitTransition) {
     TARGET_TO_END(slideOutHorizontally(targetOffsetX = { it / 2 }) + fadeOut()),
     TARGET_TO_START(slideOutHorizontally() + fadeOut())
 }
-

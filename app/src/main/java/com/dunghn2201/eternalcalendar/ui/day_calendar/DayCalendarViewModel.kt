@@ -1,22 +1,23 @@
 package com.dunghn2201.eternalcalendar.ui.day_calendar
 
 import android.app.Application
+import android.icu.util.ChineseCalendar
 import androidx.annotation.RawRes
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.base.BaseViewModel
+import com.dunghn2201.eternalcalendar.model.Events
 import com.dunghn2201.eternalcalendar.model.Quotations
 import com.dunghn2201.eternalcalendar.ui.theme.PersianBlue
 import com.dunghn2201.eternalcalendar.ui.theme.RudyRed
-import com.dunghn2201.eternalcalendar.util.extension.UiState
+import com.dunghn2201.eternalcalendar.util.extension.*
 import com.squareup.moshi.Moshi
 import dagger.hilt.android.lifecycle.HiltViewModel
-import java.time.LocalDate
-import java.time.format.TextStyle
 import java.util.*
 import javax.inject.Inject
+import kotlin.text.Typography.quote
 
 @HiltViewModel
 class DayCalendarViewModel @Inject constructor(val application: Application, val moshi: Moshi) :
@@ -24,26 +25,51 @@ class DayCalendarViewModel @Inject constructor(val application: Application, val
     var uiState by mutableStateOf(DayCalendarUiState())
         private set
 
-    val now: LocalDate by lazy {
-        LocalDate.now()
-    }
+    var quoteCollection: List<Quotations.Quotation> = listOf()
+    var eventCollection: List<Events.Event> = listOf()
 
     init {
-        getCalendarInfoByDate(now)
+        quoteCollection = getQuotes()
+        eventCollection = getEvent()
+        getCalendarInfoByDate(uiState.now)
     }
 
-    fun getCalendarInfoByDate(date: LocalDate) {
-        val targetDate = LocalDate.of(date.year, date.monthValue, date.dayOfMonth)
-        val quoteTarget = getQuotes().random()
-        val dayOfWeek = targetDate.dayOfWeek.getDisplayName(TextStyle.FULL, Locale("vi"))
+
+    fun getCalendarInfoByDate(calendar: Calendar) {
+        val quoteTarget = quoteCollection.shuffled().random()
+        val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+        val month = calendar.get(Calendar.MONTH) + 1
+        val year = calendar.get(Calendar.YEAR)
+        val dateLunar = eventCollection.firstOrNull {
+            it.daySolar == dayOfMonth &&
+                it.monthSolar == month && it.yearSolar == year
+        }
+        val lunarChineseDate = ChineseCalendar(calendar.time)
+        val dayLunar = lunarChineseDate.get(Calendar.DAY_OF_MONTH)
+        val monthLunar = lunarChineseDate.get(Calendar.MONTH) + 1
+        val yearCanChi = year.getCanChiYear()
         uiState = uiState.copy(
-            dayOfWeek = dayOfWeek,
+            dayOfMonth = dayOfMonth,
+            month = month,
+            year = year,
+            dayLunar = dayLunar,
+            monthLunar = monthLunar,
+            dayOfWeek = calendar.getDayOfWeek(),
+            yearCanChi = yearCanChi,
+            monthCanChi = monthLunar.getCanChiMonth(yearCanChi),
             quote = quoteTarget.quote,
             author = quoteTarget.author,
-            isWeekend = isWeekend(targetDate),
-            date = targetDate,
-            uiState = UiState.State.COMPLETE
+            isWeekend = calendar.isWeekend(),
+            calendar = calendar,
+            uiState = UiState.State.COMPLETE,
         )
+    }
+
+    private fun getEvent(): List<Events.Event> {
+        val jsonContent = readRawResourceToString(R.raw.events)
+        val adapter = moshi.adapter(Events::class.java)
+        val eventsResponse = adapter.fromJson(jsonContent)
+        return eventsResponse?.events.orEmpty()
     }
 
     private fun getQuotes(): List<Quotations.Quotation> {
@@ -57,72 +83,30 @@ class DayCalendarViewModel @Inject constructor(val application: Application, val
         val inputStream = application.resources.openRawResource(rawRes)
         return inputStream.bufferedReader().use { it.readText() }
     }
-
-/*    fun getMoreDaysByMonth(date: LocalDate, monthType: GetMonthType, allowRefreshLatestPage: Boolean? = null) {
-        val isValidToGetMore = date == (uiState.latestPage?.minusDays(1)) ||
-            date == (uiState.latestPage?.plusDays(1)) ||
-            (date.monthValue == uiState.latestPage?.monthValue && date.year == uiState.latestPage?.year)
-        Timber.e("getMoreDaysByMonth latestPage ${uiState.latestPage}")
-        Timber.e("getMoreDaysByMonth date $date")
-        Timber.e("check 1 ${date == (uiState.latestPage?.minusDays(1))}")
-        Timber.e("check 2 ${date == (uiState.latestPage?.plusDays(1))}")
-        Timber.e(
-            "check 3 ${
-                (
-                    date.monthValue == uiState.latestPage?.monthValue &&
-                        date.year == uiState.latestPage?.year
-                    )
-            }",
-        )
-        if (!isValidToGetMore) return
-        val dateTarget = when (monthType) {
-            GetMonthType.SUBTRACT -> date.minusMonths(1)
-            GetMonthType.PLUS -> date.plusMonths(1)
-        }
-        val isDateAlreadyExists = uiState.items.any {
-            it.date.monthValue == dateTarget.monthValue && it.date.year == dateTarget.year
-        }
-        if (isDateAlreadyExists) return
-        val totalDaysInMonth = dateTarget.lengthOfMonth()
-        val items = List(totalDaysInMonth) { dayOfMonth ->
-            val quote = quoteList.random()
-            val dateUpdated = LocalDate.of(dateTarget.year, dateTarget.monthValue, dayOfMonth + 1)
-            val dayOfWeek = dateUpdated.dayOfWeek.getDisplayName(TextStyle.FULL, Locale("vi"))
-            CalendarPagerItem(
-                dayOfWeek = dayOfWeek.uppercase(),
-                quote = quote.quote,
-                author = quote.author,
-                isWeekend = isWeekend(dateUpdated),
-                date = dateUpdated,
-            )
-        }
-        val itemsUpdated = when (monthType) {
-            GetMonthType.SUBTRACT -> items + uiState.items
-            GetMonthType.PLUS -> uiState.items + items
-        }
-        Timber.e("/// itemsUpdated ${itemsUpdated.map { it.date.monthValue }}")
-        updateUiState(
-            uiState.copy(
-                items = itemsUpdated,
-                latestPage = date,
-                allowRefreshLatestPage = allowRefreshLatestPage ?: true,
-                uiState = UiState.State.COMPLETE,
-            ),
-        )
-    }*/
 }
 
 typealias DayDrawableResource = Pair<Int, Int>
 
 data class DayCalendarUiState(
+    val dayOfMonth: Int = 1,
+    val month: Int = 1,
+    val year: Int = 1,
+    val dayLunar: Int = 1,
+    val monthLunar: Int = 1,
     val dayOfWeek: String = "",
     val quote: String = "",
     val author: String = "",
+    val yearCanChi: String = "",
+    val monthCanChi: String = "",
     val isWeekend: Boolean = false,
-    val date: LocalDate = LocalDate.now(),
-    override val uiState: UiState.State = UiState.State.INITIAL,
+    val calendar: Calendar = Calendar.getInstance(),
+    override
+    val uiState: UiState.State = UiState.State.INITIAL,
 ) : UiState {
     val colorRes = if (isWeekend) RudyRed else PersianBlue
+    val now: Calendar by lazy {
+        Calendar.getInstance()
+    }
     val dayRes
         get(): DayDrawableResource {
             val number0 = if (isWeekend) R.drawable.red0 else R.drawable.blue0
@@ -135,7 +119,7 @@ data class DayCalendarUiState(
             val number7 = if (isWeekend) R.drawable.red7 else R.drawable.blue7
             val number8 = if (isWeekend) R.drawable.red8 else R.drawable.blue8
             val number9 = if (isWeekend) R.drawable.red9 else R.drawable.blue9
-            return when (date.dayOfMonth) {
+            return when (dayOfMonth) {
                 1 -> Pair(number0, number1)
                 2 -> Pair(number0, number2)
                 3 -> Pair(number0, number3)
@@ -171,7 +155,6 @@ data class DayCalendarUiState(
             }
         }
 
-
     val bgCalendarRes =
         listOf(
             R.drawable.bg_lich0,
@@ -195,6 +178,5 @@ data class DayCalendarUiState(
             R.drawable.bg_lich18,
             R.drawable.bg_lich19,
             R.drawable.bg_lich20,
-        )
-
+        ).shuffled().random()
 }

@@ -1,29 +1,41 @@
 package com.dunghn2201.eternalcalendar.util.extension
 
+import android.app.Activity
 import android.os.SystemClock
+import android.view.Window
+import android.view.WindowManager
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.spring
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.draw.scale
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.viewinterop.AndroidView
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 @Composable
-fun HideStatusBar() {
+fun HideStatusBar(window: Window) {
     val systemUiController = rememberSystemUiController()
     SideEffect {
-        systemUiController.isStatusBarVisible = false
-        systemUiController.isNavigationBarVisible = false
-        systemUiController.isSystemBarsVisible = false
-        systemUiController.navigationBarDarkContentEnabled = false
+        with(window) {
+            addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+            addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        }
+        systemUiController.setStatusBarColor(Color.Transparent, darkIcons = true)
     }
 }
 
