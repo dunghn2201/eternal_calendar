@@ -18,6 +18,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import java.util.*
 import javax.inject.Inject
 import kotlin.text.Typography.quote
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 @HiltViewModel
 class DayCalendarViewModel @Inject constructor(val application: Application, val moshi: Moshi) :
@@ -36,33 +38,42 @@ class DayCalendarViewModel @Inject constructor(val application: Application, val
 
 
     fun getCalendarInfoByDate(calendar: Calendar) {
-        val quoteTarget = quoteCollection.shuffled().random()
-        val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
-        val month = calendar.get(Calendar.MONTH) + 1
-        val year = calendar.get(Calendar.YEAR)
-        val dateLunar = eventCollection.firstOrNull {
-            it.daySolar == dayOfMonth &&
-                it.monthSolar == month && it.yearSolar == year
+        launchCoroutine {
+            val quoteTarget = quoteCollection.shuffled().random()
+            val dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+            val month = calendar.get(Calendar.MONTH) + 1
+            val year = calendar.get(Calendar.YEAR)
+            val dateLunar = eventCollection.firstOrNull {
+                it.daySolar == dayOfMonth &&
+                    it.monthSolar == month && it.yearSolar == year
+            }
+            val lunarChineseDate = ChineseCalendar(calendar.time)
+            val dayLunar = lunarChineseDate.get(Calendar.DAY_OF_MONTH)
+            val monthLunar = lunarChineseDate.get(Calendar.MONTH) + 1
+            val yearCanChi = year.getCanChiYear()
+            val monthCanChi = monthLunar.getCanChiMonth(yearCanChi)
+            val dayCanChi = getCanChiDay(year, month, dayOfMonth)
+            withContext(Dispatchers.Main) {
+                uiState = uiState.copy(
+                    dayOfMonth = dayOfMonth,
+                    month = month,
+                    year = year,
+                    dayLunar = dayLunar,
+                    monthLunar = monthLunar,
+                    dayOfWeek = calendar.getDayOfWeek(),
+                    yearCanChi = yearCanChi,
+                    monthCanChi = monthCanChi,
+                    dayCanChi = dayCanChi,
+                    quote = quoteTarget.quote,
+                    author = quoteTarget.author,
+                    isWeekend = calendar.isWeekend(),
+                    calendar = calendar,
+                    uiState = UiState.State.COMPLETE,
+                )
+            }
         }
-        val lunarChineseDate = ChineseCalendar(calendar.time)
-        val dayLunar = lunarChineseDate.get(Calendar.DAY_OF_MONTH)
-        val monthLunar = lunarChineseDate.get(Calendar.MONTH) + 1
-        val yearCanChi = year.getCanChiYear()
-        uiState = uiState.copy(
-            dayOfMonth = dayOfMonth,
-            month = month,
-            year = year,
-            dayLunar = dayLunar,
-            monthLunar = monthLunar,
-            dayOfWeek = calendar.getDayOfWeek(),
-            yearCanChi = yearCanChi,
-            monthCanChi = monthLunar.getCanChiMonth(yearCanChi),
-            quote = quoteTarget.quote,
-            author = quoteTarget.author,
-            isWeekend = calendar.isWeekend(),
-            calendar = calendar,
-            uiState = UiState.State.COMPLETE,
-        )
+
+
     }
 
     private fun getEvent(): List<Events.Event> {
@@ -98,6 +109,8 @@ data class DayCalendarUiState(
     val author: String = "",
     val yearCanChi: String = "",
     val monthCanChi: String = "",
+    val dayCanChi: String = "",
+    val hourCanChi: String = "",
     val isWeekend: Boolean = false,
     val calendar: Calendar = Calendar.getInstance(),
     override
@@ -179,4 +192,5 @@ data class DayCalendarUiState(
             R.drawable.bg_lich19,
             R.drawable.bg_lich20,
         ).shuffled().random()
+    val ngayHoangDaoMsg get() = monthLunar.getNgayHoangDao(dayCanChi)
 }

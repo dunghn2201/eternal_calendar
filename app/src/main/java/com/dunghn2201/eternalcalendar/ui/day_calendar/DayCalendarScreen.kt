@@ -30,12 +30,11 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.ui.theme.*
-import com.dunghn2201.eternalcalendar.util.extension.SafeScaleAnimatedClickable
-import com.dunghn2201.eternalcalendar.util.extension.UiState
-import com.dunghn2201.eternalcalendar.util.extension.isSameDate
+import com.dunghn2201.eternalcalendar.util.extension.*
 import java.text.SimpleDateFormat
 import java.time.LocalTime
 import java.util.*
+import kotlinx.coroutines.NonDisposableHandle.parent
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -160,7 +159,7 @@ fun DayCalendarScreen() {
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }
-                .clickable {
+                .clickableWithoutRipple {
                     showPickDateDialog = true
                 }
                 .padding(30.dp)
@@ -228,34 +227,42 @@ fun DayCalendarScreen() {
         }
 
         /** Quote Info */
-        Column(
+        AnimatedVisibility(
             modifier = Modifier
                 .fillMaxWidth()
                 .constrainAs(quote) {
-                    bottom.linkTo(additionalInfo.top)
+                    bottom.linkTo(additionalInfo.top, margin = 10.dp)
                 },
+            visible = isVisibleTransitionType.first,
+            enter = isVisibleTransitionType.second.enterTransition,
+            exit = isVisibleTransitionType.second.exitTransition,
         ) {
-            Text(
+            Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp),
-                text = uiState.quote,
-                color = Color.Black,
-                fontSize = 17.sp,
-                fontFamily = OpenSansMedium,
-                textAlign = TextAlign.Center,
-            )
-            Spacer(modifier = Modifier.height(5.dp))
-            Text(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp),
-                text = uiState.author,
-                color = Color.Black,
-                fontSize = 17.sp,
-                fontFamily = OpenSansMedium,
-                textAlign = TextAlign.Right,
-            )
+                    .fillMaxWidth(),
+            ) {
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp),
+                    text = uiState.quote,
+                    color = Color.Black,
+                    fontSize = 17.sp,
+                    fontFamily = OpenSansMedium,
+                    textAlign = TextAlign.Center,
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp),
+                    text = uiState.author,
+                    color = Color.Black,
+                    fontSize = 17.sp,
+                    fontFamily = OpenSansMedium,
+                    textAlign = TextAlign.Right,
+                )
+            }
         }
 
         ConstraintLayout(
@@ -270,7 +277,7 @@ fun DayCalendarScreen() {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 90.dp)
+                    .padding(top = 100.dp)
                     .background(
                         Color.White.copy(
                             alpha = 0.5f,
@@ -283,6 +290,7 @@ fun DayCalendarScreen() {
                 horizontalArrangement = Arrangement.SpaceEvenly,
             ) {
                 Column(
+                    modifier = Modifier.weight(2f),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
@@ -300,21 +308,24 @@ fun DayCalendarScreen() {
                         color = PersianBlue,
                     )
                     Text(
-                        "Giờ Nhâm Tuất",
+                        currentTime.hour.getCanChiHour(uiState.dayCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
                     )
                 }
                 Text(
-                    modifier = Modifier.align(Alignment.Bottom),
-                    text = "Ngày hoàng đạo",
+                    modifier = Modifier
+                        .weight(1.5f)
+                        .align(Alignment.Bottom),
+                    text = uiState.ngayHoangDaoMsg,
                     textAlign = TextAlign.Center,
                     fontSize = 15.sp,
                     fontFamily = OpenSansMedium,
-                    color = Color.Black,
+                    color = if (uiState.ngayHoangDaoMsg.length > 12) Color.Red else NaturalGrey,
                 )
                 Column(
+                    modifier = Modifier.weight(2f),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
@@ -337,7 +348,7 @@ fun DayCalendarScreen() {
                         color = Color.Black,
                     )
                     Text(
-                        "Ngày Quý Mão",
+                        stringResource(id = R.string.month_args, uiState.dayCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
@@ -347,12 +358,12 @@ fun DayCalendarScreen() {
             /** Lunar Calendar */
             Column(
                 modifier = Modifier
-                    .size(120.dp)
+                    .wrapContentSize()
                     .paint(
                         painterResource(id = R.drawable.bg_lunar_calendar),
-                        contentScale = ContentScale.FillBounds,
+                        contentScale = ContentScale.Fit,
                     )
-                    .padding(bottom = 15.dp)
+                    .padding(top = 25.dp, bottom = 35.dp, start = 35.dp, end = 35.dp)
                     .constrainAs(lunarCalendar) {
                         top.linkTo(parent.top)
                         start.linkTo(parent.start)
@@ -368,7 +379,7 @@ fun DayCalendarScreen() {
                     color = PersianBlue,
                 )
                 Divider(
-                    modifier = Modifier.padding(horizontal = 20.dp),
+                    modifier = Modifier.width(70.dp),
                     color = PersianBlue,
                     thickness = 1.dp,
                 )
@@ -381,7 +392,8 @@ fun DayCalendarScreen() {
             }
         }
         /** PickDateDialog */
-        // PickDateDialog()
+        if (showPickDateDialog)
+            PickDateDialog()
     }
 }
 
