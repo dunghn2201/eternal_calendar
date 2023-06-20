@@ -32,7 +32,7 @@ fun HideStatusBar(window: Window) {
     val systemUiController = rememberSystemUiController()
     SideEffect {
         with(window) {
-            addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+          //  addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
             addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         }
         systemUiController.setStatusBarColor(Color.Transparent, darkIcons = true)

@@ -6,10 +6,12 @@ import androidx.annotation.RawRes
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.base.BaseViewModel
 import com.dunghn2201.eternalcalendar.model.Events
 import com.dunghn2201.eternalcalendar.model.Quotations
+import com.dunghn2201.eternalcalendar.ui.theme.NaturalGrey
 import com.dunghn2201.eternalcalendar.ui.theme.PersianBlue
 import com.dunghn2201.eternalcalendar.ui.theme.RudyRed
 import com.dunghn2201.eternalcalendar.util.extension.*
@@ -110,7 +112,6 @@ data class DayCalendarUiState(
     val yearCanChi: String = "",
     val monthCanChi: String = "",
     val dayCanChi: String = "",
-    val hourCanChi: String = "",
     val isWeekend: Boolean = false,
     val calendar: Calendar = Calendar.getInstance(),
     override

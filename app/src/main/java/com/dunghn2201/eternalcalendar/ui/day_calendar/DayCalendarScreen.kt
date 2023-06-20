@@ -20,6 +20,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -28,6 +29,7 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.chargemap.compose.numberpicker.NumberPicker
 import com.dunghn2201.eternalcalendar.R
 import com.dunghn2201.eternalcalendar.ui.theme.*
 import com.dunghn2201.eternalcalendar.util.extension.*
@@ -393,50 +395,117 @@ fun DayCalendarScreen() {
         }
         /** PickDateDialog */
         if (showPickDateDialog)
-            PickDateDialog()
+            PickDateDialog(onDismissRequest = {
+                showPickDateDialog = false
+            }) { datePicked ->
+                viewModel.getCalendarInfoByDate(datePicked)
+                showPickDateDialog = false
+            }
     }
 }
 
-@Preview
 @Composable
-fun PickDateDialog() {
-    val boxSize = with(LocalDensity.current) { 300.dp.toPx() }
-    Dialog(properties = DialogProperties(usePlatformDefaultWidth = false), onDismissRequest = { /*TODO*/ }) {
+fun PickDateDialog(onDismissRequest: () -> Unit, onPickDateSelected: (Calendar) -> Unit) {
+    val calendar by remember {
+        mutableStateOf(Calendar.getInstance())
+    }
+    val totalDayInMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH)
+    val years = (1920..2050)
+    var yearSelected by remember {
+        mutableStateOf(calendar.get(Calendar.YEAR))
+    }
+    var monthSelected by remember {
+        mutableStateOf(calendar.get(Calendar.MONTH) + 1)
+    }
+    var daySelected by remember {
+        mutableStateOf(calendar.get(Calendar.DAY_OF_MONTH))
+    }
+
+    Dialog(properties = DialogProperties(usePlatformDefaultWidth = false), onDismissRequest = { onDismissRequest() }) {
         Surface(
-            modifier = Modifier.padding(10.dp),
+            modifier = Modifier.padding(30.dp),
             shape = RoundedCornerShape(10.dp),
-            border = BorderStroke(1.dp, Color.White),
         ) {
             ConstraintLayout(modifier = Modifier.fillMaxWidth()) {
                 val (title, rowContent, Ok) = createRefs()
                 Text(
                     modifier = Modifier
                         .fillMaxWidth()
+                        .background(ThunderBird)
+                        .padding(10.dp)
                         .constrainAs(title) {
                             top.linkTo(parent.top)
                         },
-                    text = "Ngày|Tháng|Năm",
+                    text = stringResource(id = R.string.day_month_year),
                     textAlign = TextAlign.Center,
+                    fontFamily = OpenSansSemiBold,
+                    fontSize = 18.sp,
+                    color = Color.White
                 )
                 Row(
                     modifier = Modifier
+                        .padding(vertical = 10.dp)
                         .fillMaxWidth()
-                        .height(200.dp)
                         .constrainAs(rowContent) {
                             top.linkTo(title.bottom)
                         },
+                    horizontalArrangement = Arrangement.Center
                 ) {
+                    /** day */
+                    NumberPicker(
+                        value = daySelected, onValueChange = {
+                            daySelected = it
+                            calendar.set(Calendar.DAY_OF_MONTH, it)
+                        }, range = 1..totalDayInMonth, textStyle = TextStyle(
+                            fontFamily = OpenSansMedium,
+                            color = PersianBlue
+                        )
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    /** month */
+                    NumberPicker(
+                        value = monthSelected, onValueChange = {
+                            monthSelected = it
+                            calendar.set(Calendar.MONTH, it - 1)
+                        }, range = 1..12, textStyle = TextStyle(
+                            fontFamily = OpenSansMedium,
+                            color = PersianBlue
+                        )
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    /** year */
+                    NumberPicker(
+                        modifier = Modifier,
+                        value = yearSelected, onValueChange = {
+                            yearSelected = it
+                            calendar.set(Calendar.YEAR, it)
+                        }, range = years, textStyle = TextStyle(
+                            fontFamily = OpenSansMedium,
+                            color = PersianBlue
+                        )
+                    )
                 }
-                Text(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .constrainAs(Ok) {
-                            top.linkTo(rowContent.bottom)
-                            bottom.linkTo(parent.bottom)
-                        },
-                    text = "Đồng Ý",
-                    textAlign = TextAlign.Center,
-                )
+                Column(modifier = Modifier
+                    .fillMaxWidth()
+                    .constrainAs(Ok) {
+                        top.linkTo(rowContent.bottom)
+                        bottom.linkTo(parent.bottom)
+                    }) {
+                    Divider(modifier = Modifier.fillMaxWidth(), color = Color.Black)
+                    Text(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 10.dp)
+                            .clickable {
+                                onPickDateSelected(calendar)
+                            },
+                        text = stringResource(id = R.string.agree),
+                        fontFamily = OpenSansBold,
+                        fontSize = 18.sp,
+                        textAlign = TextAlign.Center,
+                    )
+                }
+
             }
         }
     }

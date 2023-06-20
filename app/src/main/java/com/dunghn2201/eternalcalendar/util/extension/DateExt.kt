@@ -2,6 +2,8 @@ package com.dunghn2201.eternalcalendar.util.extension
 
 import android.icu.util.ChineseCalendar
 import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.util.*
 import timber.log.Timber
 
@@ -9,6 +11,13 @@ fun Calendar.getDayOfWeek(): String {
     val dayOfWeekPattern = "EEEE"
     val sdf = SimpleDateFormat(dayOfWeekPattern, Locale("vi", "VN"))
     return sdf.format(this.time)
+}
+
+fun LocalDate.getDayOfWeekVIFormat(): String {
+    val dayOfWeekPattern = "EEEE"
+    val vietnameseLocale = Locale("vi", "VN")
+    val formatter = DateTimeFormatter.ofPattern(dayOfWeekPattern, vietnameseLocale)
+    return format(formatter)
 }
 
 fun Calendar.isWeekend(): Boolean {
@@ -42,6 +51,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         2 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Đinh Mão"
@@ -52,6 +62,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         3 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Mậu Thìn"
@@ -62,6 +73,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         4 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Kỷ Tỵ"
@@ -72,6 +84,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         5 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Canh Ngọ"
@@ -82,6 +95,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         6 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Tân Mùi"
@@ -92,6 +106,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         7 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Nhâm Thân"
@@ -102,6 +117,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         8 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Quý Dậu"
@@ -112,6 +128,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         9 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Giáp Tuất"
@@ -122,6 +139,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         10 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Ất Hợi"
@@ -132,6 +150,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         11 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Bính Tý"
@@ -142,6 +161,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         12 -> {
             when {
                 yearThienCan.matches1In2("Giáp", "Kỷ") -> "Đinh Sửu"
@@ -152,6 +172,7 @@ fun Int.getCanChiMonth(yearCanChi: String): String {
                 else -> ""
             }
         }
+
         else -> ""
     }
 }
@@ -194,6 +215,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         1, 2 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Ất Sửu"
@@ -204,6 +226,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         3, 4 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Bính Dần"
@@ -214,6 +237,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         5, 6 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Đinh Mão"
@@ -224,6 +248,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         7, 8 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Mậu Thìn"
@@ -234,6 +259,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         9, 10 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Kỷ Tỵ"
@@ -244,6 +270,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         11, 12 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Canh Ngọ"
@@ -254,6 +281,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         13, 14 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Tân Mùi"
@@ -264,6 +292,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         15, 16 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Nhâm Thân"
@@ -274,6 +303,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         17, 18 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Quý Dậu"
@@ -284,6 +314,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         19, 20 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Giáp Tuất"
@@ -294,6 +325,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         21, 22 -> {
             when {
                 ngayThienCan.matches1In2("Giáp", "Kỷ") -> "Ất Dậu"
@@ -304,6 +336,7 @@ fun Int.getCanChiHour(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         else -> ""
     }
 }
@@ -331,6 +364,7 @@ fun Int.getNgayHoangDao(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         2, 8 -> {
             when (ngayThienCan) {
                 "Dần" -> hoangDao
@@ -348,6 +382,7 @@ fun Int.getNgayHoangDao(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         3, 9 -> {
             when (ngayThienCan) {
                 "Thìn" -> hoangDao
@@ -365,6 +400,7 @@ fun Int.getNgayHoangDao(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         4, 10 -> {
             when (ngayThienCan) {
                 "Ngọ" -> hoangDao
@@ -382,6 +418,7 @@ fun Int.getNgayHoangDao(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         5, 11 -> {
             when (ngayThienCan) {
                 "Thân" -> hoangDao
@@ -399,6 +436,7 @@ fun Int.getNgayHoangDao(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         6, 12 -> {
             when (ngayThienCan) {
                 "Tuất" -> hoangDao
@@ -416,6 +454,7 @@ fun Int.getNgayHoangDao(ngayCanChi: String): String {
                 else -> ""
             }
         }
+
         else -> ""
     }
 }

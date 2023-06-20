@@ -13,4 +13,6 @@
     <string name="day_args">Ngày %s</string>
     <string name="month_num_args">Tháng %d</string>
     <string name="hour_minutes_args">%d:%02d</string>
+    <string name="day_month_year">Ngày | Tháng | Năm</string>
+    <string name="agree">Đồng ý</string>
 </resources>
