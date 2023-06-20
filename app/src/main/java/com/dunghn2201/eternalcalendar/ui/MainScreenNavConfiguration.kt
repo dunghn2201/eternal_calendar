@@ -50,15 +50,19 @@ fun MainScreenNavConfiguration(
 @Composable
 fun CalendarBottomNavigation(
     navController: NavController,
-    items: List<BottomNavigationScreens>
 ) {
+    val bottomNavigationItems = listOf(
+        BottomNavigationScreens.News,
+        BottomNavigationScreens.DayCalendar,
+        BottomNavigationScreens.MonthCalendar,
+    )
     var currentTabRoute by remember {
         mutableStateOf(BottomNavigationScreens.DayCalendar.route)
     }
 
     BottomNavigation(backgroundColor = Color.White) {
         val currentRoute = currentRoute(navController)
-        items.forEach { screen ->
+        bottomNavigationItems.forEach { screen ->
             val selected = currentRoute == screen.route // This hides the title for the unselected items
             val colorTab = if (currentTabRoute == screen.route) Color.Red else Color.Gray
             BottomNavigationItem(

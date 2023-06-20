@@ -1,18 +1,12 @@
 package com.dunghn2201.eternalcalendar.ui.day_calendar
 
-import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.animation.*
+import androidx.compose.foundation.*
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.gestures.detectVerticalDragGestures
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.PagerState
-import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Divider
-import androidx.compose.material.Icon
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.runtime.*
@@ -23,122 +17,114 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import androidx.compose.ui.window.DialogProperties
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.chargemap.compose.numberpicker.NumberPicker
 import com.dunghn2201.eternalcalendar.R
-import com.dunghn2201.eternalcalendar.model.CalendarPagerItem
 import com.dunghn2201.eternalcalendar.ui.theme.*
-import com.dunghn2201.eternalcalendar.util.extension.SafeScaleAnimatedClickable
-import com.dunghn2201.eternalcalendar.util.extension.UiState
-import java.time.DayOfWeek
-import java.time.LocalDate
+import com.dunghn2201.eternalcalendar.util.extension.*
+import java.text.SimpleDateFormat
+import java.time.LocalTime
 import java.util.*
+import kotlinx.coroutines.NonDisposableHandle.parent
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun DayCalendarScreen() {
     val viewModel: DayCalendarViewModel = hiltViewModel()
     val uiState by lazy {
         viewModel.uiState
     }
-    val now by lazy {
-        viewModel.now
-    }
-    Timber.e("/// check rebuild")
-    var verticalDragDirection by remember {
-        mutableStateOf(VerticalDragDirection.BOTTOM_TO_TOP)
-    }
     if (uiState.uiState != UiState.State.COMPLETE) return
-    val pagerState = rememberPagerState()
-    LaunchedEffect(Unit) {
-        pagerState.scrollToPage(now, uiState.items)
-        viewModel.updateUiState(
-            uiState.copy(
-                latestPage = now,
-            ),
-        )
+    var showPickDateDialog by remember {
+        mutableStateOf(false)
     }
     val coroutine = rememberCoroutineScope()
-    val currentPage by lazy {
-        uiState.items[pagerState.currentPage]
+    var dragDirection by remember {
+        mutableStateOf(DragDirection.TOP_TO_BOTTOM)
     }
-    val isCurrentPageIsNotToday: Boolean by lazy {
-        currentPage.date != now
+    var isVisibleTransitionType by remember {
+        mutableStateOf(Pair(true, dragDirection))
     }
-    val currentDate = currentPage.date
-    val isCurrentIndexIsFirst = pagerState.currentPage == 0 && uiState.items.isNotEmpty()
-    val isCurrentIndexIsEnd = pagerState.currentPage + 1 == uiState.items.size
-    if (isCurrentIndexIsFirst) viewModel.getMoreDaysByMonth(currentDate, GetMonthType.SUBTRACT)
-    if (isCurrentIndexIsEnd) viewModel.getMoreDaysByMonth(currentDate, GetMonthType.PLUS)
-
-    SideEffect {
-        coroutine.launch {
-            val isApproachingLatestPage = currentPage.date != (uiState.latestPage?.minusDays(1)) ||
-                currentPage.date != (uiState.latestPage?.plusDays(1))
-            val isValidToSideBack = uiState.latestPage != null &&
-                isApproachingLatestPage &&
-                uiState.allowRefreshLatestPage
-            if (isValidToSideBack) {
-                Timber.e("/// scrollToPage latestPage ${uiState.latestPage}")
-                Timber.e("/// scrollToPage currentPage ${currentPage.date}")
-
-                pagerState.scrollToPage(uiState.latestPage!!, uiState.items)
-                viewModel.updateUiState(
-                    uiState.copy(
-                        allowRefreshLatestPage = false,
-                        latestPage = currentPage.date,
-                    ),
-                )
-            }
+    var currentTime by remember {
+        mutableStateOf(LocalTime.now())
+    }
+    LaunchedEffect(Unit) {
+        while (true) {
+            delay(1000)
+            currentTime = null
+            currentTime = LocalTime.now()
         }
     }
 
     ConstraintLayout(
         modifier = Modifier
-            .fillMaxSize(),
+            .fillMaxSize()
+            .pointerInput(Unit) {
+                detectVerticalDragGestures(onDragEnd = {
+                    coroutine.launch {
+                        isVisibleTransitionType = Pair(false, dragDirection) // exit old transition
+                        delay(150)
+                        val dateTarget = dragDirection.getDateDisplayTarget(uiState.calendar)
+                        viewModel.getCalendarInfoByDate(dateTarget)
+                        delay(150)
+                        isVisibleTransitionType = Pair(true, dragDirection) // enter new transition
+                    }
+                }) { change, _ ->
+                    val deltaY = change.positionChange().y
+                    dragDirection = if (deltaY > 0) {
+                        DragDirection.TOP_TO_BOTTOM
+                    } else {
+                        DragDirection.BOTTOM_TO_TOP
+                    }
+                }
+            }
+            .pointerInput(Unit) {
+                detectHorizontalDragGestures(onDragEnd = {
+                    coroutine.launch {
+                        isVisibleTransitionType = Pair(false, dragDirection) // exit old transition
+                        delay(150)
+                        val dateTarget = dragDirection.getDateDisplayTarget(uiState.calendar)
+                        viewModel.getCalendarInfoByDate(dateTarget)
+                        delay(150)
+                        isVisibleTransitionType = Pair(true, dragDirection) // enter new transition
+                    }
+                }) { change, _ ->
+                    val deltaX = change.positionChange().x
+                    dragDirection = if (deltaX > 0) {
+                        DragDirection.START_TO_END
+                    } else {
+                        DragDirection.END_TO_START
+                    }
+                }
+            },
     ) {
-        val (today, pickDate, pager) = createRefs()
-
-        HorizontalPager(
+        val (bg, today, pickDate, mainDisplayDate, quote, additionalInfo) = createRefs()
+        /** background */
+        Image(
             modifier = Modifier
                 .fillMaxSize()
-                .constrainAs(pager) {
-                    top.linkTo(pager.top)
-                }
-                .pointerInput(Unit) {
-                    detectVerticalDragGestures(onVerticalDrag = { change, _ ->
-                        val deltaY = change.positionChange().y
-                        verticalDragDirection = if (deltaY > 0) {
-                            VerticalDragDirection.TOP_TO_BOTTOM
-                        } else {
-                            VerticalDragDirection.BOTTOM_TO_TOP
-                        }
-                    }, onDragEnd = {
-                        when (verticalDragDirection) {
-                            VerticalDragDirection.TOP_TO_BOTTOM -> {
-                                viewModel.getMoreDaysByMonth(currentDate, GetMonthType.PLUS, false)
-                            }
-                            VerticalDragDirection.BOTTOM_TO_TOP -> {
-                                viewModel.getMoreDaysByMonth(currentDate, GetMonthType.SUBTRACT, false)
-                            }
-                        }
-                        Timber.e("/// vuốt xong $verticalDragDirection")
-                    })
+                .constrainAs(bg) {
+                    top.linkTo(parent.top)
                 },
-            pageCount = uiState.items.size,
-            state = pagerState,
-        ) { currentPage ->
-            val item = uiState.items[currentPage]
-            DayCalendarItem(item)
-        }
-        if (isCurrentPageIsNotToday) {
+            painter = painterResource(id = uiState.bgCalendarRes),
+            contentDescription = "",
+            contentScale = ContentScale.FillBounds,
+        )
+        /** Today */
+        if (!uiState.calendar.isSameDate(uiState.now)) {
             SafeScaleAnimatedClickable(
                 modifier = Modifier
                     .constrainAs(today) {
@@ -147,12 +133,17 @@ fun DayCalendarScreen() {
                     }
                     .padding(start = 10.dp),
                 onClick = {
-                    pagerState.scrollToPage(now, uiState.items)
+                    viewModel.getCalendarInfoByDate(uiState.now)
                 },
             ) {
                 Text(
                     modifier = Modifier
-                        .background(Color.White, RoundedCornerShape(30.dp))
+                        .background(
+                            Color.White.copy(
+                                alpha = 0.7f,
+                            ),
+                            RoundedCornerShape(30.dp),
+                        )
                         .border(1.5.dp, ToryBlue, RoundedCornerShape(30.dp))
                         .padding(10.dp),
                     text = stringResource(R.string.today),
@@ -162,7 +153,7 @@ fun DayCalendarScreen() {
                 )
             }
         }
-
+        /** PickDate */
         Row(
             modifier = Modifier
                 .constrainAs(pickDate) {
@@ -170,110 +161,110 @@ fun DayCalendarScreen() {
                     start.linkTo(parent.start)
                     end.linkTo(parent.end)
                 }
-                .padding(10.dp)
-                .background(Color.White, RoundedCornerShape(30.dp))
+                .clickableWithoutRipple {
+                    showPickDateDialog = true
+                }
+                .padding(30.dp)
+                .background(
+                    Color.White.copy(
+                        alpha = 0.7f,
+                    ),
+                    RoundedCornerShape(30.dp),
+                )
                 .border(1.5.dp, ToryBlue, RoundedCornerShape(30.dp))
                 .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(
-                text = stringResource(R.string.pick_date_display, currentPage.date.monthValue, currentPage.date.year),
+                text = stringResource(R.string.pick_date_display, uiState.month, uiState.year),
                 color = ToryBlue,
                 fontSize = 18.sp,
                 fontFamily = OpenSansSemiBold,
             )
             Icon(imageVector = Icons.Default.ArrowDropDown, contentDescription = null, tint = ToryBlue)
         }
-    }
-}
-
-@Composable
-fun DayCalendarItem(item: CalendarPagerItem) {
-    val bgCalendar = bgCalendar.random()
-    ConstraintLayout(
-        modifier = Modifier
-            .fillMaxSize(),
-    ) {
-        val (bg, dayInfo, quote, additionalInfo) = createRefs()
-        /** background */
-        Image(
-            modifier = Modifier
-                .fillMaxSize()
-                .constrainAs(bg) {
-                    top.linkTo(parent.top)
-                },
-            painter = painterResource(id = bgCalendar),
-            contentDescription = "",
-            contentScale = ContentScale.FillBounds,
-        )
         /** dayOfWeek */
-        Column(
+        AnimatedVisibility(
             modifier = Modifier
-                .constrainAs(dayInfo) {
-                    top.linkTo(parent.top)
-                    start.linkTo(parent.start)
-                    end.linkTo(parent.end)
-                    linkTo(dayInfo.bottom, parent.bottom, bias = 0.4f)
+                .constrainAs(mainDisplayDate) {
+                    top.linkTo(pickDate.bottom)
+                    bottom.linkTo(quote.top)
                 }
-                .offset(y = 0.3.dp),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally,
-
+                .fillMaxSize(),
+            visible = isVisibleTransitionType.first,
+            enter = isVisibleTransitionType.second.enterTransition,
+            exit = isVisibleTransitionType.second.exitTransition,
         ) {
-            Row {
-                Image(
-                    modifier = Modifier
-                        .width(70.dp)
-                        .height(110.dp),
-                    painter = painterResource(id = item.dayRes.first),
-                    contentDescription = null,
-                    contentScale = ContentScale.FillBounds,
-                )
-                Image(
-                    modifier = Modifier
-                        .width(70.dp)
-                        .height(110.dp),
-                    painter = painterResource(id = item.dayRes.second),
-                    contentDescription = null,
-                    contentScale = ContentScale.FillBounds,
+            Column(
+                modifier = Modifier.offset(y = 0.3.dp),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
+
+                ) {
+                Row {
+                    Image(
+                        modifier = Modifier
+                            .width(70.dp)
+                            .height(110.dp),
+                        painter = painterResource(id = uiState.dayRes.first),
+                        contentDescription = null,
+                        contentScale = ContentScale.FillBounds,
+                    )
+                    Image(
+                        modifier = Modifier
+                            .width(70.dp)
+                            .height(110.dp),
+                        painter = painterResource(id = uiState.dayRes.second),
+                        contentDescription = null,
+                        contentScale = ContentScale.FillBounds,
+                    )
+                }
+                Text(
+                    text = uiState.dayOfWeek,
+                    color = uiState.colorRes,
+                    fontSize = 25.sp,
+                    fontFamily = OpenSansBold,
                 )
             }
-            Text(
-                text = item.dayOfWeek,
-                color = item.colorRes,
-                fontSize = 25.sp,
-                fontFamily = OpenSansBold,
-            )
         }
-        /** AdditionalInfo */
-        Column(
+
+        /** Quote Info */
+        AnimatedVisibility(
             modifier = Modifier
                 .fillMaxWidth()
                 .constrainAs(quote) {
-                    bottom.linkTo(additionalInfo.top)
+                    bottom.linkTo(additionalInfo.top, margin = 10.dp)
                 },
+            visible = isVisibleTransitionType.first,
+            enter = isVisibleTransitionType.second.enterTransition,
+            exit = isVisibleTransitionType.second.exitTransition,
         ) {
-            Text(
+            Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp),
-                text = item.quote,
-                color = Color.Black,
-                fontSize = 17.sp,
-                fontFamily = OpenSansMedium,
-                textAlign = TextAlign.Center,
-            )
-            Spacer(modifier = Modifier.height(5.dp))
-            Text(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 20.dp),
-                text = item.author,
-                color = Color.Black,
-                fontSize = 17.sp,
-                fontFamily = OpenSansMedium,
-                textAlign = TextAlign.Right,
-            )
+                    .fillMaxWidth(),
+            ) {
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp),
+                    text = uiState.quote,
+                    color = Color.Black,
+                    fontSize = 17.sp,
+                    fontFamily = OpenSansMedium,
+                    textAlign = TextAlign.Center,
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp),
+                    text = uiState.author,
+                    color = Color.Black,
+                    fontSize = 17.sp,
+                    fontFamily = OpenSansMedium,
+                    textAlign = TextAlign.Right,
+                )
+            }
         }
 
         ConstraintLayout(
@@ -288,7 +279,7 @@ fun DayCalendarItem(item: CalendarPagerItem) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 90.dp)
+                    .padding(top = 100.dp)
                     .background(
                         Color.White.copy(
                             alpha = 0.5f,
@@ -301,6 +292,7 @@ fun DayCalendarItem(item: CalendarPagerItem) {
                 horizontalArrangement = Arrangement.SpaceEvenly,
             ) {
                 Column(
+                    modifier = Modifier.weight(2f),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
@@ -312,27 +304,30 @@ fun DayCalendarItem(item: CalendarPagerItem) {
                     )
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
-                        "20:48",
+                        stringResource(id = R.string.hour_minutes_args, currentTime.hour, currentTime.minute),
                         fontSize = 25.sp,
                         fontFamily = OpenSansSemiBold,
                         color = PersianBlue,
                     )
                     Text(
-                        "Giờ Nhâm Tuất",
+                        currentTime.hour.getCanChiHour(uiState.dayCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
                     )
                 }
                 Text(
-                    modifier = Modifier.align(Alignment.Bottom),
-                    text = "Ngày hoàng đạo",
+                    modifier = Modifier
+                        .weight(1.5f)
+                        .align(Alignment.Bottom),
+                    text = uiState.ngayHoangDaoMsg,
                     textAlign = TextAlign.Center,
                     fontSize = 15.sp,
                     fontFamily = OpenSansMedium,
-                    color = Color.Black,
+                    color = if (uiState.ngayHoangDaoMsg.length > 12) Color.Red else NaturalGrey,
                 )
                 Column(
+                    modifier = Modifier.weight(2f),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
@@ -343,19 +338,19 @@ fun DayCalendarItem(item: CalendarPagerItem) {
                         color = NaturalGrey,
                     )
                     Text(
-                        "Năm Quý Mão",
+                        stringResource(id = R.string.year_args, uiState.yearCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
                     )
                     Text(
-                        "Tháng Ất Mão",
+                        stringResource(id = R.string.month_args, uiState.monthCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
                     )
                     Text(
-                        "Ngày Quý Mão",
+                        stringResource(id = R.string.month_args, uiState.dayCanChi),
                         fontSize = 15.sp,
                         fontFamily = OpenSansMedium,
                         color = Color.Black,
@@ -365,9 +360,12 @@ fun DayCalendarItem(item: CalendarPagerItem) {
             /** Lunar Calendar */
             Column(
                 modifier = Modifier
-                    .size(120.dp)
-                    .paint(painterResource(id = R.drawable.bg_lunar_calendar), contentScale = ContentScale.FillBounds)
-                    .padding(bottom = 15.dp)
+                    .wrapContentSize()
+                    .paint(
+                        painterResource(id = R.drawable.bg_lunar_calendar),
+                        contentScale = ContentScale.Fit,
+                    )
+                    .padding(top = 25.dp, bottom = 35.dp, start = 35.dp, end = 35.dp)
                     .constrainAs(lunarCalendar) {
                         top.linkTo(parent.top)
                         start.linkTo(parent.start)
@@ -376,30 +374,183 @@ fun DayCalendarItem(item: CalendarPagerItem) {
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
-                Text("25", fontSize = 50.sp, fontFamily = OpenSansBold, color = PersianBlue)
+                Text(
+                    text = String.format("%02d", uiState.dayLunar),
+                    fontSize = 60.sp,
+                    fontFamily = OpenSansBold,
+                    color = PersianBlue,
+                )
                 Divider(
-                    modifier = Modifier.padding(horizontal = 20.dp),
+                    modifier = Modifier.width(70.dp),
                     color = PersianBlue,
                     thickness = 1.dp,
                 )
-                Text("THÁNG 2", fontSize = 15.sp, fontFamily = OpenSansMedium, color = PersianBlue)
+                Text(
+                    stringResource(id = R.string.month_num_args, uiState.monthLunar),
+                    fontSize = 15.sp,
+                    fontFamily = OpenSansMedium,
+                    color = PersianBlue,
+                )
+            }
+        }
+        /** PickDateDialog */
+        if (showPickDateDialog)
+            PickDateDialog(onDismissRequest = {
+                showPickDateDialog = false
+            }) { datePicked ->
+                viewModel.getCalendarInfoByDate(datePicked)
+                showPickDateDialog = false
+            }
+    }
+}
+
+@Composable
+fun PickDateDialog(onDismissRequest: () -> Unit, onPickDateSelected: (Calendar) -> Unit) {
+    val calendar by remember {
+        mutableStateOf(Calendar.getInstance())
+    }
+    val totalDayInMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH)
+    val years = (1920..2050)
+    var yearSelected by remember {
+        mutableStateOf(calendar.get(Calendar.YEAR))
+    }
+    var monthSelected by remember {
+        mutableStateOf(calendar.get(Calendar.MONTH) + 1)
+    }
+    var daySelected by remember {
+        mutableStateOf(calendar.get(Calendar.DAY_OF_MONTH))
+    }
+
+    Dialog(properties = DialogProperties(usePlatformDefaultWidth = false), onDismissRequest = { onDismissRequest() }) {
+        Surface(
+            modifier = Modifier.padding(30.dp),
+            shape = RoundedCornerShape(10.dp),
+        ) {
+            ConstraintLayout(modifier = Modifier.fillMaxWidth()) {
+                val (title, rowContent, Ok) = createRefs()
+                Text(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(ThunderBird)
+                        .padding(10.dp)
+                        .constrainAs(title) {
+                            top.linkTo(parent.top)
+                        },
+                    text = stringResource(id = R.string.day_month_year),
+                    textAlign = TextAlign.Center,
+                    fontFamily = OpenSansSemiBold,
+                    fontSize = 18.sp,
+                    color = Color.White
+                )
+                Row(
+                    modifier = Modifier
+                        .padding(vertical = 10.dp)
+                        .fillMaxWidth()
+                        .constrainAs(rowContent) {
+                            top.linkTo(title.bottom)
+                        },
+                    horizontalArrangement = Arrangement.Center
+                ) {
+                    /** day */
+                    NumberPicker(
+                        value = daySelected, onValueChange = {
+                            daySelected = it
+                            calendar.set(Calendar.DAY_OF_MONTH, it)
+                        }, range = 1..totalDayInMonth, textStyle = TextStyle(
+                            fontFamily = OpenSansMedium,
+                            color = PersianBlue
+                        )
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    /** month */
+                    NumberPicker(
+                        value = monthSelected, onValueChange = {
+                            monthSelected = it
+                            calendar.set(Calendar.MONTH, it - 1)
+                        }, range = 1..12, textStyle = TextStyle(
+                            fontFamily = OpenSansMedium,
+                            color = PersianBlue
+                        )
+                    )
+                    Spacer(modifier = Modifier.width(20.dp))
+                    /** year */
+                    NumberPicker(
+                        modifier = Modifier,
+                        value = yearSelected, onValueChange = {
+                            yearSelected = it
+                            calendar.set(Calendar.YEAR, it)
+                        }, range = years, textStyle = TextStyle(
+                            fontFamily = OpenSansMedium,
+                            color = PersianBlue
+                        )
+                    )
+                }
+                Column(modifier = Modifier
+                    .fillMaxWidth()
+                    .constrainAs(Ok) {
+                        top.linkTo(rowContent.bottom)
+                        bottom.linkTo(parent.bottom)
+                    }) {
+                    Divider(modifier = Modifier.fillMaxWidth(), color = Color.Black)
+                    Text(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 10.dp)
+                            .clickable {
+                                onPickDateSelected(calendar)
+                            },
+                        text = stringResource(id = R.string.agree),
+                        fontFamily = OpenSansBold,
+                        fontSize = 18.sp,
+                        textAlign = TextAlign.Center,
+                    )
+                }
+
             }
         }
     }
 }
 
-@OptIn(ExperimentalFoundationApi::class)
-suspend fun PagerState.scrollToPage(dateCompare: LocalDate, items: List<CalendarPagerItem>) {
-    val index = items.indexOfFirst { it.date == dateCompare }.takeIf { it != -1 } ?: 0
-    scrollToPage(page = index)
+enum class DragDirection {
+    TOP_TO_BOTTOM, BOTTOM_TO_TOP, START_TO_END, END_TO_START;
+
+    val enterTransition
+        get() = when (this) {
+            TOP_TO_BOTTOM -> EnterTransitionType.TOP_TO_TARGET.enterTransition
+            BOTTOM_TO_TOP -> EnterTransitionType.BOTTOM_TO_TARGET.enterTransition
+            START_TO_END -> EnterTransitionType.START_TO_TARGET.enterTransition
+            END_TO_START -> EnterTransitionType.END_TO_TARGET.enterTransition
+        }
+
+    val exitTransition
+        get() = when (this) {
+            TOP_TO_BOTTOM -> ExitTransitionType.TARGET_TO_BOTTOM.enterTransition
+            BOTTOM_TO_TOP -> ExitTransitionType.TARGET_TO_TOP.enterTransition
+            START_TO_END -> ExitTransitionType.TARGET_TO_END.enterTransition
+            END_TO_START -> ExitTransitionType.TARGET_TO_START.enterTransition
+        }
+
+    fun getDateDisplayTarget(calendar: Calendar): Calendar {
+        when (this) {
+            TOP_TO_BOTTOM -> calendar.add(Calendar.MONTH, 1)
+            BOTTOM_TO_TOP -> calendar.add(Calendar.MONTH, -1)
+            START_TO_END -> calendar.add(Calendar.DAY_OF_MONTH, -1)
+            END_TO_START -> calendar.add(Calendar.DAY_OF_MONTH, 1)
+        }
+        return calendar
+    }
 }
 
-fun isWeekend(date: LocalDate): Boolean {
-    val dayOfWeek = date.dayOfWeek
-    return dayOfWeek == DayOfWeek.SUNDAY
+enum class EnterTransitionType(val enterTransition: EnterTransition) {
+    TOP_TO_TARGET(slideInVertically() + fadeIn()),
+    BOTTOM_TO_TARGET(slideInVertically(initialOffsetY = { it / 2 }) + fadeIn()),
+    START_TO_TARGET(slideInHorizontally() + fadeIn()),
+    END_TO_TARGET(slideInHorizontally(initialOffsetX = { it / 2 }) + fadeIn())
 }
 
-enum class VerticalDragDirection {
-    BOTTOM_TO_TOP,
-    TOP_TO_BOTTOM,
+enum class ExitTransitionType(val enterTransition: ExitTransition) {
+    TARGET_TO_TOP(slideOutVertically() + fadeOut()),
+    TARGET_TO_BOTTOM(slideOutVertically(targetOffsetY = { it / 2 }) + fadeOut()),
+    TARGET_TO_END(slideOutHorizontally(targetOffsetX = { it / 2 }) + fadeOut()),
+    TARGET_TO_START(slideOutHorizontally() + fadeOut())
 }

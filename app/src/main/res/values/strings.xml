@@ -8,4 +8,11 @@
     <string name="pick_date_display">Tháng %d - %d</string>
     <string name="hour">Giờ</string>
     <string name="detail">Chi tiết</string>
+    <string name="year_args">Năm %s</string>
+    <string name="month_args">Tháng %s</string>
+    <string name="day_args">Ngày %s</string>
+    <string name="month_num_args">Tháng %d</string>
+    <string name="hour_minutes_args">%d:%02d</string>
+    <string name="day_month_year">Ngày | Tháng | Năm</string>
+    <string name="agree">Đồng ý</string>
 </resources>
